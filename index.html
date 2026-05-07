@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="DRC Beam Test Archive summary.">
+  <meta property="og:title" content="KoDRC Beam Test Archive"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>KoDRC Beam Test Archive</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
 
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
 
@@ -25,13 +33,9 @@
             <div class="is-size-5 publication-authors">
               <span class="author-block">Dual-Readout Calorimeter Collaboration</span>
             </div>
-            <div class="is-size-6" style="margin-top: 10px; color: #666;">
-              Summary of beam tests conducted at CERN, DESY and more since 2022.
-            </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                
                 <span class="link-block">
                   <a href="TestBeam/2022/index.html" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-calendar-alt"></i></span>
@@ -59,7 +63,6 @@
                     <span>2025 Test</span>
                   </a>
                 </span>
-
               </div>
             </div>
           </div>
@@ -70,76 +73,71 @@
 
   <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Experimental Milestones</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Experimental Milestones</h2>
+          <div class="content has-text-justified">
+            <p>
+              우리 팀은 2022년부터 매년 듀얼리드아웃 칼로리미터의 성능 검증을 위한 빔테스트를 수행해왔습니다. 
+              각 연도별 페이지에서는 해당 테스트에 사용된 3D 모듈 구조, 런 리스트, 그리고 주요 물리 결과를 확인하실 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      
       <div class="columns is-multiline">
-        
         <div class="column is-one-half">
-          <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee; height: 100%;">
+          <div class="card" style="border-radius: 10px; border: 1px solid #e5e5e5;">
             <div class="card-content">
               <p class="title is-4">2022 Beam Test</p>
               <p class="subtitle is-6">TB2022 @ CERN SPS</p>
-              <div class="content">
-                초기 프로토타입 검증 및 데이터 수집 분석 결과 요약.
-              </div>
-              <a href="TestBeam/2022/index.html" class="button is-link is-fullwidth is-outlined">View Details</a>
+              <a href="TestBeam/2022/index.html" class="button is-link is-fullwidth is-outlined is-rounded">View Summary</a>
             </div>
           </div>
         </div>
 
         <div class="column is-one-half">
-          <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee; height: 100%;">
+          <div class="card" style="border-radius: 10px; border: 1px solid #e5e5e5;">
             <div class="card-content">
               <p class="title is-4">2023 Beam Test</p>
               <p class="subtitle is-6">TB2023 @ CERN PS</p>
-              <div class="content">
-                SiPM 리드아웃 통합 테스트 및 성능 평가 데이터.
-              </div>
-              <a href="TestBeam/2023/index.html" class="button is-link is-fullwidth is-outlined">View Details</a>
+              <a href="TestBeam/2023/index.html" class="button is-link is-fullwidth is-outlined is-rounded">View Summary</a>
             </div>
           </div>
         </div>
 
         <div class="column is-one-half">
-          <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee; height: 100%;">
+          <div class="card" style="border-radius: 10px; border: 1px solid #e5e5e5;">
             <div class="card-content">
               <p class="title is-4">2024 Beam Test</p>
               <p class="subtitle is-6">TB2024 @ CERN</p>
-              <div class="content">
-                검출기 모듈 확장 및 고에너지 분해능 측정 실험.
-              </div>
-              <a href="TestBeam/2024/index.html" class="button is-link is-fullwidth is-outlined">View Details</a>
+              <a href="TestBeam/2024/index.html" class="button is-link is-fullwidth is-outlined is-rounded">View Summary</a>
             </div>
           </div>
         </div>
 
         <div class="column is-one-half">
-          <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee; height: 100%;">
+          <div class="card" style="border-radius: 10px; border: 1px solid #e5e5e5;">
             <div class="card-content">
               <p class="title is-4">2025 Beam Test</p>
-              <p class="subtitle is-6">TB2025 (Ongoing)</p>
-              <div class="content">
-                최신 데모기 제작 및 최적화 연구 데이터 아카이브.
-              </div>
-              <a href="TestBeam/2025/index.html" class="button is-link is-fullwidth is-outlined">View Details</a>
+              <p class="subtitle is-6">TB2025 (Upcoming)</p>
+              <a href="TestBeam/2025/index.html" class="button is-link is-fullwidth is-outlined is-rounded">View Summary</a>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content has-text-centered">
-            <p>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
-              <br> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-          </div>
-        </div>
+      <div class="content has-text-centered">
+        <p>
+          This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+        <p>
+          Source code borrowed from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>.
+        </p>
       </div>
     </div>
   </footer>
