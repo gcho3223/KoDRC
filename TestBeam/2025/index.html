@@ -50,6 +50,11 @@
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 
+  <!-- Scroll To Top Button -->
+<button id="scrollTopBtn" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
 <body>
 
   <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -358,6 +363,25 @@
     // 아니면 새로 열기
     target.classList.remove('is-hidden');
   }
+  // 위로가기 버튼 표시/숨김
+  window.onscroll = function () {
+    const btn = document.getElementById("scrollTopBtn");
+
+    if (document.body.scrollTop > 300 ||
+        document.documentElement.scrollTop > 300) {
+      btn.style.display = "flex";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // 맨 위로 스크롤
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
 </script>
 
 <style>
@@ -381,6 +405,40 @@
   }
 
   .is-hidden {display: none !important;}
+
+  #scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #3273dc;
+  color: white;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+  transition: all 0.2s ease;
+
+  z-index: 999;
+}
+
+#scrollTopBtn:hover {
+  transform: translateY(-3px);
+  background-color: #2759a5;
+}
 </style>
 
   <!-------------------------------------- Tools -------------------------------------->
