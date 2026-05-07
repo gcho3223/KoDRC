@@ -355,23 +355,14 @@
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
   }
 
-  .module-info-content {
-    animation: fadeIn 0.4s;
-  }
+  .module-info-content {animation: fadeIn 0.4s;}
 
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 
-  .is-hidden {
-    display: none !important;
-  }
+  .is-hidden {display: none !important;}
 </style>
 
   <!-------------------------------------- Tools -------------------------------------->
@@ -461,9 +452,7 @@
   const isAlreadyOpen = !target.classList.contains('is-hidden');
   const contents = document.querySelectorAll('.tool-info-content');
 
-  contents.forEach(content => {
-    content.classList.add('is-hidden');
-  });
+  contents.forEach(content => {content.classList.add('is-hidden');});
 
   // 이미 열려있으면 접기
   if (isAlreadyOpen) {return;}
@@ -485,9 +474,7 @@
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
   }
 
-  .tool-info-content {
-    animation: fadeIn 0.4s;
-  }
+  .tool-info-content {animation: fadeIn 0.4s;}
 </style>
 
   <!-------------------------------------- Run list -------------------------------------->
