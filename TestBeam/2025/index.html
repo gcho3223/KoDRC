@@ -10,18 +10,37 @@
   <link rel="stylesheet" href="../../static/css/index.css">
 
   <style>
-    /* 부드러운 스크롤 효과 */
     html {
       scroll-behavior: smooth;
     }
-    /* 점프 시 네비바에 제목이 가려지지 않도록 상단 여백 설정 */
+
     section[id] {
       scroll-margin-top: 70px;
     }
+
     .jump-box {
-      border-radius: 50px; 
+      border-radius: 50px;
       padding: 1rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .run-table-wrapper {
+      animation: fadeIn 0.5s;
+      overflow-x: auto;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .is-hidden {
+      display: none !important;
     }
   </style>
 
@@ -29,6 +48,7 @@
   <script defer src="../../static/js/fontawesome.all.min.js"></script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
+
 <body>
 
   <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -37,15 +57,17 @@
         <span class="icon"><i class="fas fa-home"></i></span>&nbsp;Home
       </a>
     </div>
+
     <div class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="#abstract">Abstract</a>
+        <a class="navbar-item" href="#meeting-log">Meeting & Log</a>
         <a class="navbar-item" href="#3d-model">3D Module</a>
         <a class="navbar-item" href="#run-list">Run List</a>
       </div>
     </div>
   </nav>
-<!-------------------------------------- Title -------------------------------------->
+
+  <!-------------------------------------- Title -------------------------------------->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -60,607 +82,277 @@
       </div>
     </div>
   </section>
-<!-------------------------------------- Jumping buttons -------------------------------------->
-<section class="section pt-0">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="box has-background-light" style="border-radius: 50px; padding: 1rem;">
-          <div class="buttons is-centered">
-            <!-------------------------------- DRM & DAQ log -------------------------------->
-            <a href="#meeting-log" class="button is-rounded is-white has-text-weight-semibold">
-              <span class="icon is-small"><i class="fas fa-link"></i></span>
-              <span>Daily Meeting & Log</span>
-            </a>
-            <!-------------------------------- Module -------------------------------->
-            <a href="#3d-model" class="button is-rounded is-white has-text-weight-semibold">
-              <span class="icon is-small"><i class="fas fa-cube"></i></span>
-              <span>3D Module</span>
-            </a>
-            <!-------------------------------- Run list -------------------------------->
-            <a href="#run-list" class="button is-rounded is-white has-text-weight-semibold">
-              <span class="icon is-small"><i class="fas fa-list-ol"></i></span>
-              <span>Run List</span>
-            </a>
-            <!-------------------------------- useful link -------------------------------->
-            <a href="#whats-new" class="button is-rounded is-white has-text-weight-semibold">
-              <span class="icon is-small"><i class="fas fa-bolt"></i></span>
-              <span>What's New</span>
-            </a>
-            <!-------------------------------- participants -------------------------------->
-            <a href="#participant" class="button is-rounded is-white has-text-weight-semibold">
-              <span class="icon is-small"><i class="fas fa-users"></i></span>
-              <span>Participants</span>
-            </a>
+
+  <!-------------------------------------- Jumping buttons -------------------------------------->
+  <section class="section pt-0">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="box has-background-light" style="border-radius: 50px; padding: 1rem;">
+            <div class="buttons is-centered">
+
+              <a href="#meeting-log" class="button is-rounded is-white has-text-weight-semibold">
+                <span class="icon is-small"><i class="fas fa-link"></i></span>
+                <span>Daily Meeting & Log</span>
+              </a>
+
+              <a href="#3d-model" class="button is-rounded is-white has-text-weight-semibold">
+                <span class="icon is-small"><i class="fas fa-cube"></i></span>
+                <span>3D Module</span>
+              </a>
+
+              <a href="#run-list" class="button is-rounded is-white has-text-weight-semibold">
+                <span class="icon is-small"><i class="fas fa-list-ol"></i></span>
+                <span>Run List</span>
+              </a>
+
+              <a href="#whats-new" class="button is-rounded is-white has-text-weight-semibold">
+                <span class="icon is-small"><i class="fas fa-bolt"></i></span>
+                <span>What's New</span>
+              </a>
+
+              <a href="#participant" class="button is-rounded is-white has-text-weight-semibold">
+                <span class="icon is-small"><i class="fas fa-users"></i></span>
+                <span>Participants</span>
+              </a>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-------------------------------------- What's new? -------------------------------------->
+  </section>
+
+  <!-------------------------------------- What's new? -------------------------------------->
   <section class="section" id="whats-new">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">What's New in TB2025?</h2>
-        <div class="content has-text-justified">
-          <p class="has-text-centered">
-            The 2025 beam test introduces several key upgrades..!!
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-------------------------------------- new 1 -------------------------------------->
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <div class="card" style="border-radius: 15px; border-top: 5px solid #3273dc; height: 100%;">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <span class="icon is-large has-text-link">
-                  <i class="fas fa-microchip fa-2x"></i>
-                </span>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Module</p>
-              </div>
-            </div>
-
-            <div class="content">
-              <ul style="list-style-type: none; margin-left: 0;">
-                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>New Readout Frame:</strong> Better optical contact using spring/screw mechanism.</li>
-                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>New module frame to use TB2024 only:</strong> 
-                  <ul class="is-size-7 mt-1" style="list-style-type: square;">
-                    <li>easier installation using rail & no need for SiPM setup</li>
-                    <li>LC installed under the module for precise leakage counting.</li>
-                    <li>New back-plane & side-planes for stability/alignment.</li>
-                  </ul>
-                </li>
-                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>Yellow Filter:</strong> Wratten #12 &rarr; #3 (Higher light yield).</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-------------------------------------- new 2 -------------------------------------->
-      <div class="column is-half">
-        <div class="card" style="border-radius: 15px; border-top: 5px solid #48c774; height: 100%;">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <span class="icon is-large has-text-success">
-                  <i class="fas fa-server fa-2x"></i>
-                </span>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">DAQ</p>
-              </div>
-            </div>
-
-            <div class="content">
-              <ul style="list-style-type: none; margin-left: 0;">
-                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Fix Timing Issue:</strong> Firmware upgrade for DAQ board</li>
-                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Move Sensor Boards:</strong> Relocated to concrete block to reduce cable tension</li>
-                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Pedestal Fluctuation:</strong> Pre-run calibration (std. dev. < ~5)</li>
-                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Separate Cables:</strong> Separated cables for adjacent modules to reduce the cross-talk</li>
-                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Trigger:</strong> New triggers with better timing resolution</li>
-              </ul>
-            </div>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">What's New in TB2025?</h2>
+          <div class="content has-text-justified">
+            <p class="has-text-centered">
+              The 2025 beam test introduces several key upgrades..!!
+            </p>
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-<!-------------------------------------- DRM & DAQ Log-------------------------------------->
-  <section class="section" id="meeting-log"> 
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full has-text-centered">
-        <h2 class="title is-3">Daily Run Meeting & DAQ Log</h2>
-        
-        <div class="buttons is-centered mt-5">
-          <a href="https://indico.cern.ch/event/1572295/" target="_blank" 
-             class="button is-link is-large is-rounded is-outlined" 
-             style="min-width: 230px; border-width: 2px;">
-            <span class="icon is-medium">
-              <i class="fas fa-calendar-alt"></i>
-            </span>
-            <span class="ml-2"><strong>Indico Agenda</strong></span>
-          </a>
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <div class="card" style="border-radius: 15px; border-top: 5px solid #3273dc; height: 100%;">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <span class="icon is-large has-text-link">
+                    <i class="fas fa-microchip fa-2x"></i>
+                  </span>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Module</p>
+                </div>
+              </div>
 
-          <a href="https://docs.google.com/document/d/1I7dI2cQcZ0qU8uhYoJ_Ixwr4qmGQj_Wh14z5fP__gZw/edit?tab=t.0#heading=h.y77lurvcsdg7" target="_blank" 
-             class="button is-success is-large is-rounded is-outlined" 
-             style="min-width: 230px; border-width: 2px;">
-            <span class="icon is-medium">
-              <i class="fas fa-file-signature"></i>
-            </span>
-            <span class="ml-2"><strong>Meeting Minutes</strong></span>
-          </a>
+              <div class="content">
+                <ul style="list-style-type: none; margin-left: 0;">
+                  <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>New Readout Frame:</strong> Better optical contact using spring/screw mechanism.</li>
+                  <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>New module frame to use TB2024 only:</strong>
+                    <ul class="is-size-7 mt-1" style="list-style-type: square;">
+                      <li>easier installation using rail & no need for SiPM setup</li>
+                      <li>LC installed under the module for precise leakage counting.</li>
+                      <li>New back-plane & side-planes for stability/alignment.</li>
+                    </ul>
+                  </li>
+                  <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>Yellow Filter:</strong> Wratten #12 &rarr; #3 (Higher light yield).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <a href="https://docs.google.com/spreadsheets/d/1QejInj5na9T6plFYdJDt8GvZw5HbREuHqwmiyV5pKWY/edit?gid=170723003#gid=170723003" target="_blank" 
-             class="button is-warning is-large is-rounded is-outlined" 
-             style="min-width: 230px; border-width: 2px;">
-            <span class="icon is-medium">
-              <i class="fas fa-table"></i>
-            </span>
-            <span class="ml-2"><strong>DAQ Log</strong></span>
-          </a>
+        <div class="column is-half">
+          <div class="card" style="border-radius: 15px; border-top: 5px solid #48c774; height: 100%;">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <span class="icon is-large has-text-success">
+                    <i class="fas fa-server fa-2x"></i>
+                  </span>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">DAQ</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <ul style="list-style-type: none; margin-left: 0;">
+                  <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Fix Timing Issue:</strong> Firmware upgrade for DAQ board</li>
+                  <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Move Sensor Boards:</strong> Relocated to concrete block to reduce cable tension</li>
+                  <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Pedestal Fluctuation:</strong> Pre-run calibration (std. dev. &lt; ~5)</li>
+                  <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Separate Cables:</strong> Separated cables for adjacent modules to reduce the cross-talk</li>
+                  <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Trigger:</strong> New triggers with better timing resolution</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
-  </div>
-</section>
-<!-------------------------------------- Module information -------------------------------------->
+  </section>
+
+  <!-------------------------------------- DRM & DAQ Log -------------------------------------->
+  <section class="section" id="meeting-log">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full has-text-centered">
+          <h2 class="title is-3">Daily Run Meeting & DAQ Log</h2>
+
+          <div class="buttons is-centered mt-5">
+            <a href="https://indico.cern.ch/event/1572295/" target="_blank"
+               class="button is-link is-large is-rounded is-outlined"
+               style="min-width: 230px; border-width: 2px;">
+              <span class="icon is-medium">
+                <i class="fas fa-calendar-alt"></i>
+              </span>
+              <span class="ml-2"><strong>Indico Agenda</strong></span>
+            </a>
+
+            <a href="https://docs.google.com/document/d/1I7dI2cQcZ0qU8uhYoJ_Ixwr4qmGQj_Wh14z5fP__gZw/edit?tab=t.0#heading=h.y77lurvcsdg7" target="_blank"
+               class="button is-success is-large is-rounded is-outlined"
+               style="min-width: 230px; border-width: 2px;">
+              <span class="icon is-medium">
+                <i class="fas fa-file-signature"></i>
+              </span>
+              <span class="ml-2"><strong>Meeting Minutes</strong></span>
+            </a>
+
+            <a href="https://docs.google.com/spreadsheets/d/1QejInj5na9T6plFYdJDt8GvZw5HbREuHqwmiyV5pKWY/edit?gid=170723003#gid=170723003" target="_blank"
+               class="button is-warning is-large is-rounded is-outlined"
+               style="min-width: 230px; border-width: 2px;">
+              <span class="icon is-medium">
+                <i class="fas fa-table"></i>
+              </span>
+              <span class="ml-2"><strong>DAQ Log</strong></span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------- Module information -------------------------------------->
   <section class="section" id="3d-model">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">3D Module Viewer</h2>
       <div class="columns is-centered">
         <div class="column is-full">
           <div class="card" style="border-radius: 20px; overflow: hidden;">
-            <model-viewer src="../../static/models/drc_2022.glb" 
+            <model-viewer src="../../static/models/drc_2022.glb"
                           poster="../../static/images/poster_2022.png"
-                          auto-rotate camera-controls 
+                          auto-rotate
+                          camera-controls
                           style="width: 100%; height: 500px; background-color: #f5f5f5;">
             </model-viewer>
           </div>
-          <p class="help has-text-centered mt-2">마우스로 드래그하여 회전, 휠로 확대/축소할 수 있습니다.</p>
+          <p class="help has-text-centered mt-2">
+            마우스로 드래그하여 회전, 휠로 확대/축소할 수 있습니다.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-<!-------------------------------------- Run list -------------------------------------->
+  <!-------------------------------------- Run list -------------------------------------->
   <section class="section" id="run-list">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Run List & Records</h2>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Run List & Records</h2>
 
-    <!-- run type -->
-    <div class="buttons is-centered mb-4">
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
+      <div class="buttons is-centered mb-4">
+        <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
+        <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
+        <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
+        <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
+        <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
+        <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
 
-      <button class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
-        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-        <span>Hadron</span>
-      </button>
-    </div>
-
-    <!-- hadron sub menu -->
-    <div id="hadron-sub-menu"
-         class="box has-background-light is-hidden animate__animated animate__fadeIn"
-         style="border-radius:20px; margin-bottom:2rem;">
-
-      <p class="has-text-centered is-size-7 has-text-grey mb-2">
-        Select Hadron Sub-type
-      </p>
-
-      <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light"
-                onclick="showRunCategory('h-pion')">Pion</button>
-
-        <button class="button is-small is-rounded is-danger is-light"
-                onclick="showRunCategory('h-pk')">Proton/Kaon</button>
-
-        <button class="button is-small is-rounded is-danger is-light"
-                onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
-
-        <button class="button is-small is-rounded is-danger is-light"
-                onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
-
-        <button class="button is-small is-rounded is-danger is-light"
-                onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
+        <button class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
+          <span class="icon"><i class="fas fa-chevron-down"></i></span>
+          <span>Hadron</span>
+        </button>
       </div>
-    </div>
 
-    <!-- ================= Calibration ================= -->
-    <div id="calib" class="run-content">
-      <h4 class="subtitle is-5">Calibration Runs</h4>
+      <div id="hadron-sub-menu"
+           class="box has-background-light is-hidden"
+           style="border-radius:20px; margin-bottom:2rem;">
 
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1001</td>
-            <td>20 GeV</td>
-            <td>Electron</td>
-            <td>0 / 0</td>
-            <td>Cerenkov calibration</td>
-          </tr>
-
-          <tr>
-            <td>1002</td>
-            <td>50 GeV</td>
-            <td>Electron</td>
-            <td>0 / 0</td>
-            <td>Scintillation calibration</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= Uniformity ================= -->
-    <div id="unif" class="run-content is-hidden">
-      <h4 class="subtitle is-5">Uniformity</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1101</td>
-            <td>20 GeV</td>
-            <td>Electron</td>
-            <td>0 / 0</td>
-            <td>9-point scan</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= EM ================= -->
-    <div id="em" class="run-content is-hidden">
-      <h4 class="subtitle is-5">EM Shower Runs</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1201</td>
-            <td>10 GeV</td>
-            <td>Electron</td>
-            <td>0 / 0</td>
-            <td>Energy linearity</td>
-          </tr>
-
-          <tr>
-            <td>1202</td>
-            <td>20 GeV</td>
-            <td>Electron</td>
-            <td>0 / 0</td>
-            <td>EM shower profile</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= Double Peak ================= -->
-    <div id="double-peak" class="run-content is-hidden">
-      <h4 class="subtitle is-5">Double Peak</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1255</td>
-            <td>20 GeV</td>
-            <td>Electron</td>
-            <td>2.5 / 0</td>
-            <td>Tower boundary check</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= Timing ================= -->
-    <div id="timing" class="run-content is-hidden">
-      <h4 class="subtitle is-5">Timing Resolution</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1280</td>
-            <td>20 GeV</td>
-            <td>Electron</td>
-            <td>0 / 0</td>
-            <td>Firmware v2.1</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= LC Calibration ================= -->
-    <div id="lc-calib" class="run-content is-hidden">
-      <h4 class="subtitle is-5">LC Calibration</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1310</td>
-            <td>-</td>
-            <td>Pedestal</td>
-            <td>0 / 0</td>
-            <td>Leakage counter baseline</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= Hadron : Pion ================= -->
-    <div id="h-pion" class="run-content is-hidden">
-      <h4 class="subtitle is-5">Hadron : Pion</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1401</td>
-            <td>100 GeV</td>
-            <td>Pion</td>
-            <td>0 / 0</td>
-            <td>Standard pion run</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= Hadron : Proton/Kaon ================= -->
-    <div id="h-pk" class="run-content is-hidden">
-      <h4 class="subtitle is-5">Hadron : Proton/Kaon</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1450</td>
-            <td>150 GeV</td>
-            <td>Proton/Kaon</td>
-            <td>0 / 0</td>
-            <td>PID applied</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= Hadron : Pion Rotation ================= -->
-    <div id="h-pion-rot" class="run-content is-hidden">
-      <h4 class="subtitle is-5">Hadron : Pion w/ Rotation</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1501</td>
-            <td>100 GeV</td>
-            <td>Pion</td>
-            <td>1.5 / 0</td>
-            <td>Rotated module scan</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= Hadron : Proton/Kaon Rotation ================= -->
-    <div id="h-pk-rot" class="run-content is-hidden">
-      <h4 class="subtitle is-5">Hadron : Proton/Kaon w/ Rotation</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1520</td>
-            <td>150 GeV</td>
-            <td>Proton/Kaon</td>
-            <td>1.5 / 0</td>
-            <td>Angular dependence</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- ================= Hadron : Interaction Target ================= -->
-    <div id="h-target" class="run-content is-hidden">
-      <h4 class="subtitle is-5">Hadron : Pion w/ Interaction Target</h4>
-
-      <table class="table is-striped is-fullwidth is-hoverable">
-        <thead>
-          <tr>
-            <th>Run No.</th>
-            <th>Energy</th>
-            <th>Particle</th>
-            <th>Angle (R/T)</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1600</td>
-            <td>100 GeV</td>
-            <td>Pion</td>
-            <td>0 / 0</td>
-            <td>W-target installed</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-  </div>
-</section>
-
-<script>
-  function showRunCategory(categoryId) {
-
-    const contents = document.querySelectorAll('.run-content');
-
-    contents.forEach(content => {
-      content.classList.add('is-hidden');
-    });
-
-    document.getElementById(categoryId)
-            .classList.remove('is-hidden');
-  }
-
-  function toggleHadronMenu() {
-    const subMenu = document.getElementById('hadron-sub-menu');
-    subMenu.classList.toggle('is-hidden');
-  }
-</script>
-
-<style>
-
-  .run-content {
-    animation: fadeIn 0.5s;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  .is-hidden {
-    display: none !important;
-  }
-
-</style>
-<!-------------------------------------- Participant list -------------------------------------->
-  <section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Participant list</h2>
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee;">
-          <iframe 
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml?widget=true&amp;headers=false" 
-            style="width: 100%; height: 600px; border: none;">
-          </iframe>
-        </div>
-        <p class="help has-text-right mt-2">
-          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml" target="_blank" class="button is-small is-text">
-            <span class="icon"><i class="fas fa-external-link-alt"></i></span>
-            <span>full screen</span>
-          </a>
+        <p class="has-text-centered is-size-7 has-text-grey mb-2">
+          Select Hadron Sub-type
         </p>
+
+        <div class="buttons is-centered">
+          <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion')">Pion</button>
+          <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk')">Proton/Kaon</button>
+          <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
+          <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
+          <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
+        </div>
+      </div>
+
+      <h4 id="run-category-title" class="subtitle is-5">Calibration Runs</h4>
+
+      <div class="run-table-wrapper">
+        <table class="table is-striped is-fullwidth is-hoverable">
+          <thead>
+            <tr>
+              <th>Run No.</th>
+              <th>Energy</th>
+              <th>Particle</th>
+              <th>Angle (R/T)</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+
+          <tbody id="run-table-body">
+            <tr>
+              <td colspan="5" class="has-text-centered has-text-grey">
+                Loading run list...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-------------------------------------- Participant list -------------------------------------->
+  <section class="section" id="participant">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Participant list</h2>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee;">
+            <iframe
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml?widget=true&amp;headers=false"
+              style="width: 100%; height: 600px; border: none;">
+            </iframe>
+          </div>
+
+          <p class="help has-text-right mt-2">
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml"
+               target="_blank"
+               class="button is-small is-text">
+              <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+              <span>full screen</span>
+            </a>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  
-<!---------------------------------- end -------------------------------->
+  <!---------------------------------- end -------------------------------->
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
@@ -668,6 +360,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/runTable.js"></script>
 
 </body>
 </html>
