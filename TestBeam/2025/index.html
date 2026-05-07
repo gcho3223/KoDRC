@@ -9,6 +9,22 @@
   <link rel="stylesheet" href="../../static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="../../static/css/index.css">
 
+  <style>
+    /* 부드러운 스크롤 효과 */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* 점프 시 네비바에 제목이 가려지지 않도록 상단 여백 설정 */
+    section[id] {
+      scroll-margin-top: 70px;
+    }
+    .jump-box {
+      border-radius: 50px; 
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+  </style>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="../../static/js/fontawesome.all.min.js"></script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
@@ -44,6 +60,43 @@
       </div>
     </div>
   </section>
+<!-------------------------------------- Jumping buttons -------------------------------------->
+<section class="section pt-0">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="box has-background-light" style="border-radius: 50px; padding: 1rem;">
+          <div class="buttons is-centered">
+            <a href="#whats-new" class="button is-rounded is-white has-text-weight-semibold">
+              <span class="icon is-small"><i class="fas fa-bolt"></i></span>
+              <span>What's New</span>
+            </a>
+
+            <a href="#meeting-log" class="button is-rounded is-white has-text-weight-semibold">
+              <span class="icon is-small"><i class="fas fa-link"></i></span>
+              <span>Daily Meeting & Log</span>
+            </a>
+
+            <a href="#3d-model" class="button is-rounded is-white has-text-weight-semibold">
+              <span class="icon is-small"><i class="fas fa-cube"></i></span>
+              <span>3D Module</span>
+            </a>
+
+            <a href="#run-list" class="button is-rounded is-white has-text-weight-semibold">
+              <span class="icon is-small"><i class="fas fa-list-ol"></i></span>
+              <span>Run List</span>
+            </a>
+
+            <a href="#participant" class="button is-rounded is-white has-text-weight-semibold">
+              <span class="icon is-small"><i class="fas fa-users"></i></span>
+              <span>Participants</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-------------------------------------- What's new? -------------------------------------->
   <section class="section" id="whats-new">
   <div class="container is-max-desktop">
@@ -121,12 +174,11 @@
   </div>
 </section>
 <!-------------------------------------- DRM & DAQ Log-------------------------------------->
-  <section class="section">
+  <section class="section" id="meeting-log"> 
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full has-text-centered">
         <h2 class="title is-3">Daily Run Meeting & DAQ Log</h2>
-        <p class="subtitle is-6 mt-1">Access the meeting agenda, minutes, and live DAQ logs</p>
         
         <div class="buttons is-centered mt-5">
           <a href="https://indico.cern.ch/event/1572295/" target="_blank" 
