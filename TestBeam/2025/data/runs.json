@@ -1,1 +1,7607 @@
-
+[
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12148",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 Calibration run, 30000 이밴트 받음 *run# 12171부터 다시 진행"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12149",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T1 Calibration run, 30000 이밴트 받음 *run# 12171부터 다시 진행"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12150",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T2 Calibration run, 30000 이밴트 받음 *run# 12171부터 다시 진행"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12151",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning 시작, 1000 개씩, HORIZONTAL 먼저 시작 이유 : M4T2 (run# 11990) peakADC 확인 시 치우쳐진 것을 확인할 수 있음 이에 따라서 calibration 3개 런 이후에 position scanning 다시 진행 후 확인하는 작업 55 -> 45 -> ... -> 15 예정 PID 이후 진행 (S channel, intADC, after PID)"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12170",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "타겟 : M1T1 목적 : 리키지 현상이 사라졌는지 확인을 위해 3000개 이밴트 받음 이전 런 대비 변경 점 : position M1T1 센터 -> M1T1, S 채널의 픽 2개 문제는 해결되지 않음. 그러나 알고있는 문제임 POSITION RE-SCANNING DONE, 다음 런부터 calibration run 다시 시작"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12171",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "이미 진행된 calibration run (12148-12150)은 무시하고 처음부터 다시 진행 M1T1부터 오른쪽으로 ㄹ자 방향, Front view (Upstream) 에서. M1T1 Calibration run, 30000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12172",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 Calibration run, 30000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12173",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T1 Calibration run, 30000 이밴트 받음 position 요류, 잘 못 받음 -11.5에서 데이터 받음 다음 런에 다시 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12174",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T1 Calibration run, 30000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12175",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T2 Calibration run, 30000 이밴트 받음 (run# 12143 ~ ) 현재런까지 LHC FILL 중임. 1 수퍼 사이클에 3 스필을 예상했던 것과 달리 1 스필만 들어오는 상황 기 계획 타임라인을 맞추기 위해 다음 런부터 10000개씩 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12176",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T1 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12177",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T2 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12178",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12179",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12180",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12181",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12182",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12183",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12184",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T1 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12185",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T2 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12186",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12187",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T2 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12188",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T1 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12189",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T2 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12190",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12191",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12192",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12193",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12194",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T4 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12195",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T3 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12196",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T1 Calibration run, 10000 이벤트 받음 Super Cycle 당 Spill 3개로 증가."
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12197",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T2 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12198",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T1 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12199",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T2 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12200",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T1 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12201",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T2 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12202",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12203",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T3 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12204",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T4 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12205",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12206",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12207",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12208",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 Calibration run, 20000 이벤트 추가로 받음"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.07",
+    "runNumber": "12209",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 Calibration run, 20000 이벤트 추가로 받음 Beam 안들어오고 Uniformity Scan Program 으로 넘어가기 위해 런 끊음. 약 100개 이벤트만 들어옴."
+  },
+  {
+    "category": "calib",
+    "date": "25.08.09",
+    "runNumber": "12340",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Saleve (LC 2, 4, 8, 10) test run"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.09",
+    "runNumber": "12341",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Saleve (LC 2, 4, 8, 10) calibration run"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.09",
+    "runNumber": "12342",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Saleve (LC2, 4, 8, 10) test run 이전 run 보다 poisition이 잘 맞을까? 하고 test run 돌림. 차이 없어서 이전 run으로 calibration 진행 예정"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.09",
+    "runNumber": "12343",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Jura (LC3, 5, 7, 9) calibration run"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.09",
+    "runNumber": "12344",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Top (LC 11, 12, 13, 19) calibration run"
+  },
+  {
+    "category": "calib",
+    "date": "25.08.09",
+    "runNumber": "12345",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Bottom (LC 14, 15, 16, 20) calibration run"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.05",
+    "runNumber": "11875",
+    "energy": "100GeV",
+    "particle": "e+",
+    "angle": "0.66 / 0",
+    "note": "Uniformity Scan(M5T3) 60GeV Purity 떨어져서 100GeV로 uniformity scan 진행"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12209",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 Calibration run, 20000 이벤트 추가로 받음 Beam 안들어오고 Uniformity Scan Program 으로 넘어가기 위해 런 끊음. 약 100개 이벤트만 들어옴."
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12217",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Beam Profile 확정 Module Uniformity Scan Point 1, M5T1 Center"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12218",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 2, Btw M5T1 - M5T2"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12219",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 3, M5T2 Center Prescale 1 Test (버퍼 괜찮은지) 테스트 결과 괜찮은 거 같아서 prescale 1로 진행"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12220",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 3, M5T2 Center 추가 스탯 3만개"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12221",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 4, Btw M5T2-M6T1"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12222",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 5, M6T1 Center"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12223",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 10, Btw M6T1-M6T3"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12225",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 9, Btw M5T2-M6T1, M5T4-M6T3 four center"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12226",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 8, Btw M5T2-M5T4"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12227",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 7, Btw M5T1-M5T2, M5T3-M5T4 four center"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12228",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 6, Btw M5T1-M5T3"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12229",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 11, M5T3 Center"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12230",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 12, Btw M5T3 - M5T4"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12231",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 13, M5T4 Center"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12232",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 14, Btw M5T4 - M6T3"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12233",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 15, M6T3 Center"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12234",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3 포지션 확인하기 위한 테스트 런"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12235",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12236",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3 하드 백업 속도 이슈로 5만개 런 킬 하고 절반씩 나눠 받기로. 이벤트 400개 정도 받아짐."
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12237",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12238",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3 엑셀 시트에 vertical, horizontal 계산 반대로 기재되어 포지션 치우쳐짐. 위 런들 버리고 새로 시작"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12239",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3 포지션 테스트용 런"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12240",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3 - 1st"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12241",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3 - 2nd"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12242",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3 - 1st"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12243",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3 - 2nd"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12244",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P3; M5T3 - 1st"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12245",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P3; M5T3 - 2nd"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12246",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P4; M5T3 - 1st 죽었던 C23 다시 살아남 .. 다른 채널과 비슷한 레벨의 신호 관측됨."
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12247",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P4; M5T3 - 2nd"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12248",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P5; M5T3 - 1st"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12249",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P5; M5T3 - 2nd"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12250",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P6; M5T3 - 1st"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.07",
+    "runNumber": "12251",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P6; M5T3 - 2nd"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12615",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Uniforminy scan 을 위해 VETO off vertical은 소수점 표시가 안되서 0.1미리 세팅 불가능"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12616",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "여기서부터 시간 절약 위해 20k로 줄임"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12617",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12618",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "시프트리더 고인물되어서 런끝나고 1분안에 이동후 런시작 가능"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12619",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12620",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12621",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12622",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12623",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "안근필->도현석"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12624",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12625",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "시간문제로 10000event로 줄임"
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12626",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12627",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12628",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12629",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12630",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12631",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12632",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12633",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "unif",
+    "date": "25.08.12",
+    "runNumber": "12634",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "마지막!"
+  },
+  {
+    "category": "em",
+    "date": "25.08.05",
+    "runNumber": "11871",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0.45 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.05",
+    "runNumber": "11873",
+    "energy": "100GeV",
+    "particle": "e+",
+    "angle": "0.66 / 0",
+    "note": "HV scan 600 어찌저찌 해서 하이볼테이지 스캔 을다시하였다"
+  },
+  {
+    "category": "em",
+    "date": "25.08.05",
+    "runNumber": "11874",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0.66 / 0",
+    "note": "Energy resolution 스캔중! 연습용"
+  },
+  {
+    "category": "em",
+    "date": "25.08.05",
+    "runNumber": "11875",
+    "energy": "100GeV",
+    "particle": "e+",
+    "angle": "0.66 / 0",
+    "note": "Uniformity Scan(M5T3) 60GeV Purity 떨어져서 100GeV로 uniformity scan 진행"
+  },
+  {
+    "category": "em",
+    "date": "25.08.05",
+    "runNumber": "11876",
+    "energy": "100GeV",
+    "particle": "e+",
+    "angle": "0.66 / 0",
+    "note": "M5T1 M5T2 로 이동하면서 타워 경계를 찾는 중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11887",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "beam profiling -> not coliminate positron"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11888",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "beam profiling -> not coliminate positron"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11889",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "beam profiling -> not coliminate positron"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11890",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- beam profiling -> not coliminate positron - 마지막엔 1500/spill까지 들어옴."
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11891",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- beam profiling -> not coliminate positron - 중간에 빔 끊김."
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11892",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11893",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "veto off"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11897",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11898",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- M5T3 센터 기준으로 상하좌우 1cm 스텝으로 이동하며 포지션 스캔 예정 - M5T3 center에서 살레브 방향으로 1cm 이동 (총 -1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11899",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 살레브 방향으로 추가로 1cm 이동 (총 -2 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11900",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 살레브 방향으로 추가로 1cm 이동 (총 -3 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11901",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 살레브 방향으로 추가로 1cm 이동 (총 -4 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11902",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 쥬라 방향으로 1cm 이동 (총 +1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11903",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 쥬라 방향으로 추가로 1cm 이동 (총 +2 cm) DQM 확인 결과, S 채널에서 saturation 나서 이후 런부터 다시 처음부터 스캔하기로 결정. 위 런들도 saturation 발생한 런들."
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11904",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- M4T4 550 V -> 500 V으로 바꿈. HV 변경 후 saturation 확인용 -> saturation 안 남! - M5T3 center에서 살레브 방향 (M4T4 방향)으로 4번째 포인트로 이동 (- 4 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11905",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- 모든 타워에 대해 S 채널 550 V -> 500 V으로 바꿈. 이 런부터 다시 스캔 시작 - M5T3 center로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11906",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 살레브 방향 (M4T4 방향)으로 1 cm 이동 (-1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11907",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 살레브 방향 (M4T4 방향)으로 1 cm 이동 (-2 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11908",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 살레브 방향 (M4T4 방향)으로 1 cm 이동 (-3 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11909",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 살레브 방향 (M4T4 방향)으로 1 cm 이동 (-4 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11910",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 쥬라 방향 (M5T4 방향)으로 1 cm 이동 (총 +1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11911",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 쥬라 방향 (M5T4 방향)으로 1 cm 이동 (총 +2 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11912",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 쥬라 방향 (M5T4 방향)으로 1 cm 이동 (총 +3 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11913",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 쥬라 방향 (M5T4 방향)으로 1 cm 이동 (총 +4 cm) position scan 결과, M5T3 위치: -10.1 ~ 34.77 mm (position calculator 계산 결과, M5T3 우측 경계: 37.85 mm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11914",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 M8T1 방향으로 1 cm 이동 (총 -1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11915",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 M8T1 방향으로 추가로 1 cm 이동 (총 -2 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11916",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 center에서 M8T1 방향으로 추가로 1 cm 이동 (총 -3 cm) 이전 런들 확인 결과, M5T3 센터에서 M5T4 방향 (우측)으로 이동할수록 M5T3의 intADC 값이 증가하고 있었음. 경계면 근처까지 증가하다가 이후에 급격한 감소를 보이는 양상. 좌측으로 이동할 때는 감소한 것 확인."
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11917",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scan으로 구한 값을 이용해서 M5T3 센터 잡고 확인"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11918",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "vertical은 센터로 안 옮겨서 다시 옮겨서 확인 힛맵 확인해봤을 때 M5T3 센터가 오른쪽으로 조금 치우쳐져 있음. -> 정확한 센터를 못 잡음."
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11919",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "확인용 런"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11920",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "확인용 런"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11921",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 측정 결과를 봤을 때 해석이 어려워서 M5T2 센터로 이동 & 모든 타워의 C 채널 HV를 650 V으로 일괄 변경 -> saturation 나서 600 V으로 변경하기로 결정"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11922",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- C 채널들 600 V로 변경 후 다시 확인 - M5T2 센터"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11923",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- C 채널들 600 V로 변경 후 다시 확인 - M5T2 센터에서 왼쪽으로 1 cm 이동 (총 -1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11924",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- C 채널들 600 V로 변경 후 다시 확인 - M5T2 센터에서 왼쪽으로 추가 1 cm 이동 (총 -2 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11925",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- C 채널들 600 V로 변경 후 다시 확인 - M5T2 센터에서 왼쪽으로 추가 1 cm 이동 (총 -3 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11926",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- C 채널들 600 V로 변경 후 다시 확인 - M5T2 센터에서 왼쪽으로 추가 1 cm 이동 (총 -4 cm) - 중간에 포지션 옮김. But, 2000개 이벤트까지는 사용 가능"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11927",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "- C 채널들 600 V로 변경 후 다시 확인 - M5T2 센터에서 왼쪽으로 추가 1 cm 이동 (총 -4 cm) - 런 킬. 이벤트 개수 잘못 넣음."
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11928",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "런 킬. 위에서 이벤트 개수 잘못 넣은 거 확인하고 이것도 그냥 킬하고 위치 바꿔서 다시 돌릴 예정"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11929",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T2 센터에서 오른쪽으로 1 cm 이동 (총 +1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11930",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T2 센터에서 오른쪽으로 1 cm 이동 (총 +2 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11931",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T2 센터에서 오른쪽으로 1 cm 이동 (총 +3 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11932",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T2 센터에서 오른쪽으로 1 cm 이동 (총 +4 cm) - 포지션 스캔 결과 좌 경계: 30.75 mm, 우 경계: 88.89 mm -> 타워 가로 길이 58.13 mm로 측정됨. 센터는 position calculator와 2~3 mm 정도 차이. 좌우로 넓게 측정됨. 해당 센터를 센터로 결정 - M5T2 센터 포지션: horizontal 59.8 mm"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11933",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "새로 구한 horizontal M5T2 센터로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11934",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 아래 방향으로 1 cm 이동 (총 +1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11935",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 아래 방향으로 추가 1 cm 이동 (총 +2 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11936",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 아래 방향으로 추가 1 cm 이동 (총 +3 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11937",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 아래 방향으로 추가 1 cm 이동 (총 +4 cm) M5T2 아랫면 경계: 916.28 mm"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11938",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 윗 방향으로 1 cm 이동 (총 -1 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11939",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 윗 방향으로 1 cm 이동 (총 -2 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11940",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 윗 방향으로 1 cm 이동 (총 -3 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11941",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 윗 방향으로 1 cm 이동 (총 -4 cm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11942",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "horizontal 센터에서 vertical 스캔 시작 M5T2 센터에서 윗 방향으로 1 cm 이동 (총 -5 cm) M5T2 horizontal, vertical center: 59.82, 887.51 mm -> 양 끝값에서 중앙으로 평균낸 값"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11943",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "위에서 계산된 M5T2 센터 기준으로 타워 지오메트리 반영하여 M5T3 센터로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11944",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 센터에서 추가 스탯"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11945",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T2 계산시 경계 커브가 이상적인 쉐입의 한쪽 경계를 기준으로 타워 지오메트리만큼 계산해서 센터 포지션 확정함. 이 런은 그걸 토대로 계산한 M5T3의 센터. -> 힛맵 확인 결과 중앙에 잘 맞음. 최종 M5T3 center: (6.5, 938 mm)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11946",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Saturation이 나는지 확인하기 위해 1500 Padc ADC에 맞추는 작업을 수행"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11947",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "HV equalization MCP HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11948",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "MCP C hv 조정중 (1)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11949",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "MCP C hv 조정중 (2)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11950",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "MCP C hv 더 디테일하게 조정중 (1500 peak adc 기준 확정(s,c : 1495peak) 120gev에서 saturation 확인해야함)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11951",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "m5t2 로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11952",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "m5t2 로 이동 1500peakADC로 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11953",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "m5t2 c (1510) s (1507) peak adc 맞췄음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11954",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "pre2 로 변경 120gev positron쏴서 saturation 되는지 확인 (최대 3000adc정도 시그널 크기) saturatipm 없고 250adc정도 여유가 있어서 괜찮다고 생각함"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11955",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3로 이동 120gev에서 saturation 되는지 확인 (최대 3400 adc 정도 시그널 크기) 200adc정도 여유가 있어 괜찮다고 생각함 mcp, generoc 모두 세추레이션 없어서 1500adc로 설정! 나머지도 모두 1500ADC스캔 예정"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11956",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T4로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11957",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11958",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11959",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T4 HV 완료 (M5T4 c :1496, s: 1497 )"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11960",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 으로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11961",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11962",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 HV 조정중 intensity 기록 시작 : 세자르 트리거 스테이터스 543번 카운트 기준 (작년에는 DWC count 기준이었음 (TB2024))"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11963",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11964",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 HV 조정 완료 (M5T1 s: 1497 c:1502 peak adc)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11965",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 완료된 후 5000개 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11966",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T2 HV조정 완료후 5000개 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11967",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T4 HV조정 완료후 5000개 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11968",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 HV조정 완료후 5000개 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11969",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T4로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11970",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11971",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11972",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T4 HV 확정 s:1499 c:1499 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11973",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T4 5000event 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11974",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T3로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11975",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11976",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11977",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T3 HV 조정 완료 S : 1498, C:1506 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11978",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T3 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11979",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T1으로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11980",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11981",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11982",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11983",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T1 HV 조정 완료"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11984",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "현재 run 돌다가 daq pc의 tmux 가 갑자기 종료됨 원인불명(dead run) 감자기 daq pc가 재시작되서 돌던 run 다 끊어짐"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11985",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "TCB run number error 떴음 그레서 다시 새로운 run시작함(dead run)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11986",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T1 HV 확정 추가로 5000개 받음 s:1487 c:1499 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11987",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T2 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11988",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11989",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11990",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T2 HV 조정롼료 s :1491 c: 1472 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11991",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T2 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11992",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11993",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11994",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11995",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11996",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11997",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 HV 조정완료 s : 1501 : 1494 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11998",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "11999",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T3 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12000",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12001",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T3 HV 조정완료 s:1486 c:1495 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12002",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T3 5000개 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12003",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T1 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12004",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12005",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12006",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T1 HV 조정완료 s:1492, c:1492 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12007",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T1 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12008",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12009",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12010",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12011",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 HV 조정중 s channel HV 조정을 잘못함 잘못받은 run"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12012",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12013",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12014",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 HV 조정완료 s: 1503, c : 1492 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12015",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 추라로 5000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12016",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T1 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12017",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12018",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T1 HV 조정완료 s : 1490 c: 1500 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12019",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T1 5000이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12020",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T3로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12021",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12022",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12023",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T3 HV 조정완료 s :1492, c:1485 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12024",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T3 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12025",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T4 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12026",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12027",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12028",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12029",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T4 HV 조정 완료 s :1488, c: 1489 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12030",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T4 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12031",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T2로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12032",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12033",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12034",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T2 HV 조정완료 s: 1497, c: 1494 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12035",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T2에 추가로 5000개 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12036",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T1 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12037",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12038",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12039",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12040",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T1 HV 조정완료 s 1494, c: 1481 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12041",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T1 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12042",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T2로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12043",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12044",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12045",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T2 HV 조정완료 s : 1491, c: 1499 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12046",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T2 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12047",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T4로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12048",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12049",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12050",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T4 HV 조정완료 s: 1499, c:1495 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12051",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T4 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12052",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T3로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12053",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12054",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12055",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T3 HV 조정완료s:1485, c:1478 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12056",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T3 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12057",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T1로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12058",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12059",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12060",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12061",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T1 HV 조정완료 s:1496, c:1504 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12062",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T1 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12063",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T2로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12064",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12065",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12066",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12067",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T2 HV 조정 완료 s:1506, c:1492"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12068",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T2 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12069",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T4로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12070",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T4로 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12071",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T4로 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12072",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T4로 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12073",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T4로 HV 조정완료 s: 1500. c:1493 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12074",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T4 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12075",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T3로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12076",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12077",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12078",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12079",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T3 HV 조정완료 s:1515, c:1515 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12080",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T3 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12081",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T1로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12082",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12083",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T1 HV 조정완료 s:1494, c:1489 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12084",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T1 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12085",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T2로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12086",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12087",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12088",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T2 HV 조정완료 s: 1486, c:1498 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12089",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T2 5000이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12090",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12091",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12092",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12093",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12094",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12095",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4 HV 조정완료 s: 1512, c:1491"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12096",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4 5000 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12097",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T3로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12098",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12099",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12100",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T3 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12101",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T3 HV 조정완료 s: 1512, c:1502 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12102",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T3 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12103",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T4로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12104",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12105",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12106",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T4 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12107",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T4 HV 조정완료 s: 1493, c:1505 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12108",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T4 5000개 이벤트 추가로 더 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12109",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T2로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12110",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12111",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T2 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12112",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T2 HV 조정완료 s:1510, c:1514"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12113",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T2 5000개 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12114",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T1로 이동"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12115",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12116",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T1 HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12117",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T1 HV 조정완료 s: 1508, c:1506 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.06",
+    "runNumber": "12118",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T1 5000 이벤트 추가로 받음 intensidy TB2024와 비교는 어려움. 값이 다르기 때문이다. (dwc 150정도로 나와서 사용 어려움)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12118",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T1 5000 이벤트 추가로 받음 intensity TB2024와 비교는 어려움. 값이 다르기 때문이다. (dwc 150정도로 나와서 사용 어려움)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12119",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "다음 타워로 진행 M8T3 3000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12120",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 3000 이벤트 받음, S and C HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12121",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 3000 이벤트 받음, S and C HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12122",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 3000 이벤트 받음, S and C HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12123",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 3000 이벤트 받음, S and C HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12124",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 3000 이벤트 받음, S and C HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12125",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 3000 이벤트 받음, S and C HV 조정중 HV 확정 s:1500, c:1500 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12126",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 5000 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12127",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "다음 타워로 진행 M7T4 3000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12128",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 3000 이벤트 받음, S and C HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12129",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 3000 이벤트 받음, S and C HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12130",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 3000 이벤트 받음, S and C HV 조정중 *HV 키보드 이상해져서 다음이 수정됨 : m1t4c 1-4+ / m2t1c 2-1+"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12131",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 3000 이벤트 받음 HV 확정 s:1500, c:1500 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12132",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 5000 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12133",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "다음 타워로 진행 M7T2 3000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12134",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T2 3000 이벤트 받음, HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12135",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T2 3000 이벤트 받음, HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12136",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T2 3000 이벤트 받음, HV 조정중 HV 확정 s:1500, c:1500 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12137",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T2 5000 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12138",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "다음 타워로 진행 M7T1 3000 이벤트 받음 *해당 타워, 더블 픽, 확인이 필요"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12139",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T1 3000 이벤트 받음, HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12140",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T1 3000 이벤트 받음, HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12141",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T1 3000 이벤트 받음, HV 조정중 HV 확정 다음 런 5000개 받은 뒤 DQM 체크 후 조정 유무를 확인하려고 함 s:1500, c:1500 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12142",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T1 5000 이벤트 추가로 받음 DQM 체크 : c가 무너지는 현상 확인, 더블픽은 아님, 왼쪽으로 테일이 길게"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12143",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "다음 타워로 진행 M7T3 3000 이벤트 받음 LHC fill 준비로 이밴트 느리게 쌓임 (08:15)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12144",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 3000 이벤트 받음, HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12145",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 3000 이벤트 받음, HV 조정중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12146",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 3000 이벤트 받음, HV 조정중 HV 확정 s:1500, c:1500 peak adc"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12147",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 5000 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12148",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 Calibration run, 30000 이밴트 받음 *run# 12171부터 다시 진행"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12149",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T1 Calibration run, 30000 이밴트 받음 *run# 12171부터 다시 진행"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12150",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T2 Calibration run, 30000 이밴트 받음 *run# 12171부터 다시 진행"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12151",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning 시작, 1000 개씩, HORIZONTAL 먼저 시작 이유 : M4T2 (run# 11990) peakADC 확인 시 치우쳐진 것을 확인할 수 있음 이에 따라서 calibration 3개 런 이후에 position scanning 다시 진행 후 확인하는 작업 55 -> 45 -> ... -> 15 예정 PID 이후 진행 (S channel, intADC, after PID)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12152",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, horizontal"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12153",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, horizontal"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12154",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, horizontal"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12155",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, horizontal"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12156",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, horizontal 65 -> 75 -> ... -> 95 예정"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12157",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, horizontal"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12158",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, horizontal"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12159",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, horizontal scan 완료 다음 런에서 VERTICAL로 넘어감"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12160",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, vertical 898 -> 908 -> 918 예정, 888 case는 run# 12151"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12161",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, vertical"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12162",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, vertical"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12163",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, vertical 878 -> 868 -> 858 예정, 888 case는 run# 12151"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12164",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, vertical"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12165",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "position scanning, vertical VERTICAL scan 끝 확인 결과 : vertical +2 mm / horizontal +5 mm 오차가 있음을 확인 다음 런에서 조정된 position(horizontal, vertical)로 5000 이밴트 받을 예정"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12166",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "직전 런에서 조정된 position로 5000 이밴트 받음 경계값 상세 : M5T2 -> M5T1 , 36.5 M5T2 -> M6T1 , 83.4 M5T2 -> M5T4 , 911 M5T2 -> M2T4 , 860 이 런이 끝난 뒤에 중심, 위 그리고 옆 타워 확인 (DQM) - M5, peak/intADC check! - M2, '' - M6, '' --> 결론 : CENTER가 잘 잡힌 것처럼 보임 (intADC) ---> 120 GeV로 올려서 한번 더 확인해볼 예정 (다음 런)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12167",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "세츄레이션 나는지 확인 위해 에너지 높여서 3000개 받음 변경 점 : pre1 --> pre2 / 60 GeV --> 120 GeV 결론 : 세츄레이션 안나는 것 확인 (M5T2) 다음 런 : 60 GeV로 바꿉니다. 그리고 기존 문제있는 것으로 보였던 타워들도 재확인 예정 타워(런넘버) : M1T1(12006) / M4T2(11990) / M7T1(12142)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12168",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "타겟 : M4T2 목적 : 리키지 현상이 사라졌는지 확인을 위해 3000개 이밴트 받음 이전 런 대비 변경 점 : pre2 --> pre1 / 120 GeV --> 60 GeV / position M4T2 센터"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12169",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "타겟 : M7T1 목적 : 리키지 현상이 사라졌는지 확인을 위해 3000개 이밴트 받음 이전 런 대비 변경 점 : position M7T1 센터"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12170",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "타겟 : M1T1 목적 : 리키지 현상이 사라졌는지 확인을 위해 3000개 이밴트 받음 이전 런 대비 변경 점 : position M1T1 센터 -> M1T1, S 채널의 픽 2개 문제는 해결되지 않음. 그러나 알고있는 문제임 POSITION RE-SCANNING DONE, 다음 런부터 calibration run 다시 시작"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12171",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "이미 진행된 calibration run (12148-12150)은 무시하고 처음부터 다시 진행 M1T1부터 오른쪽으로 ㄹ자 방향, Front view (Upstream) 에서. M1T1 Calibration run, 30000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12172",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T2 Calibration run, 30000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12173",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T1 Calibration run, 30000 이밴트 받음 position 요류, 잘 못 받음 -11.5에서 데이터 받음 다음 런에 다시 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12174",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T1 Calibration run, 30000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12175",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T2 Calibration run, 30000 이밴트 받음 (run# 12143 ~ ) 현재런까지 LHC FILL 중임. 1 수퍼 사이클에 3 스필을 예상했던 것과 달리 1 스필만 들어오는 상황 기 계획 타임라인을 맞추기 위해 다음 런부터 10000개씩 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12176",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T1 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12177",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T2 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12178",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12179",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M3T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12180",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12181",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M2T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12182",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12183",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12184",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T1 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12185",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T2 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12186",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12187",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T2 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12188",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T1 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12189",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T2 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12190",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12191",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M6T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12192",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T4 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12193",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T3 Calibration run, 10000 이밴트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12194",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T4 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12195",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M4T3 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12196",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T1 Calibration run, 10000 이벤트 받음 Super Cycle 당 Spill 3개로 증가."
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12197",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T2 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12198",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T1 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12199",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T2 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12200",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T1 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12201",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T2 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12202",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T4 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12203",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M9T3 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12204",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T4 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12205",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M8T3 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12206",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12207",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 Calibration run, 10000 이벤트 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12208",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T3 Calibration run, 20000 이벤트 추가로 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12209",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M7T4 Calibration run, 20000 이벤트 추가로 받음 Beam 안들어오고 Uniformity Scan Program 으로 넘어가기 위해 런 끊음. 약 100개 이벤트만 들어옴."
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12210",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Prescale 2 로 조정, Rate 확인하기 위한 런 Spill 당 1000개 (Prescale 적용, waveform events) VETO HV 0 으로 조정 100 GeV positron 으로 변경"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12211",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Point 1 스캔, 밥먹기 위해 20만개 였으나 DWC 확인 결과 Beam 이 오른쪽에 치우쳐진 현상 발견, 런 끊고 Beam Profile 수정"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12212",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Beam Profile 조정 후 다시 DWC 확인"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12213",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Beam Profile 조정 후 다시 DWC 확인"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12214",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Beam Profile 조정 후 다시 DWC 확인"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12215",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M5T1 Center, P1 20만개 걸어놓고 밥먹으러 감 Beam Profile 확정 전!"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12216",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Beam Profile 조정 후 다시 DWC 확인 Beam Profile 을 조금 더 퍼트림, 사각형 beam profile 이 나오도록 조정 (가로 4cm, 세로 2cm beam profile)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12217",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Beam Profile 확정 Module Uniformity Scan Point 1, M5T1 Center"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12218",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 2, Btw M5T1 - M5T2"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12219",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 3, M5T2 Center Prescale 1 Test (버퍼 괜찮은지) 테스트 결과 괜찮은 거 같아서 prescale 1로 진행"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12220",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 3, M5T2 Center 추가 스탯 3만개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12221",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 4, Btw M5T2-M6T1"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12222",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 5, M6T1 Center"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12223",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 10, Btw M6T1-M6T3"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12225",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 9, Btw M5T2-M6T1, M5T4-M6T3 four center"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12226",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 8, Btw M5T2-M5T4"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12227",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 7, Btw M5T1-M5T2, M5T3-M5T4 four center"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12228",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 6, Btw M5T1-M5T3"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12229",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 11, M5T3 Center"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12230",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 12, Btw M5T3 - M5T4"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12231",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 13, M5T4 Center"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12232",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 14, Btw M5T4 - M6T3"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12233",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan Point 15, M6T3 Center"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12234",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3 포지션 확인하기 위한 테스트 런"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12235",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12236",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3 하드 백업 속도 이슈로 5만개 런 킬 하고 절반씩 나눠 받기로. 이벤트 400개 정도 받아짐."
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12237",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12238",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3 엑셀 시트에 vertical, horizontal 계산 반대로 기재되어 포지션 치우쳐짐. 위 런들 버리고 새로 시작"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12239",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3 포지션 테스트용 런"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12240",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3 - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12241",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P1; M5T3 - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12242",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3 - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12243",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P2; M5T3 - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12244",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P3; M5T3 - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12245",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P3; M5T3 - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12246",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P4; M5T3 - 1st 죽었던 C23 다시 살아남 .. 다른 채널과 비슷한 레벨의 신호 관측됨."
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12247",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P4; M5T3 - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12248",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P5; M5T3 - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12249",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P5; M5T3 - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12250",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P6; M5T3 - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12251",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Module Uniformity Scan P6; M5T3 - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12252",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Rotation: 초기 셋팅: -0.55 deg / +1.5 deg (머리가 Jura 방향으로 이동)로 맞추기 위해 +0.95 설정 Tilting: +1 deg M5T2 center 빔튜닝 시작 VETO HV on from this run."
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12253",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "PS로 확인 결과 100 GeV에서 beam purity 51%"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12254",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "- 120 GeV로 바꿔서 확인 - spill당 1500개 이상 들어옴 -> 다음 런부터 pre2로 변경해서 받을예정 - 빔 purity가 낮은 것 같음 (12%). PS에서 electron이 잘 안 보임 (3mip, 5mip 구분 불가) - M5 intADC distribution봤을때 갯수가 적음 -> 이벤트를 많이 받아야 할 듯. - 3천개 돌렸으나 rate 높아서 5천개 받아짐."
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12255",
+    "energy": "80 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "80 GeV로 바꿔서 확인 prescale 2 적용돼서 스필당 500 -> 따라서 원래는 1000. 다음 런부턴 다시 pre1로 복귀 PS로 확인 결과 80 GeV에서 beam purity 67%"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12256",
+    "energy": "40 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "40 GeV로 빔 에너지 바꿔서 확인 PS로 확인 결과 40 GeV에서 beam purity 72% 계산상 120 GeV에서 컷 다 주고 3000 이벤트 남게 하려면 79000개 이벤트 받아야 함 (from Prof.SW)."
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12257",
+    "energy": "30 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "30 GeV로 바꿔서 확인 PS로 확인 결과 30 GeV에서 beam purity 76%"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12258",
+    "energy": "20 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "20 GeV로 바꿔서 확인 PS로 확인 결과 20 GeV에서 beam purity 70%"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12259",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "10 GeV로 바꿔서 확인 이벤트 약 45초에 100개 PS로 확인 결과 10 GeV에서 beam purity 44%"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12260",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "6 GeV 확인은 시간 너무 오래 걸릴 것 같아서 건너 뜀. 100 GeV - 1st 이후로 모든 에너지에 대해 5만개씩 data-taking"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12261",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "100 GeV - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12262",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "120 GeV - 1st 버퍼 터져서 런 킬"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12263",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "120 GeV - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12264",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "120 GeV - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12265",
+    "energy": "80 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "80 GeV - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12266",
+    "energy": "80 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "80 GeV - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12267",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "120 GeV - 추가 스탯 1 (purity 낮아서)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12268",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "120 GeV - 추가 스탯 2 (purity 낮아서)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12269",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "60 GeV - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12270",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "60 GeV - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12271",
+    "energy": "40 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "40 GeV - 1st"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12272",
+    "energy": "40 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "40 GeV - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12273",
+    "energy": "30 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "30 GeV - 1st ~11500개까지 받아졌다가 빔 끊김. 다시 받아짐"
+  },
+  {
+    "category": "em",
+    "date": "25.08.07",
+    "runNumber": "12274",
+    "energy": "30 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "30 GeV - 2nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12275",
+    "energy": "20 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "20 GeV - 1st 여기서부터 beam intensity 부정확"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12276",
+    "energy": "20 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "20 GeV - 2 nd"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12277",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "10 GeV"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12278",
+    "energy": "6 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "6 GeV - test run"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12279",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "120 GeV 이제 beam intensity 정확"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12280",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "120 GeV"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12281",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "120 GeV M4T2 test run"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12283",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "120 GeV Beam inclination test"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12284",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-3 / 1",
+    "note": "120 GeV Beam inclination test"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12285",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "120 GeV M4T2 Energy resolution run"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12286",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "10 GeV 3spill 이어서 10GeV 받음 // stopped by visiting of cc expert"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12287",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "체렌코프 엑스퍼트 와서 세팅바꿈 프레쌰는 안건드리고 HV 변경"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12288",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "체렌코브 테스트 런 2 : 빔에너지 변경 CC1 ~1700V (120GeV 인데 pre1로 돌린 것은 실수;)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12289",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "체렌코브 테스트 런 3 : 빔에너지 변경 CC1 1662V - no separation"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12290",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "체렌코브 테스트 런 4 : HV 변경 CC1 1713V"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12291",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "체렌코브 테스트 런 5 : HV 변경 CC1 1750V - fixed"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12292",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "Back to E scan 10GeV 중간에 스필당 이벤트는 동일 한데 50초당 3스필에서 2스필로 줄어듬 18:00 50초당 3스필로 돌아옴 20:16"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12293",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "["
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12294",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12295",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 60000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12296",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 80000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12297",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 100000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12298",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 120000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12299",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 140000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12300",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 150000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12301",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "빔에너지 변경 100 GeV 5만개 받을예정 (누적 20000개)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12302",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12303",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 50000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12304",
+    "energy": "80 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "빔에너지 변경 80 GeV 5만개 받을예정 (누적 20000개)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12305",
+    "energy": "80 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12306",
+    "energy": "80 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 50000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12307",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "빔에너지 변경 60 GeV 5만개 받을예정 (누적 20000개)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12308",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12309",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 50000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12310",
+    "energy": "40 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "빔에너지 변경 40 GeV 5만개 받을예정 (누적 20000개) 수퍼사이클 50초 3스필 -> 1스필 스필당 이벤트는 그대로"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12311",
+    "energy": "40 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12312",
+    "energy": "40GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 50000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12313",
+    "energy": "30GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "intensity는 트리거 543 카운트 기준으로 작성하였음 누적 20000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12314",
+    "energy": "30GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12315",
+    "energy": "30GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 50000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12316",
+    "energy": "20GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 20000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12317",
+    "energy": "20GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12318",
+    "energy": "20GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 50000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12319",
+    "energy": "10GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 20000개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.08",
+    "runNumber": "12320",
+    "energy": "10GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개 그 이후에는 M5T2 10GeV 돌려야함"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12320",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "-1.5 / 1",
+    "note": "누적 40000개 그 이후에는 M5T2 10GeV 돌려야함"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12321",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "M5T2 10 GeV 시작, 각도 회전 및 포지션 조정됨 각도 회전 후 확인용 이밴트 500개 특이사항 없음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12322",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "20000 이밴트 받으려고 했으나 (누적 20000) 19000 이밴트 받고, 빔 안 나와서 킬 하였음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12323",
+    "energy": "10 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "19000 이밴트 받음 (누적 38000)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12324",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M7T1 Center Rotation 해서 3만개 받음."
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12325",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M3T1 Center Rotation 해서 3만개 받음."
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12326",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M3T1 Center Rotation 해서 3만개 받음."
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12327",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 1 VETO 끄고 Rate 올라간거 생각안해서 buffer 터짐, pre2 로 바꾸고 rerun, 이벤트 사용 X"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12328",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 1 (Upstream view 좌상단) w/ angle"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12329",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 2 (Upstream view 우상단) w/ angle"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12330",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 4 (Upstream view 우하단) w/ angle"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12331",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 3 (Upstream view 좌하단) w/ angle"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12332",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 3 (Upstream view 좌하단) w/o angle T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12333",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 4 (Upstream view 우하단) w/o angle T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12334",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 2 (Upstream view 우상단) w/o angle CC pressure 조정, 안정화 T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12335",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 1 (Upstream view 좌상단) w/o angle T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12336",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Timing Resolution Study M5T2 Center 60GeV e+ T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12337",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Timing Resolution Study M5T3 Center 60GeV e+ T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12338",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Timing Resolution Study M5T3 Center 60GeV e+ T2 6ns 당김"
+  },
+  {
+    "category": "em",
+    "date": "25.08.09",
+    "runNumber": "12339",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Timing Resolution Study M5T2 Center 60GeV e+ T2 6ns 당김"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12581",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "time resolution test 용 런 T2 -> 6 ns delay T1 -> 빠름"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12582",
+    "energy": "20GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "PID study start 500k evt"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12583",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "PID study start e+ 60GeV 20k 받기 시작 (총 50k 목표)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12584",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "e+60 GeV total 40k"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12585",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "e+ 60 GeV totla 50k!!"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12586",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "PID study start e+ 60GeV 12:0k 받기 시작 (총 100k 목표)"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12587",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "40k"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12588?",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "60k"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12589",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "80k"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12590",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "100k"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12599",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 런 시작 pre1으로 받아서 버퍼 터짐, 런 킬 하고 다시 시작"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12600",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 2만개 pre2로 다시 받는중"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12601",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 4만개, 런 중간에 이후 받을 pion 120GeV 기준 CC1 압력 맞추려 내리기 시작, 현재 런부터 CC1값 부정확"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12602",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 6만개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12603",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 8만개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12604",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 10만개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12605",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 12만개, 시간 부족해서 여기서 종료 후 다음 파티클 세팅으로 넘어감"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12606",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 시간 부족할거같아서 뮤온으로 넘어가려 했으나 3스필 회복됨, 그냥 e+ 15만개 예정대로 받을것 누적 14만개"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12607",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 15만개 끝 이후 뮤온 120GeV로 넘어갈 예정"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12609",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "CC압력이 다 안내려가서 프로그램 순서 약간 변경하여 e+ 60GeV 먼저 받기 시작 40k 예정, 한 런에 다 받음"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12614",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "M1 모듈 스프링 간격 2->0.5 cm 즐임 (나사를 더 조여서 스프링을 더 밀어줌) DRC 중 M1 만 HV 올림 / TC, LC HV down /"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12615",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Uniforminy scan 을 위해 VETO off vertical은 소수점 표시가 안되서 0.1미리 세팅 불가능"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12616",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "여기서부터 시간 절약 위해 20k로 줄임"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12617",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12618",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "시프트리더 고인물되어서 런끝나고 1분안에 이동후 런시작 가능"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12619",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12620",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12621",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12622",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12623",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "안근필->도현석"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12624",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12625",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "시간문제로 10000event로 줄임"
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12626",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12627",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12628",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12629",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12630",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12631",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12632",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12633",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": ""
+  },
+  {
+    "category": "em",
+    "date": "25.08.12",
+    "runNumber": "12634",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "마지막!"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12324",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M7T1 Center Rotation 해서 3만개 받음."
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12325",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M3T1 Center Rotation 해서 3만개 받음."
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12326",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M3T1 Center Rotation 해서 3만개 받음."
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12327",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 1 VETO 끄고 Rate 올라간거 생각안해서 buffer 터짐, pre2 로 바꾸고 rerun, 이벤트 사용 X"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12328",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 1 (Upstream view 좌상단) w/ angle"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12329",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 2 (Upstream view 우상단) w/ angle"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12330",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 4 (Upstream view 우하단) w/ angle"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12331",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "1.5 / 1",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 3 (Upstream view 좌하단) w/ angle"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12332",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 3 (Upstream view 좌하단) w/o angle T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12333",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 4 (Upstream view 우하단) w/o angle T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12334",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 2 (Upstream view 우상단) w/o angle CC pressure 조정, 안정화 T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "double-peak",
+    "date": "25.08.09",
+    "runNumber": "12335",
+    "energy": "100 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Double Peak Study 용 이벤트, M1T1 Point 1 (Upstream view 좌상단) w/o angle T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.09",
+    "runNumber": "12336",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Timing Resolution Study M5T2 Center 60GeV e+ T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.09",
+    "runNumber": "12337",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Timing Resolution Study M5T3 Center 60GeV e+ T1 6ns 당겨서 T2로 triggering"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.09",
+    "runNumber": "12338",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Timing Resolution Study M5T3 Center 60GeV e+ T2 6ns 당김"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.09",
+    "runNumber": "12339",
+    "energy": "60 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "Timing Resolution Study M5T2 Center 60GeV e+ T2 6ns 당김"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12581",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "time resolution test 용 런 T2 -> 6 ns delay T1 -> 빠름"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12594",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "MCP-PMT timing resolution study 시작 Pion 60GeV부터 100k 예정, M5T3 센터 맞춤, 각도 없음 누적 2만개"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12595",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "Pion 60GeV 총 10만개 예정 누적 4만개"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12596",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "Pion 60GeV 총 10만개 예정 누적 6만개"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12597",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "Pion 60GeV 총 10만개 예정 누적 8만개"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12598",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "Pion 60GeV 총 10만개 예정 누적 10만개 중간부터 1스필로 줄어듬 ㅠ"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12599",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 런 시작 pre1으로 받아서 버퍼 터짐, 런 킬 하고 다시 시작"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12600",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 2만개 pre2로 다시 받는중"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12601",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 4만개, 런 중간에 이후 받을 pion 120GeV 기준 CC1 압력 맞추려 내리기 시작, 현재 런부터 CC1값 부정확"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12602",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 6만개"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12603",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 8만개"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12604",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 10만개"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12605",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 12만개, 시간 부족해서 여기서 종료 후 다음 파티클 세팅으로 넘어감"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12606",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 시간 부족할거같아서 뮤온으로 넘어가려 했으나 3스필 회복됨, 그냥 e+ 15만개 예정대로 받을것 누적 14만개"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12607",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 15만개 끝 이후 뮤온 120GeV로 넘어갈 예정"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12608",
+    "energy": "120 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "120GeV muon 50k 예정 시간 절약을 위해 한 런에 다 받음 (3스필)"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12609",
+    "energy": "60GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "CC압력이 다 안내려가서 프로그램 순서 약간 변경하여 e+ 60GeV 먼저 받기 시작 40k 예정, 한 런에 다 받음"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12610",
+    "energy": "120 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "cc1 gas 가 0.021에서 더 안내려가서 시작하였슴 pion 120 GeV 120k 받을 예정 (누적 30k)"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12611",
+    "energy": "120 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "pion 120 GeV 120k 받을 예정 (누적 60k)"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12612",
+    "energy": "120 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "pion 120 GeV 120k 받을 예정 (누적 90k)"
+  },
+  {
+    "category": "timing",
+    "date": "25.08.12",
+    "runNumber": "12613",
+    "energy": "120 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "pion 120 GeV 120k 받을 예정 (누적 120k)"
+  },
+  {
+    "category": "lc-calib",
+    "date": "25.08.09",
+    "runNumber": "12340",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Saleve (LC 2, 4, 8, 10) test run"
+  },
+  {
+    "category": "lc-calib",
+    "date": "25.08.09",
+    "runNumber": "12341",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Saleve (LC 2, 4, 8, 10) calibration run"
+  },
+  {
+    "category": "lc-calib",
+    "date": "25.08.09",
+    "runNumber": "12342",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Saleve (LC2, 4, 8, 10) test run 이전 run 보다 poisition이 잘 맞을까? 하고 test run 돌림. 차이 없어서 이전 run으로 calibration 진행 예정"
+  },
+  {
+    "category": "lc-calib",
+    "date": "25.08.09",
+    "runNumber": "12343",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Jura (LC3, 5, 7, 9) calibration run"
+  },
+  {
+    "category": "lc-calib",
+    "date": "25.08.09",
+    "runNumber": "12344",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Top (LC 11, 12, 13, 19) calibration run"
+  },
+  {
+    "category": "lc-calib",
+    "date": "25.08.09",
+    "runNumber": "12345",
+    "energy": "110 GeV",
+    "particle": "muon",
+    "angle": "0 / 0",
+    "note": "LC Bottom (LC 14, 15, 16, 20) calibration run"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.05",
+    "runNumber": "11872",
+    "energy": "100 GeV",
+    "particle": "pion",
+    "angle": "0.45 / 0",
+    "note": "특이사항 없음 문제1 : ... 조치 어떻게 함 런 킬"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12346",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "Hadron beam starts at M5T2 center Pion selection: CC1 - pedestal & CC2 - above pedestal 120 GeV hadron beam adjustment, selection for pion Purity from CC : ~60 % After PID (including DWC cut) : 5%"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12347",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100 GeV hadron beam adjustment, selection for pion Purity from CC : - After PID (including DWC cut) : -"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12348",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80 GeV hadron beam adjustment, selection for pion Purity from PS - TC : 85 % (1700/2000) <- before Aux. cut After PID (including DWC cut) : - gas 압력 현재 상태로 고정"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12349",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "위 80 GeV 런 끝나고 CCC에서 radiation 너무 높다고 알람이 왔고, collimator 조절 당함. rate 반으로 줄어듦.. Purity from PS - TC: 85 % (1700/2000) IntADC로 확인해봤을 때 C 채널은 페데스탈 픽과 시그널 픽 위치가 가까움."
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12350",
+    "energy": "40 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "또 collimator 조절했는지 rate 더 줄어듦 -> 200 evts/spill Purity from PS - TC : 85% (1700/2000)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12351",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "버퍼 터져서 런 킬"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12364",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100 GeV 런 시작 CC1 0.018 이상 안 올라가서 calculation 표 보고 muon < 0.018 < pion 확인 후 진행"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12374",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80 GeV 런 시작"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12384",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "60 GeV 런 시작"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12389",
+    "energy": "40 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "40 GeV 런 시작"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.09",
+    "runNumber": "12392",
+    "energy": "20 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "20 GeV 런 시작"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12393",
+    "energy": "20 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "more stats for 20 GeV total 30k events for 20 GeV"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12432",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV Pion beam with rotation 로테이션 +1.5 로테이션이 잘 되는지 M4 m5 m6 라이브 모니터링 체렌코브 압력 내려가는데 많은 시간 소요 -> 이전 런과 시간 차 100 GeV 먼저 받기로함 압력 낮아지는게 늦어서 (120k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12433",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam 40,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12434",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam 60,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12435",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam 80,000 수퍼사이클당 1스필로 줄어듬"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12436",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam 100,000 중간에 스필 회복됨 3 spill per a cycle"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12437",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam total 120k"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12438",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "CC 1 압력 부적합 분석시 사용 X (압력이 충분히 안내려감) 120 GeV Pion beam with rotation (160k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12439",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 40,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12440",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 60,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12441",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 80,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12442",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 100,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12443",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 120,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12444",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 140,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12445",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam Total 160k"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12446",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV Pion beam with rotation (120k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12447",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation 40,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12448",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation 60,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12449",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation 80,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12450",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation 100,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12451",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation total 120k"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12452",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation (100k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12453",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation 40,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12454",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation 60,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12455",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation 80,000 Intensity: trigger state의 XSCI.042.543 기준으로 count"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12456",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation 100,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12457",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV Pion beam with rotation 20,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12458",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV Pion beam with rotation 40,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12459",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV Pion beam with rotation 60,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12460",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV Pion beam with rotation 20,000개 받던 중 빔 끊김(No beam from Booster) 금방 해결되지 않을 것 같아 17000개 정도 받은 상태에서 run 끝냄"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.10",
+    "runNumber": "12461",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV Pion beam with rotation beam 다시 나오기 시작해 나머지 13000개 받음 total 30,000"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.11",
+    "runNumber": "12493",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80 GeV pion beam scan with interaction target 시작 테스트 런 5000개 첫번째 (누적 5000) *Interaction 720 V **Interaction 설치 후 시그널 잘 들어오는지 확인을 위해 80 GeV로 3개 테스트런 진행 후 이어서 목표치까지 받음"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.11",
+    "runNumber": "12502",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "CC 1 압력 부적합 분석시 사용 X (압력이 충분히 안내려감) 120 GeV pion beam scan with interaction target 시작 누적 160,000 이벤트 목표 20000 이벤트 (누적 20000)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.11",
+    "runNumber": "12510",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100 GeV pion beam scan with interaction target 시작 누적 120,000 이밴트 목표 20000 이벤트 (누적 20000)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.11",
+    "runNumber": "12516",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "60 GeV pion beam scan with interaction target 시작 누적 100,000 이밴트 목표 20000 이벤트 (누적 20000)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.11",
+    "runNumber": "12522",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "40 GeV pion beam scan with interaction target 시작 누적 600,000 이밴트 목표 20000 이벤트 (누적 20000)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.11",
+    "runNumber": "12525",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "20000 이벤트 (누적 80000) 기존 hadron run 대비 필요 스탯이 10배라 rotation 안하고 low energy 안받고 높은 에너지만 많이 받기로 함."
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.11",
+    "runNumber": "12537",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "본래 100GeV 부터 받으려 했으나, CC1 압력이 내려가지 않아 60 GeV run 부터 진행 20000 이벤트 (누적 120k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12554",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "20000 이벤트 (누적 460k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12564",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "- 런 시작 전, LHC filling 시작해서 빔 없었음. - CC 압력 매우 느리게 내려감. 원래 목표는 CC1 (519) 0.022인데 이 이하 더 안 내려감. 허용 범위 0.01595~0.02784 안에 들어오므로 그냥 데이터 받음. 20000 이벤트 (누적 140k) 이전 100 GeV 마지막 런: 12515"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12577",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "M7T3로 옮겨서 lateral shower profile 프로그램 시작 20000 이벤트 (누적 20k), 목표 100k 60GeV pion이 아니라 positron으로 magnet 설정하여 빔 끊고 다시 받음"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12578",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "M7T3로 옮겨서 lateral shower profile 프로그램 시작 20000 이벤트 (누적 20k), 목표 100k"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12579",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "M7T3로 옮겨서 lateral shower profile 프로그램 시작 20000 이벤트 (누적 40k), 목표 100k"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12594",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "MCP-PMT timing resolution study 시작 Pion 60GeV부터 100k 예정, M5T3 센터 맞춤, 각도 없음 누적 2만개"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12595",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "Pion 60GeV 총 10만개 예정 누적 4만개"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12596",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "Pion 60GeV 총 10만개 예정 누적 6만개"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12597",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "Pion 60GeV 총 10만개 예정 누적 8만개"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12598",
+    "energy": "60 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "Pion 60GeV 총 10만개 예정 누적 10만개 중간부터 1스필로 줄어듬 ㅠ"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12601",
+    "energy": "120 GeV",
+    "particle": "e+",
+    "angle": "0 / 0",
+    "note": "120GeV e+ 총 15만개 받을 예정 누적 4만개, 런 중간에 이후 받을 pion 120GeV 기준 CC1 압력 맞추려 내리기 시작, 현재 런부터 CC1값 부정확"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12610",
+    "energy": "120 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "cc1 gas 가 0.021에서 더 안내려가서 시작하였슴 pion 120 GeV 120k 받을 예정 (누적 30k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12611",
+    "energy": "120 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "pion 120 GeV 120k 받을 예정 (누적 60k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12612",
+    "energy": "120 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "pion 120 GeV 120k 받을 예정 (누적 90k)"
+  },
+  {
+    "category": "h-pion",
+    "date": "25.08.12",
+    "runNumber": "12613",
+    "energy": "120 GeV",
+    "particle": "pion",
+    "angle": "0 / 0",
+    "note": "pion 120 GeV 120k 받을 예정 (누적 120k)"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12399",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam(가스 압력 변경) test run"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12401",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam 20000event씩 8번 받을 예정 1/8"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12402",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam 2/8"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12403",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam 3/8"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12404",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam 4/8"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12405",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam 5/8"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12406",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam 6/8"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12407",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam 7/8"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12408",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "120GeV Kaon/proton beam 8/8 total 160k events for 120 GeV"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12409",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100GeV Kaon/proton beam pre1이 나을듯 하여 끊고 다시 돌림"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12410",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100GeV Kaon/proton beam 20000씩 6번 받을거임 1/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12411",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100GeV Kaon/proton beam 2/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12412",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100GeV Kaon/proton beam 3/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12413",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100GeV Kaon/proton beam 4/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12414",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100GeV Kaon/proton beam 5/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12415",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100GeV Kaon/proton beam 6/6 total 120k events for 100 GeV"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12416",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80GeV Kaon/proton beam 20000 event씩 6번 받음 1/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12417",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80GeV Kaon/proton beam 2/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12418",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80GeV Kaon/proton beam 3/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12419",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80GeV Kaon/proton beam 4/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12420",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80GeV Kaon/proton beam 5/6"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12421",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80GeV Kaon/proton beam 6/6 total 120k events for 80 GeV"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12422",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "60GeV Kaon/proton beam 1/5"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12423",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "60GeV Kaon/proton beam 2/5"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12424",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "60GeV Kaon/proton beam 3/5"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12425",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "60GeV Kaon/proton beam 4/5"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12426",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "60GeV Kaon/proton beam 5/5 total 100k events for 80 GeV"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12427",
+    "energy": "40 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "40GeV Kaon/proton beam 1/3"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12428",
+    "energy": "40 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "40GeV Kaon/proton beam 2/3"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12429",
+    "energy": "40 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "40GeV Kaon/proton beam 3/3 total 60k events for 80 GeV"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12430",
+    "energy": "20 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "20GeV Kaon/proton beam"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12431",
+    "energy": "20 GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "20GeV Kaon/proton beam DAQ 실수로 30,000개 이상 받음 (4만개로 착각)"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.10",
+    "runNumber": "12462",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12463",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 40,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12464",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12465",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 80,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12466",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 100,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12467",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 120,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12468",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 140,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12469",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 160,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12470",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12471",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 40,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12472",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12473",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 80,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12474",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 100,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12475",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 120,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12476",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12477",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 40,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12478",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12479",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 80,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12480",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 100,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12481",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 120,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12482",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12483",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 40,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12484",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12485",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 80,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12486",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 100,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12487",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12488",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV kaon/proton beam with rotation total 40,000 11:00 Beam 끊김, 11:15에 다시 들어온다고 함 -> 11:15 다시 회복됨"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12489",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12490",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12491",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV kaon/proton beam with rotation total 30,000"
+  },
+  {
+    "category": "h-pk",
+    "date": "25.08.11",
+    "runNumber": "12492",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV kaon/proton beam with rotation 10000개 잡 신청 ~1500 이밴트 받았을 즈음 런 킬 정확한 이밴트 개수 확인하지 못 함 20 GeV kaon/proton beam with rotation 작업 끝 !"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.05",
+    "runNumber": "11872",
+    "energy": "100 GeV",
+    "particle": "pion",
+    "angle": "0.45 / 0",
+    "note": "특이사항 없음 문제1 : ... 조치 어떻게 함 런 킬"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12432",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV Pion beam with rotation 로테이션 +1.5 로테이션이 잘 되는지 M4 m5 m6 라이브 모니터링 체렌코브 압력 내려가는데 많은 시간 소요 -> 이전 런과 시간 차 100 GeV 먼저 받기로함 압력 낮아지는게 늦어서 (120k)"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12433",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam 40,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12434",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam 60,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12435",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam 80,000 수퍼사이클당 1스필로 줄어듬"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12436",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam 100,000 중간에 스필 회복됨 3 spill per a cycle"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12437",
+    "energy": "100 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV pion beam total 120k"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12438",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "CC 1 압력 부적합 분석시 사용 X (압력이 충분히 안내려감) 120 GeV Pion beam with rotation (160k)"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12439",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 40,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12440",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 60,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12441",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 80,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12442",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 100,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12443",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 120,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12444",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam 140,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12445",
+    "energy": "120 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV pion beam Total 160k"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12446",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV Pion beam with rotation (120k)"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12447",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation 40,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12448",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation 60,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12449",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation 80,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12450",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation 100,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12451",
+    "energy": "80 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV pion beam with rotation total 120k"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12452",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation (100k)"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12453",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation 40,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12454",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation 60,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12455",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation 80,000 Intensity: trigger state의 XSCI.042.543 기준으로 count"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12456",
+    "energy": "60 GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV Pion beam with rotation 100,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12457",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV Pion beam with rotation 20,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12458",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV Pion beam with rotation 40,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12459",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV Pion beam with rotation 60,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12460",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV Pion beam with rotation 20,000개 받던 중 빔 끊김(No beam from Booster) 금방 해결되지 않을 것 같아 17000개 정도 받은 상태에서 run 끝냄"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.10",
+    "runNumber": "12461",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV Pion beam with rotation beam 다시 나오기 시작해 나머지 13000개 받음 total 30,000"
+  },
+  {
+    "category": "h-pion-rot",
+    "date": "25.08.11",
+    "runNumber": "12525",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "20000 이벤트 (누적 80000) 기존 hadron run 대비 필요 스탯이 10배라 rotation 안하고 low energy 안받고 높은 에너지만 많이 받기로 함."
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.10",
+    "runNumber": "12462",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12463",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 40,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12464",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12465",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 80,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12466",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 100,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12467",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 120,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12468",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 140,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12469",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "120 GeV kaon/proton beam with rotation total 160,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12470",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12471",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 40,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12472",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12473",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 80,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12474",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 100,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12475",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "100 GeV kaon/proton beam with rotation total 120,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12476",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12477",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 40,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12478",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12479",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 80,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12480",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 100,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12481",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "80 GeV kaon/proton beam with rotation total 120,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12482",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12483",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 40,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12484",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12485",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 80,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12486",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "60 GeV kaon/proton beam with rotation total 100,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12487",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12488",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV kaon/proton beam with rotation total 40,000 11:00 Beam 끊김, 11:15에 다시 들어온다고 함 -> 11:15 다시 회복됨"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12489",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "40 GeV kaon/proton beam with rotation total 60,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12490",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV kaon/proton beam with rotation total 20,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12491",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV kaon/proton beam with rotation total 30,000"
+  },
+  {
+    "category": "h-pk-rot",
+    "date": "25.08.11",
+    "runNumber": "12492",
+    "energy": "20GeV",
+    "particle": "hadron",
+    "angle": "1.5 / 0",
+    "note": "20 GeV kaon/proton beam with rotation 10000개 잡 신청 ~1500 이밴트 받았을 즈음 런 킬 정확한 이밴트 개수 확인하지 못 함 20 GeV kaon/proton beam with rotation 작업 끝 !"
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.11",
+    "runNumber": "12493",
+    "energy": "80GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "80 GeV pion beam scan with interaction target 시작 테스트 런 5000개 첫번째 (누적 5000) *Interaction 720 V **Interaction 설치 후 시그널 잘 들어오는지 확인을 위해 80 GeV로 3개 테스트런 진행 후 이어서 목표치까지 받음"
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.11",
+    "runNumber": "12502",
+    "energy": "120GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "CC 1 압력 부적합 분석시 사용 X (압력이 충분히 안내려감) 120 GeV pion beam scan with interaction target 시작 누적 160,000 이벤트 목표 20000 이벤트 (누적 20000)"
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.11",
+    "runNumber": "12510",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "100 GeV pion beam scan with interaction target 시작 누적 120,000 이밴트 목표 20000 이벤트 (누적 20000)"
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.11",
+    "runNumber": "12516",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "60 GeV pion beam scan with interaction target 시작 누적 100,000 이밴트 목표 20000 이벤트 (누적 20000)"
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.11",
+    "runNumber": "12522",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "40 GeV pion beam scan with interaction target 시작 누적 600,000 이밴트 목표 20000 이벤트 (누적 20000)"
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.11",
+    "runNumber": "12525",
+    "energy": "40GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "20000 이벤트 (누적 80000) 기존 hadron run 대비 필요 스탯이 10배라 rotation 안하고 low energy 안받고 높은 에너지만 많이 받기로 함."
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.11",
+    "runNumber": "12537",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "본래 100GeV 부터 받으려 했으나, CC1 압력이 내려가지 않아 60 GeV run 부터 진행 20000 이벤트 (누적 120k)"
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.12",
+    "runNumber": "12554",
+    "energy": "60GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "20000 이벤트 (누적 460k)"
+  },
+  {
+    "category": "h-target",
+    "date": "25.08.12",
+    "runNumber": "12564",
+    "energy": "100GeV",
+    "particle": "hadron",
+    "angle": "0 / 0",
+    "note": "- 런 시작 전, LHC filling 시작해서 빔 없었음. - CC 압력 매우 느리게 내려감. 원래 목표는 CC1 (519) 0.022인데 이 이하 더 안 내려감. 허용 범위 0.01595~0.02784 안에 들어오므로 그냥 데이터 받음. 20000 이벤트 (누적 140k) 이전 100 GeV 마지막 런: 12515"
+  }
+]
