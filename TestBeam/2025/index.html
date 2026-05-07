@@ -114,6 +114,12 @@
                 <span>Analysis</span>
               </a>
 
+              <a href="#paper" class="button is-rounded is-white has-text-weight-semibold">
+                <span class="icon is-small"><i class="fas fa-book"></i>
+                </span>
+                <span>Papers</span>
+              </a>
+
               <a href="#participant" class="button is-rounded is-white has-text-weight-semibold">
                 <span class="icon is-small"><i class="fas fa-users"></i></span>
                 <span>Participants</span>
@@ -929,6 +935,113 @@
     height: auto;
     display: block;
     margin: auto;
+  }
+</style>
+
+  <!-------------------------------------- Paper -------------------------------------->
+<section class="section" id="paper">
+  <div class="container is-max-desktop">
+    <!-- title -->
+    <h2 class="title is-3 has-text-centered">Papers</h2>
+    <div class="columns is-multiline mt-5">
+      <!-- Paper 1 -->
+      <div class="column is-half">
+        <div class="card paper-card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large has-text-link">
+                  <i class="fas fa-file-alt fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p class="title is-5">
+                  Paper 1 title
+                </p>
+                <p class="subtitle is-6 has-text-grey">
+                  paper 1 subtitle
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              paper1 for beam test
+            </div>
+            <div class="buttons mt-4">
+              <a href="#"
+                 class="button is-link is-light is-rounded">
+                <span class="icon">
+                  <i class="fas fa-book-open"></i>
+                </span>
+                <span>Read Paper</span>
+              </a>
+              <a href="#"
+                 class="button is-dark is-light is-rounded">
+                <span class="icon">
+                  <i class="fas fa-download"></i>
+                </span>
+                <span>PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paper 2 -->
+      <div class="column is-half">
+        <div class="card paper-card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large has-text-danger">
+                  <i class="fas fa-file-signature fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p class="title is-5">
+                  Paper 2 title
+                </p>
+                <p class="subtitle is-6 has-text-grey">
+                  paper2 sub title
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              paper 2 content
+            </div>
+            <div class="buttons mt-4">
+              <a href="#"
+                 class="button is-danger is-light is-rounded">
+                <span class="icon">
+                  <i class="fas fa-book-open"></i>
+                </span>
+                <span>Read Paper</span>
+              </a>
+              <a href="#"
+                 class="button is-dark is-light is-rounded">
+                <span class="icon">
+                  <i class="fas fa-download"></i>
+                </span>
+                <span>PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .paper-card {
+    border-radius: 20px;
+    transition: all 0.25s ease;
+    height: 100%;
+    border-top: 5px solid #3273dc;
+  }
+
+  .paper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
   }
 </style>
 
