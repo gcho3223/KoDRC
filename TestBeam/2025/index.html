@@ -32,10 +32,23 @@
     .is-hidden {display: none !important;}
 
     .jump-buttons {
-      flex-wrap: nowrap;
+      flex-wrap: nowrap !important;
       overflow-x: auto;
+      overflow-y: hidden;
       gap: 0.4rem;
+      justify-content: center;
+      scrollbar-width: none;
     }
+
+  .jump-buttons::-webkit-scrollbar {display: none;}
+
+  .jump-buttons .button {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
 
     .jump-buttons .button {
       white-space: nowrap;
@@ -974,13 +987,6 @@
                 </span>
                 <span>Read Paper</span>
               </a>
-              <a href="#"
-                 class="button is-dark is-light is-rounded">
-                <span class="icon">
-                  <i class="fas fa-download"></i>
-                </span>
-                <span>PDF</span>
-              </a>
             </div>
           </div>
         </div>
@@ -1015,13 +1021,6 @@
                   <i class="fas fa-book-open"></i>
                 </span>
                 <span>Read Paper</span>
-              </a>
-              <a href="#"
-                 class="button is-dark is-light is-rounded">
-                <span class="icon">
-                  <i class="fas fa-download"></i>
-                </span>
-                <span>PDF</span>
               </a>
             </div>
           </div>
