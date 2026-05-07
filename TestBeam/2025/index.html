@@ -97,49 +97,60 @@
   <!-------------------------------------- Jumping buttons -------------------------------------->
   <section class="section pt-0">
     <div class="container is-max-desktop">
-      <div class="buttons is-centered jump-buttons">
-        <div class="column is-full">
-          <div class="box has-background-light" style="border-radius: 50px; padding: 1rem;">
-            <div class="buttons is-centered">
-
-              <a href="#meeting-log" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-alt"></i></span>
-                <span>Daily Meeting & Log</span>
-              </a>
-
-              <a href="#3d-model" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-cube"></i></span>
-                <span>DRC Module Info</span>
-              </a>
-
-              <a href="#tools" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-tools"></i></span>
-                <span>Tools</span>
-              </a>
-
-              <a href="#run-list" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-list-ol"></i></span>
-                <span>Run List</span>
-              </a>
-
-              <a href="#analysis" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-list-line"></i></span>
-                <span>Analysis</span>
-              </a>
-
-              <a href="#paper" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-book"></i>
-                </span>
-                <span>Papers</span>
-              </a>
-
-              <a href="#participant" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-users"></i></span>
-                <span>Participants</span>
-              </a>
-
-            </div>
-          </div>
+      <div class="box has-background-light jump-box">
+        <!-- first row -->
+        <!-- DRM and DAQ log -->
+        <div class="buttons is-centered mb-3">
+          <a href="#meeting-log"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-calendar-alt"></i>
+            </span>
+            <span>Daily Meeting & Log</span>
+          </a>
+          <!-- module info -->
+          <a href="#module-info"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-cube"></i>
+            </span>
+            <span>DRC Module Info</span>
+          </a>
+          <!-- tools -->
+          <a href="#tools"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-tools"></i>
+            </span>
+            <span>Tools</span>
+          </a>
+        </div>
+        <!-- second row -->
+        <div class="buttons is-centered">
+          <!-- runlist -->
+          <a href="#run-list"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-list-ol"></i>
+            </span><span>Run List</span>
+          </a>
+          <!-- analysis -->
+          <a href="#analysis"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-chart-line"></i>
+            </span>
+            <span>Analysis</span>
+          </a>
+          <!-- paper -->
+          <a href="#paper"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-book"></i>
+            </span>
+            <span>Papers</span>
+          </a>
+          <!-- participant list -->
+          <a href="#participant"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-users"></i>
+            </span>
+            <span>Participants</span>
+          </a>
         </div>
       </div>
     </div>
@@ -261,7 +272,7 @@
   </section>
 
   <!-------------------------------------- Module information -------------------------------------->
-<section class="section" id="3d-model">
+<section class="section" id="module-info">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Module Information</h2>
 
@@ -615,7 +626,7 @@
   <!-------------------------------------- Run list -------------------------------------->
   <section class="section" id="run-list">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Run List & Records</h2>
+      <h2 class="title is-3 has-text-centered">Run List</h2>
 
       <div class="buttons is-centered mb-4">
         <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
