@@ -237,180 +237,376 @@
   <section class="section" id="run-list">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Run List & Records</h2>
-    <!-------------------------------- run type -------------------------------->
+
+    <!-- run type -->
     <div class="buttons is-centered mb-4">
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('pos-scan')">Position Scan</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('hv-eq')">HV Equalization</button>
       <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
       <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
       <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
       <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
       <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
       <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
+
       <button class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
         <span class="icon"><i class="fas fa-chevron-down"></i></span>
         <span>Hadron</span>
       </button>
     </div>
-    <!-------------------------------- hadron beam sub types -------------------------------->
-    <div id="hadron-sub-menu" class="box has-background-light is-hidden animate__animated animate__fadeIn" style="border-radius: 20px; margin-bottom: 2rem;">
-      <p class="has-text-centered is-size-7 has-text-grey mb-2">Select Hadron Sub-type</p>
+
+    <!-- hadron sub menu -->
+    <div id="hadron-sub-menu"
+         class="box has-background-light is-hidden animate__animated animate__fadeIn"
+         style="border-radius:20px; margin-bottom:2rem;">
+
+      <p class="has-text-centered is-size-7 has-text-grey mb-2">
+        Select Hadron Sub-type
+      </p>
+
       <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion')">Pion</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk')">Proton/Kaon</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showRunCategory('h-pion')">Pion</button>
+
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showRunCategory('h-pk')">Proton/Kaon</button>
+
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
+
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
+
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
       </div>
     </div>
-    <!-------------------------------- run list for each program -------------------------------->
-    <div id="run-table-container">
-  <div id="calib" class="run-content">
-    <h4 class="subtitle is-5">Calibration Runs</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1001-1010</td><td>Calibration</td><td>20 GeV</td><td>Electron</td><td>0/0</td><td>Cerenkov/Scintillation calib</td></tr>
-        <tr><td>1045</td><td>Calibration</td><td>50 GeV</td><td>Electron</td><td>0/0</td><td>High energy pedestal check</td></tr>
-      </tbody>
-    </table>
-  </div>
 
-  <div id="unif" class="run-content is-hidden">
-    <h4 class="subtitle is-5">Uniformity Scan</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1120-1135</td><td>Uniformity</td><td>20 GeV</td><td>Electron</td><td>0/0</td><td>9-point position scan</td></tr>
-      </tbody>
-    </table>
-  </div>
+    <!-- ================= Calibration ================= -->
+    <div id="calib" class="run-content">
+      <h4 class="subtitle is-5">Calibration Runs</h4>
 
-  <div id="em" class="run-content is-hidden">
-    <h4 class="subtitle is-5">EM Shower Runs</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1201-1210</td><td>EM</td><td>10, 20, 50 GeV</td><td>Electron</td><td>0/0</td><td>Energy linearity study</td></tr>
-      </tbody>
-    </table>
-  </div>
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
 
-  <div id="double-peak" class="run-content is-hidden">
-    <h4 class="subtitle is-5">Double Peak Search</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1255</td><td>Double Peak</td><td>20 GeV</td><td>Electron</td><td>2.5/0</td><td>Checking boundary between towers</td></tr>
-      </tbody>
-    </table>
-  </div>
+        <tbody>
+          <tr>
+            <td>1001</td>
+            <td>20 GeV</td>
+            <td>Electron</td>
+            <td>0 / 0</td>
+            <td>Cerenkov calibration</td>
+          </tr>
 
-  <div id="timing" class="run-content is-hidden">
-    <h4 class="subtitle is-5">Timing Resolution</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1280-1290</td><td>Timing</td><td>20 GeV</td><td>Electron</td><td>0/0</td><td>Firmware v2.1 applied</td></tr>
-      </tbody>
-    </table>
-  </div>
+          <tr>
+            <td>1002</td>
+            <td>50 GeV</td>
+            <td>Electron</td>
+            <td>0 / 0</td>
+            <td>Scintillation calibration</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <div id="lc-calib" class="run-content is-hidden">
-    <h4 class="subtitle is-5">LC Calibration</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1310</td><td>LC Calib</td><td>-</td><td>Pedestal</td><td>0/0</td><td>Leakage counter baseline check</td></tr>
-      </tbody>
-    </table>
-  </div>
+    <!-- ================= Uniformity ================= -->
+    <div id="unif" class="run-content is-hidden">
+      <h4 class="subtitle is-5">Uniformity</h4>
 
-  <div id="h-pion" class="run-content is-hidden">
-    <h4 class="subtitle is-5">Hadron: Pion</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1401-1420</td><td>Hadron</td><td>100 GeV</td><td>Pion</td><td>0/0</td><td>Standard pion run</td></tr>
-      </tbody>
-    </table>
-  </div>
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
 
-  <div id="h-pk" class="run-content is-hidden">
-    <h4 class="subtitle is-5">Hadron: Proton/Kaon</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1450</td><td>Hadron</td><td>150 GeV</td><td>Proton/Kaon</td><td>0/0</td><td>H8 beam line PID applied</td></tr>
-      </tbody>
-    </table>
-  </div>
+        <tbody>
+          <tr>
+            <td>1101</td>
+            <td>20 GeV</td>
+            <td>Electron</td>
+            <td>0 / 0</td>
+            <td>9-point scan</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <div id="h-pion-rot" class="run-content is-hidden">
-    <h4 class="subtitle is-5">Hadron: Pion w/ Rotation</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1501</td><td>Hadron</td><td>100 GeV</td><td>Pion</td><td>1.5/0</td><td>Rotated module scan</td></tr>
-      </tbody>
-    </table>
-  </div>
+    <!-- ================= EM ================= -->
+    <div id="em" class="run-content is-hidden">
+      <h4 class="subtitle is-5">EM Shower Runs</h4>
 
-  <div id="h-pk-rot" class="run-content is-hidden">
-    <h4 class="subtitle is-5">Hadron: Proton/Kaon w/ Rotation</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1520</td><td>Hadron</td><td>150 GeV</td><td>Proton/Kaon</td><td>1.5/0</td><td>Angular dependence study</td></tr>
-      </tbody>
-    </table>
-  </div>
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
 
-  <div id="h-target" class="run-content is-hidden">
-    <h4 class="subtitle is-5">Hadron: Pion w/ Target</h4>
-    <table class="table is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr><th>Run No.</th><th>Program</th><th>Energy</th><th>Particle</th><th>Angle (R/T)</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1600-1610</td><td>Hadron</td><td>100 GeV</td><td>Pion</td><td>0/0</td><td>W-target in front of module</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+        <tbody>
+          <tr>
+            <td>1201</td>
+            <td>10 GeV</td>
+            <td>Electron</td>
+            <td>0 / 0</td>
+            <td>Energy linearity</td>
+          </tr>
 
-      </div>
+          <tr>
+            <td>1202</td>
+            <td>20 GeV</td>
+            <td>Electron</td>
+            <td>0 / 0</td>
+            <td>EM shower profile</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ================= Double Peak ================= -->
+    <div id="double-peak" class="run-content is-hidden">
+      <h4 class="subtitle is-5">Double Peak</h4>
+
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1255</td>
+            <td>20 GeV</td>
+            <td>Electron</td>
+            <td>2.5 / 0</td>
+            <td>Tower boundary check</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ================= Timing ================= -->
+    <div id="timing" class="run-content is-hidden">
+      <h4 class="subtitle is-5">Timing Resolution</h4>
+
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1280</td>
+            <td>20 GeV</td>
+            <td>Electron</td>
+            <td>0 / 0</td>
+            <td>Firmware v2.1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ================= LC Calibration ================= -->
+    <div id="lc-calib" class="run-content is-hidden">
+      <h4 class="subtitle is-5">LC Calibration</h4>
+
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1310</td>
+            <td>-</td>
+            <td>Pedestal</td>
+            <td>0 / 0</td>
+            <td>Leakage counter baseline</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ================= Hadron : Pion ================= -->
+    <div id="h-pion" class="run-content is-hidden">
+      <h4 class="subtitle is-5">Hadron : Pion</h4>
+
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1401</td>
+            <td>100 GeV</td>
+            <td>Pion</td>
+            <td>0 / 0</td>
+            <td>Standard pion run</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ================= Hadron : Proton/Kaon ================= -->
+    <div id="h-pk" class="run-content is-hidden">
+      <h4 class="subtitle is-5">Hadron : Proton/Kaon</h4>
+
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1450</td>
+            <td>150 GeV</td>
+            <td>Proton/Kaon</td>
+            <td>0 / 0</td>
+            <td>PID applied</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ================= Hadron : Pion Rotation ================= -->
+    <div id="h-pion-rot" class="run-content is-hidden">
+      <h4 class="subtitle is-5">Hadron : Pion w/ Rotation</h4>
+
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1501</td>
+            <td>100 GeV</td>
+            <td>Pion</td>
+            <td>1.5 / 0</td>
+            <td>Rotated module scan</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ================= Hadron : Proton/Kaon Rotation ================= -->
+    <div id="h-pk-rot" class="run-content is-hidden">
+      <h4 class="subtitle is-5">Hadron : Proton/Kaon w/ Rotation</h4>
+
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1520</td>
+            <td>150 GeV</td>
+            <td>Proton/Kaon</td>
+            <td>1.5 / 0</td>
+            <td>Angular dependence</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ================= Hadron : Interaction Target ================= -->
+    <div id="h-target" class="run-content is-hidden">
+      <h4 class="subtitle is-5">Hadron : Pion w/ Interaction Target</h4>
+
+      <table class="table is-striped is-fullwidth is-hoverable">
+        <thead>
+          <tr>
+            <th>Run No.</th>
+            <th>Energy</th>
+            <th>Particle</th>
+            <th>Angle (R/T)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1600</td>
+            <td>100 GeV</td>
+            <td>Pion</td>
+            <td>0 / 0</td>
+            <td>W-target installed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
 <script>
   function showRunCategory(categoryId) {
-    // 모든 표 숨기기
+
     const contents = document.querySelectorAll('.run-content');
-    contents.forEach(content => content.classList.add('is-hidden'));
-    
-    // 선택한 표만 보여주기
-    document.getElementById(categoryId).classList.remove('is-hidden');
+
+    contents.forEach(content => {
+      content.classList.add('is-hidden');
+    });
+
+    document.getElementById(categoryId)
+            .classList.remove('is-hidden');
   }
 
   function toggleHadronMenu() {
@@ -420,17 +616,25 @@
 </script>
 
 <style>
+
   .run-content {
     animation: fadeIn 0.5s;
   }
+
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
-  /* 숨김 처리용 Bulma 클래스 보조 */
+
   .is-hidden {
     display: none !important;
   }
+
 </style>
 <!-------------------------------------- Participant list -------------------------------------->
   <section class="section">
