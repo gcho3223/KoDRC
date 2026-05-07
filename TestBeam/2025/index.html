@@ -72,7 +72,7 @@
             <div class="buttons is-centered">
 
               <a href="#meeting-log" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-link"></i></span>
+                <span class="icon is-small"><i class="fas fa-alt"></i></span>
                 <span>Daily Meeting & Log</span>
               </a>
 
@@ -82,7 +82,7 @@
               </a>
 
               <a href="#tools" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-bolt"></i></span>
+                <span class="icon is-small"><i class="fas fa-tools"></i></span>
                 <span>Tools</span>
               </a>
 
@@ -92,7 +92,7 @@
               </a>
 
               <a href="#run-list" class="button is-rounded is-white has-text-weight-semibold">
-                <span class="icon is-small"><i class="fas fa-list-ol"></i></span>
+                <span class="icon is-small"><i class="fas fa-list-line"></i></span>
                 <span>Analysis</span>
               </a>
 
@@ -555,6 +555,298 @@
 
     </div>
   </section>
+
+  <!-------------------------------------- Analysis -------------------------------------->
+<section class="section" id="analysis">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Analysis</h2>
+
+    <!-- main analysis buttons -->
+    <div class="columns is-centered mt-5">
+
+      <div class="column">
+        <div class="card analysis-card" onclick="showAnalysisInfo('analysis-em')">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">EM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card analysis-card" onclick="toggleHadronAnalysisMenu()">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">Hadron</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- hadron sub buttons -->
+    <div id="hadron-analysis-menu"
+         class="box has-background-light is-hidden mt-4"
+         style="border-radius: 20px;">
+
+      <p class="has-text-centered is-size-7 has-text-grey mb-2">
+        Select Hadron Analysis
+      </p>
+
+      <div class="columns is-centered">
+
+        <div class="column">
+          <div class="card analysis-sub-card" onclick="showAnalysisInfo('analysis-pi')">
+            <div class="card-content has-text-centered">
+              <p class="title is-6">Pi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card analysis-sub-card" onclick="showAnalysisInfo('analysis-proton')">
+            <div class="card-content has-text-centered">
+              <p class="title is-6">Proton</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card analysis-sub-card" onclick="showAnalysisInfo('analysis-pi-rot')">
+            <div class="card-content has-text-centered">
+              <p class="title is-6">Pi w/ Rotation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card analysis-sub-card" onclick="showAnalysisInfo('analysis-proton-rot')">
+            <div class="card-content has-text-centered">
+              <p class="title is-6">Proton w/ Rotation</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!----------------- Analysis contents ----------------->
+
+    <!-- EM plots -->
+    <div id="analysis-em" class="analysis-content mt-5 is-hidden">
+      <div class="columns is-multiline is-centered">
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/em_plot1.png"
+                 alt="EM Plot 1"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/em_plot2.png"
+                 alt="EM Plot 2"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/em_plot3.png"
+                 alt="EM Plot 3"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Pi plots -->
+    <div id="analysis-pi" class="analysis-content mt-5 is-hidden">
+      <div class="columns is-multiline is-centered">
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/pi_plot1.png"
+                 alt="Pi Plot 1"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/pi_plot2.png"
+                 alt="Pi Plot 2"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/pi_plot3.png"
+                 alt="Pi Plot 3"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Proton plots -->
+    <div id="analysis-proton" class="analysis-content mt-5 is-hidden">
+      <div class="columns is-multiline is-centered">
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/proton_plot1.png"
+                 alt="Proton Plot 1"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/proton_plot2.png"
+                 alt="Proton Plot 2"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/proton_plot3.png"
+                 alt="Proton Plot 3"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Pi rotation plots -->
+    <div id="analysis-pi-rot" class="analysis-content mt-5 is-hidden">
+      <div class="columns is-multiline is-centered">
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/pi_rot_plot1.png"
+                 alt="Pi Rotation Plot 1"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/pi_rot_plot2.png"
+                 alt="Pi Rotation Plot 2"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/pi_rot_plot3.png"
+                 alt="Pi Rotation Plot 3"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Proton rotation plots -->
+    <div id="analysis-proton-rot" class="analysis-content mt-5 is-hidden">
+      <div class="columns is-multiline is-centered">
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/proton_rot_plot1.png"
+                 alt="Proton Rotation Plot 1"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/proton_rot_plot2.png"
+                 alt="Proton Rotation Plot 2"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card analysis-plot-card">
+            <img src="../../TestBeam/2025/analysis/proton_rot_plot3.png"
+                 alt="Proton Rotation Plot 3"
+                 class="analysis-plot-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function showAnalysisInfo(contentId) {
+    const target = document.getElementById(contentId);
+    const isAlreadyOpen = !target.classList.contains('is-hidden');
+
+    const contents = document.querySelectorAll('.analysis-content');
+
+    contents.forEach(content => {content.classList.add('is-hidden');});
+
+    if (isAlreadyOpen) {return;}
+
+    target.classList.remove('is-hidden');
+  }
+
+  function toggleHadronAnalysisMenu() {
+    const menu = document.getElementById('hadron-analysis-menu');
+    const isAlreadyOpen = !menu.classList.contains('is-hidden');
+
+    menu.classList.toggle('is-hidden');
+
+    if (isAlreadyOpen) {
+      const contents = document.querySelectorAll('.analysis-content');
+      contents.forEach(content => {content.classList.add('is-hidden');});
+    }
+  }
+</script>
+
+<style>
+  .analysis-card,
+  .analysis-sub-card {
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+  }
+
+  .analysis-card:hover,
+  .analysis-sub-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .analysis-content {
+    animation: fadeIn 0.4s;
+  }
+
+  .analysis-plot-card {
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1rem;
+  }
+
+  .analysis-plot-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+</style>
 
   <!-------------------------------------- Participant list -------------------------------------->
   <section class="section" id="participant">
