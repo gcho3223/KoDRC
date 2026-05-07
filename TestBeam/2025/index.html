@@ -245,58 +245,63 @@
 
     <!-- module information buttons -->
     <div class="columns is-centered mt-5">
-      <div class="column is-one-third">
+
+      <div class="column is-one-quarter">
         <div class="card module-info-card" onclick="showModuleInfo('geometry')">
           <div class="card-content has-text-centered">
-            <p class="title is-4">Experimental hall geometry</p>
+            <p class="title is-5">Experimental Hall Geometry</p>
           </div>
         </div>
       </div>
 
-    <div class="columns is-centered mt-5">
-      <div class="column is-one-third">
+      <div class="column is-one-quarter">
         <div class="card module-info-card" onclick="showModuleInfo('module-viewer')">
           <div class="card-content has-text-centered">
-            <p class="title is-4">Module Viewer</p>
+            <p class="title is-5">Module Viewer</p>
           </div>
         </div>
       </div>
 
-      <div class="column is-one-third">
+      <div class="column is-one-quarter">
         <div class="card module-info-card" onclick="showModuleInfo('module-dim')">
           <div class="card-content has-text-centered">
-            <p class="title is-4">Setup Configuration</p>
+            <p class="title is-5">Setup Configuration</p>
           </div>
         </div>
       </div>
 
-      <div class="column is-one-third">
+      <div class="column is-one-quarter">
         <div class="card module-info-card" onclick="showModuleInfo('lc-position')">
           <div class="card-content has-text-centered">
-            <p class="title is-4">Button3</p>
+            <p class="title is-5">LC Position</p>
           </div>
         </div>
       </div>
+
     </div>
 
     <!----------------- Module information content ----------------->
-    <!-- Geometry -->
-    <div id="module-dim" class="module-info-content mt-5 is-hidden">
-      <div class="box has-text-centered">
-        <module-dim src="../../TestBeam/2025/module/dimension.png"
-          style="width: 100%; height: 500px;">
-        <module-dim>
+
+    <!-- Experimental Hall Geometry -->
+    <div id="geometry" class="module-info-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <img
+          src="../../TestBeam/2025/module/ExpHall_geometry.png"
+          alt="Experimental Hall Geometry"
+          style="width: 100%; height: auto; display: block;"
+        >
       </div>
     </div>
 
     <!-- Module Viewer -->
     <div id="module-viewer" class="module-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <model-viewer src="../../TestBeam/2025/module/TB2025.glb"
-                      poster="../../static/images/poster_2022.png"
-                      auto-rotate
-                      camera-controls
-                      style="width: 100%; height: 500px; background-color: #f5f5f5;">
+        <model-viewer
+          src="../../TestBeam/2025/module/TB2025.glb"
+          poster="../../static/images/poster_2022.png"
+          auto-rotate
+          camera-controls
+          style="width: 100%; height: 500px; background-color: #f5f5f5;">
         </model-viewer>
       </div>
 
@@ -305,20 +310,25 @@
       </p>
     </div>
 
-    <!-- Geometry -->
+    <!-- Setup Configuration / Module Dimension -->
     <div id="module-dim" class="module-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <img src="../../TestBeam/2025/module/ExpHall_geometry.png" 
-          alt="Experimental Hall Geometry" 
-          style="width: 100%; height: auto; display: block;">
+        <img
+          src="../../TestBeam/2025/module/DRC_dimension.png"
+          alt="DRC Module Dimension"
+          style="width: 100%; height: auto; display: block;"
+        >
       </div>
     </div>
 
-    <!-- Leakage counter -->
+    <!-- Leakage Counter Position -->
     <div id="lc-position" class="module-info-content mt-5 is-hidden">
-      <div class="box has-text-centered">
-        <p class="title is-5">Leakage counter position</p>
-        <p>Additional content will be added here.</p>
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe
+          src="https://drive.google.com/file/d/1GcK9Xj86flsFGSsy0YFivAiQSc3FfRF9/preview"
+          style="width: 100%; height: 600px; border: none;"
+          allow="autoplay">
+        </iframe>
       </div>
     </div>
 
@@ -352,6 +362,20 @@
 
   .module-info-content {
     animation: fadeIn 0.4s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .is-hidden {
+    display: none !important;
   }
 </style>
 
