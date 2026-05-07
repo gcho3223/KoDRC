@@ -61,27 +61,87 @@
     </div>
   </section>
 <!-------------------------------------- What's new? -------------------------------------->
-  <section class="section" id="abstract">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">What's new?</h2>
-          <div class="content has-text-justified">
-            <p>
-              뭐가 업그레이드됨?
-            </p>
-          </div>
+  <section class="section" id="whats-new">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">What's New in TB2025?</h2>
+        <div class="content has-text-justified">
+          <p class="has-text-centered">
+            The 2025 beam test introduces several key upgrades in hardware design and data acquisition systems.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="card" style="border-radius: 15px; border-top: 5px solid #3273dc; height: 100%;">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large has-text-link">
+                  <i class="fas fa-microchip fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Module Subsystem</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <ul style="list-style-type: none; margin-left: 0;">
+                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>Readout Frame:</strong> Better optical contact using spring/screw mechanism.</li>
+                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>TB2024 Module Only Frame:</strong> 
+                  <ul class="is-size-7 mt-1" style="list-style-type: square;">
+                    <li>Rail-based easy installation.</li>
+                    <li>LC installed under the module for precise leakage counting.</li>
+                    <li>New back-plane & side-planes for stability/alignment.</li>
+                  </ul>
+                </li>
+                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>Yellow Filter:</strong> Wratten #12 &rarr; #3 (Higher light yield).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="card" style="border-radius: 15px; border-top: 5px solid #48c774; height: 100%;">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large has-text-success">
+                  <i class="fas fa-server fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">DAQ Subsystem</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <ul style="list-style-type: none; margin-left: 0;">
+                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Timing Issue:</strong> Firmware upgrade for DAQ board stability.</li>
+                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Sensor Boards:</strong> Relocated to concrete block to reduce cable tension.</li>
+                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Pedestal Fluctuation:</strong> Pre-run calibration (std. dev. < ~5).</li>
+                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Cross-talk Reduction:</strong> Separated cables for adjacent modules.</li>
+                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Trigger:</strong> New triggers with better timing resolution.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 <!-------------------------------------- DRM -------------------------------------->
   <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-eight-fifths has-text-centered">
         <h2 class="title is-3">Daily Run Meeting</h2>
-        <p class="subtitle is-6 mt-1">Access the meeting agenda and minutes below</p>
         
         <div class="buttons is-centered mt-5">
           <a href="https://indico.cern.ch/event/1572295/" target="_blank" 
