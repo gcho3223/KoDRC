@@ -67,26 +67,27 @@
       <div class="column is-full">
         <div class="box has-background-light" style="border-radius: 50px; padding: 1rem;">
           <div class="buttons is-centered">
-            <a href="#whats-new" class="button is-rounded is-white has-text-weight-semibold">
-              <span class="icon is-small"><i class="fas fa-bolt"></i></span>
-              <span>What's New</span>
-            </a>
-
+            <!-------------------------------- DRM & DAQ log -------------------------------->
             <a href="#meeting-log" class="button is-rounded is-white has-text-weight-semibold">
               <span class="icon is-small"><i class="fas fa-link"></i></span>
               <span>Daily Meeting & Log</span>
             </a>
-
+            <!-------------------------------- Module -------------------------------->
             <a href="#3d-model" class="button is-rounded is-white has-text-weight-semibold">
               <span class="icon is-small"><i class="fas fa-cube"></i></span>
               <span>3D Module</span>
             </a>
-
+            <!-------------------------------- Run list -------------------------------->
             <a href="#run-list" class="button is-rounded is-white has-text-weight-semibold">
               <span class="icon is-small"><i class="fas fa-list-ol"></i></span>
               <span>Run List</span>
             </a>
-
+            <!-------------------------------- useful link -------------------------------->
+            <a href="#whats-new" class="button is-rounded is-white has-text-weight-semibold">
+              <span class="icon is-small"><i class="fas fa-bolt"></i></span>
+              <span>What's New</span>
+            </a>
+            <!-------------------------------- participants -------------------------------->
             <a href="#participant" class="button is-rounded is-white has-text-weight-semibold">
               <span class="icon is-small"><i class="fas fa-users"></i></span>
               <span>Participants</span>
@@ -105,7 +106,7 @@
         <h2 class="title is-3">What's New in TB2025?</h2>
         <div class="content has-text-justified">
           <p class="has-text-centered">
-            The 2025 beam test introduces several key upgrades
+            The 2025 beam test introduces several key upgrades..!!
           </p>
         </div>
       </div>
@@ -234,30 +235,93 @@
 
 <!-------------------------------------- Run list -------------------------------------->
   <section class="section" id="run-list">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Run List & Records</h2>
-      <div class="content">
-        <table class="table is-striped is-fullwidth">
-          <thead>
-            <tr>
-              <th>Run No.</th>
-              <th>Energy</th>
-              <th>Particle</th>
-              <th>Note</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1234</td>
-              <td>20 GeV</td>
-              <td>Electron</td>
-              <td>Position Scan</td>
-            </tr>
-            </tbody>
-        </table>
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Run List & Records</h2>
+    <!-------------------------------- run type -------------------------------->
+    <div class="buttons is-centered mb-4">
+      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('pos-scan')">Position Scan</button>
+      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('hv-eq')">HV Equalization</button>
+      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
+      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
+      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
+      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
+      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
+      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
+      <button class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
+        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+        <span>Hadron</span>
+      </button>
+    </div>
+    <!-------------------------------- hadron beam sub types -------------------------------->
+    <div id="hadron-sub-menu" class="box has-background-light is-hidden animate__animated animate__fadeIn" style="border-radius: 20px; margin-bottom: 2rem;">
+      <p class="has-text-centered is-size-7 has-text-grey mb-2">Select Hadron Sub-type</p>
+      <div class="buttons is-centered">
+        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion')">Pion</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk')">Proton/Kaon</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
       </div>
     </div>
-  </section>
+
+    <div id="run-table-container">
+      <div id="pos-scan" class="run-content">
+        <h4 class="subtitle is-5">Position Scan Results</h4>
+        <table class="table is-striped is-fullwidth is-hoverable">
+          <thead><tr><th>Run No.</th><th>Energy</th><th>Particle</th><th>Note</th></tr></thead>
+          <tbody><tr><td>1234</td><td>20 GeV</td><td>Electron</td><td>Center scan</td></tr></tbody>
+        </table>
+      </div>
+
+      <div id="hv-eq" class="run-content is-hidden">
+        <h4 class="subtitle is-5">HV Equalization</h4>
+        <table class="table is-striped is-fullwidth is-hoverable">
+          <thead><tr><th>Run No.</th><th>Energy</th><th>Particle</th><th>Note</th></tr></thead>
+          <tbody><tr><td>1250</td><td>50 GeV</td><td>Muon</td><td>HV adjustment done</td></tr></tbody>
+        </table>
+      </div>
+
+      <div id="h-pion" class="run-content is-hidden">
+        <h4 class="subtitle is-5">Hadron: Pion</h4>
+        <table class="table is-striped is-fullwidth is-hoverable">
+          <thead><tr><th>Run No.</th><th>Energy</th><th>Particle</th><th>Note</th></tr></thead>
+          <tbody><tr><td>1300</td><td>100 GeV</td><td>Pion</td><td>High energy run</td></tr></tbody>
+        </table>
+      </div>
+
+      </div>
+  </div>
+</section>
+
+<script>
+  function showRunCategory(categoryId) {
+    // 모든 표 숨기기
+    const contents = document.querySelectorAll('.run-content');
+    contents.forEach(content => content.classList.add('is-hidden'));
+    
+    // 선택한 표만 보여주기
+    document.getElementById(categoryId).classList.remove('is-hidden');
+  }
+
+  function toggleHadronMenu() {
+    const subMenu = document.getElementById('hadron-sub-menu');
+    subMenu.classList.toggle('is-hidden');
+  }
+</script>
+
+<style>
+  .run-content {
+    animation: fadeIn 0.5s;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  /* 숨김 처리용 Bulma 클래스 보조 */
+  .is-hidden {
+    display: none !important;
+  }
+</style>
 <!-------------------------------------- Participant list -------------------------------------->
   <section class="section">
   <div class="container is-max-desktop">
