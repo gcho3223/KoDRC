@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2022 DRC Beam Test Details</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="../../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../../static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../../static/js/fontawesome.all.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../index.html">
+        <span class="icon"><i class="fas fa-home"></i></span>&nbsp;Home
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#abstract">Abstract</a>
+        <a class="navbar-item" href="#3d-model">3D Module</a>
+        <a class="navbar-item" href="#run-list">Run List</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">2022 DRC Beam Test Summary</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">CERN SPS H8 Line</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              2022년 빔테스트에 대한 개요를 여기에 작성하세요. 
+              사용된 프로토타입의 특징, 목표, 그리고 주요 성과 등을 정리할 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="3d-model">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">3D Module Viewer</h2>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="card" style="border-radius: 20px; overflow: hidden;">
+            <model-viewer src="../../static/models/drc_2022.glb" 
+                          poster="../../static/images/poster_2022.png"
+                          auto-rotate camera-controls 
+                          style="width: 100%; height: 500px; background-color: #f5f5f5;">
+            </model-viewer>
+          </div>
+          <p class="help has-text-centered mt-2">마우스로 드래그하여 회전, 휠로 확대/축소할 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="run-list">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Run List & Records</h2>
+      <div class="content">
+        <table class="table is-striped is-fullwidth">
+          <thead>
+            <tr>
+              <th>Run No.</th>
+              <th>Energy</th>
+              <th>Particle</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1234</td>
+              <td>20 GeV</td>
+              <td>Electron</td>
+              <td>Position Scan</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>© 2026 KoDRC Collaboration</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
