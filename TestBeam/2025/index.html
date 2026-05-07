@@ -104,7 +104,7 @@
                 <span>Run List</span>
               </a>
 
-              <a href="#run-list" class="button is-rounded is-white has-text-weight-semibold">
+              <a href="#analysis" class="button is-rounded is-white has-text-weight-semibold">
                 <span class="icon is-small"><i class="fas fa-list-line"></i></span>
                 <span>Analysis</span>
               </a>
@@ -419,6 +419,27 @@
 
     <!----------------- Tool contents ----------------->
 
+    <!-- main page -->
+    <div id="main-page" class="tool-info-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe
+          src="https://docs.google.com/document/d/1RQVTv-KAkWnZLgpNQ2_dNovxLpTNB1d1AhAORExZ5u0/edit?tab=t.0/preview?gid=0"
+          style="width: 100%; height: 900px; border: none;">
+        </iframe>
+      </div>
+      <div class="has-text-right mt-2">
+          <a
+            href="https://docs.google.com/document/d/1RQVTv-KAkWnZLgpNQ2_dNovxLpTNB1d1AhAORExZ5u0/edit?tab=t.0/preview?gid=0"
+            target="_blank"
+            class="button is-link is-light is-small">
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <span>Open in Google Sheets</span>
+          </a>
+        </div>
+    </div>
+    
     <!-- Position Calculator -->
     <div id="position-calculator" class="tool-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
@@ -597,52 +618,39 @@
 
     <!-- hadron sub buttons -->
     <div id="hadron-analysis-menu"
-           class="box has-background-light is-hidden"
-           style="border-radius:20px; margin-bottom:2rem;">
+         class="box has-background-light is-hidden"
+         style="border-radius:20px; margin-bottom:2rem;">
 
       <p class="has-text-centered is-size-7 has-text-grey mb-2">
         Select Hadron Analysis
       </p>
 
-      <div class="columns is-centered">
+      <div class="buttons is-centered">
 
-        <div class="column">
-          <div class="card analysis-sub-card" onclick="showAnalysisInfo('analysis-pi')">
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Pi</p>
-            </div>
-          </div>
-        </div>
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showAnalysisInfo('analysis-pi')">
+          Pi
+        </button>
 
-        <div class="column">
-          <div class="card analysis-sub-card" onclick="showAnalysisInfo('analysis-proton')">
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Proton</p>
-            </div>
-          </div>
-        </div>
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showAnalysisInfo('analysis-proton')">
+          Proton
+        </button>
 
-        <div class="column">
-          <div class="card analysis-sub-card" onclick="showAnalysisInfo('analysis-pi-rot')">
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Pi w/ Rotation</p>
-            </div>
-          </div>
-        </div>
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showAnalysisInfo('analysis-pi-rot')">
+          Pi w/ Rotation
+        </button>
 
-        <div class="column">
-          <div class="card analysis-sub-card" onclick="showAnalysisInfo('analysis-proton-rot')">
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Proton w/ Rotation</p>
-            </div>
-          </div>
-        </div>
+        <button class="button is-small is-rounded is-danger is-light"
+                onclick="showAnalysisInfo('analysis-proton-rot')">
+          Proton w/ Rotation
+        </button>
 
       </div>
     </div>
 
     <!----------------- Analysis contents ----------------->
-
     <!-- EM plots -->
     <div id="analysis-em" class="analysis-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
@@ -823,29 +831,26 @@
 
     if (isAlreadyOpen) {
       const contents = document.querySelectorAll('.analysis-content');
+
       contents.forEach(content => {content.classList.add('is-hidden');});
     }
   }
 </script>
 
 <style>
-  .analysis-card,
-  .analysis-sub-card {
+  .analysis-card {
     border-radius: 15px;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     height: 100%;
   }
 
-  .analysis-card:hover,
-  .analysis-sub-card:hover {
+  .analysis-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
   }
 
-  .analysis-content {
-    animation: fadeIn 0.4s;
-  }
+  .analysis-content {animation: fadeIn 0.4s;}
 
   .analysis-plot-card {
     border-radius: 20px;
