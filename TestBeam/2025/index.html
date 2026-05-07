@@ -351,13 +351,14 @@
 
 <script>
   function showModuleInfo(contentId) {
+    const target = document.getElementById(contentId);
+    const isAlreadyOpen = !target.classList.contains('is-hidden');
     const contents = document.querySelectorAll('.module-info-content');
-
-    contents.forEach(content => {
-      content.classList.add('is-hidden');
-    });
-
-    document.getElementById(contentId).classList.remove('is-hidden');
+    contents.forEach(content => {content.classList.add('is-hidden');});
+    // 이미 열려있던 걸 다시 누르면 닫기만 함
+    if (isAlreadyOpen) {return;}
+    // 아니면 새로 열기
+    target.classList.remove('is-hidden');
   }
 </script>
 
@@ -464,14 +465,20 @@
 
 <script>
   function showToolInfo(contentId) {
-    const contents = document.querySelectorAll('.tool-info-content');
 
-    contents.forEach(content => {
-      content.classList.add('is-hidden');
-    });
+  const target = document.getElementById(contentId);
+  const isAlreadyOpen = !target.classList.contains('is-hidden');
+  const contents = document.querySelectorAll('.tool-info-content');
 
-    document.getElementById(contentId).classList.remove('is-hidden');
-  }
+  contents.forEach(content => {
+    content.classList.add('is-hidden');
+  });
+
+  // 이미 열려있으면 접기
+  if (isAlreadyOpen) {return;}
+  // 아니면 열기
+  target.classList.remove('is-hidden');
+}
 </script>
 
 <style>
