@@ -1183,56 +1183,29 @@
   <!-------------------------------------- Gallery -------------------------------------->
 <section class="section" id="gallery">
   <div class="container is-max-desktop">
-
     <!-- title -->
     <h2 class="title is-3 has-text-centered">Gallery</h2>
-    <div class="columns is-centered mt-5">
-      <div class="column is-full">
-        <!-- gallery card -->
-        <div class="card gallery-card">
-          <div class="card-content has-text-centered">
-            <span class="icon is-large has-text-warning">
-              <i class="fas fa-images fa-3x"></i>
-            </span>
-            <h3 class="title is-4 mt-4">
-              TB2025 Photo Gallery
-            </h3>
-            <p class="subtitle is-6 has-text-grey">
-              Beam test photos, setup images, detector operation, and experimental hall snapshots.
-            </p>
-            <!-- open gallery button -->
-            <div class="mt-5">
-              <a href="https://drive.google.com/drive/folders/1n7JBFKQTU4hxLH7dMEvmbWaNeU-pTofw?usp=drive_link"
-                 target="_blank"
-                 class="button is-warning is-light is-rounded is-medium">
-                <span class="icon">
-                  <i class="fas fa-external-link-alt"></i>
-                </span>
 
-                <span>Open Gallery</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- gallery preview -->
+    <div class="card mt-5"
+         style="border-radius: 25px; overflow: hidden;">
+      <iframe
+        src="https://drive.google.com/embeddedfolderview?id=1n7JBFKQTU4hxLH7dMEvmbWaNeU-pTofw#grid"
+        style="width:100%; height:900px; border:0;">
+      </iframe>
     </div>
-
+    <!-- open gallery button -->
+    <div class="has-text-right mt-3">
+      <a href="https://drive.google.com/drive/folders/1n7JBFKQTU4hxLH7dMEvmbWaNeU-pTofw?usp=drive_link"
+         target="_blank"
+         class="button is-warning is-light is-rounded">
+        <span class="icon"><i class="fas fa-images"></i>
+        </span>
+        <span>Open Gallery</span>
+      </a>
+    </div>
   </div>
 </section>
-
-<style>
-  .gallery-card {
-    border-radius: 25px;
-    padding: 2rem;
-    transition: all 0.25s ease;
-    border-top: 5px solid #ffdd57;
-  }
-
-  .gallery-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-  }
-</style>
 
   <!-------------------------------------- Participant list -------------------------------------->
   <section class="section" id="participant">
