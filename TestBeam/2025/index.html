@@ -151,6 +151,13 @@
             </span>
             <span>Papers</span>
           </a>
+          <!-- Gallery -->
+          <a href="#gallery"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-images"></i>
+            </span>
+            <span>Gallery</span>
+          </a>
           <!-- participant list -->
           <a href="#participant"
             class="button is-rounded is-white has-text-weight-semibold">
@@ -1170,6 +1177,60 @@
   .paper-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  }
+</style>
+
+  <!-------------------------------------- Gallery -------------------------------------->
+<section class="section" id="gallery">
+  <div class="container is-max-desktop">
+
+    <!-- title -->
+    <h2 class="title is-3 has-text-centered">Gallery</h2>
+    <div class="columns is-centered mt-5">
+      <div class="column is-full">
+        <!-- gallery card -->
+        <div class="card gallery-card">
+          <div class="card-content has-text-centered">
+            <span class="icon is-large has-text-warning">
+              <i class="fas fa-images fa-3x"></i>
+            </span>
+            <h3 class="title is-4 mt-4">
+              TB2025 Photo Gallery
+            </h3>
+            <p class="subtitle is-6 has-text-grey">
+              Beam test photos, setup images, detector operation, and experimental hall snapshots.
+            </p>
+            <!-- open gallery button -->
+            <div class="mt-5">
+              <a href="https://drive.google.com/drive/folders/1n7JBFKQTU4hxLH7dMEvmbWaNeU-pTofw?usp=drive_link"
+                 target="_blank"
+                 class="button is-warning is-light is-rounded is-medium">
+                <span class="icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </span>
+
+                <span>Open Gallery</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .gallery-card {
+    border-radius: 25px;
+    padding: 2rem;
+    transition: all 0.25s ease;
+    border-top: 5px solid #ffdd57;
+  }
+
+  .gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
   }
 </style>
 
