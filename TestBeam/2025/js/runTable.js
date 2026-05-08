@@ -1,4 +1,5 @@
 let allRuns = [];
+let currentRunCategory = null;
 
 const categoryTitles = {
   "calib": "Calibration Runs",
@@ -15,23 +16,56 @@ const categoryTitles = {
 };
 
 async function loadRuns() {
+
   const response = await fetch("data/runs.json");
   allRuns = await response.json();
 
-  showRunCategory("calib");
+  const title = document.getElementById("run-category-title");
+  const tbody = document.getElementById("run-table-body");
+  const tableWrapper = document.querySelector(".run-table-wrapper");
+
+  // 처음에는 아무것도 안보이게
+  title.textContent = "Select a run category";
+  tbody.innerHTML = "";
+
+  tableWrapper.classList.add("is-hidden");
 }
 
 function showRunCategory(categoryId) {
+
   const tbody = document.getElementById("run-table-body");
   const title = document.getElementById("run-category-title");
+  const tableWrapper = document.querySelector(".run-table-wrapper");
 
-  title.textContent = categoryTitles[categoryId] || "Run List";
+  // 같은 버튼 다시 누르면 접기
+  if (
+    currentRunCategory === categoryId &&
+    !tableWrapper.classList.contains("is-hidden")
+  ) {
+
+    currentRunCategory = null;
+
+    title.textContent = "Select a run category";
+
+    tbody.innerHTML = "";
+
+    tableWrapper.classList.add("is-hidden");
+
+    return;
+  }
+
+  currentRunCategory = categoryId;
+
+  title.textContent =
+    categoryTitles[categoryId] || "Run List";
 
   tbody.innerHTML = "";
 
-  const filteredRuns = allRuns.filter(run => run.category === categoryId);
+  const filteredRuns =
+    allRuns.filter(run => run.category === categoryId);
 
   if (filteredRuns.length === 0) {
+
     tbody.innerHTML = `
       <tr>
         <td colspan="5" class="has-text-centered has-text-grey">
@@ -39,10 +73,14 @@ function showRunCategory(categoryId) {
         </td>
       </tr>
     `;
+
+    tableWrapper.classList.remove("is-hidden");
+
     return;
   }
 
   filteredRuns.forEach(run => {
+
     const row = document.createElement("tr");
 
     row.innerHTML = `
@@ -55,11 +93,19 @@ function showRunCategory(categoryId) {
 
     tbody.appendChild(row);
   });
+
+  tableWrapper.classList.remove("is-hidden");
 }
 
 function toggleHadronMenu() {
-  const subMenu = document.getElementById("hadron-sub-menu");
+
+  const subMenu =
+    document.getElementById("hadron-sub-menu");
+
   subMenu.classList.toggle("is-hidden");
 }
 
-document.addEventListener("DOMContentLoaded", loadRuns);
+document.addEventListener(
+  "DOMContentLoaded",
+  loadRuns
+);
