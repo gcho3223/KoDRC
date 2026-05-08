@@ -86,7 +86,7 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">TB2025 Summary</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">CERN SPS H8 Line</span>
+              <span class="author-block">6 - 13 Aug. @ CERN SPS H8 Line</span>
             </div>
           </div>
         </div>
@@ -113,6 +113,13 @@
             <span class="icon is-small"><i class="fas fa-cube"></i>
             </span>
             <span>DRC Module Info</span>
+          </a>
+          <!-- working log -->
+          <a href="#working-log"
+            class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-clipboard-list"></i>
+            </span>
+            <span>Wroking Log</span>
           </a>
           <!-- tools -->
           <a href="#tools"
@@ -469,6 +476,115 @@
   transform: translateY(-3px);
   background-color: #2759a5;
 }
+</style>
+
+  <!-------------------------------------- Working Log -------------------------------------->
+<section class="section" id="working-log">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Working Log</h2>
+
+    <!-- working log buttons -->
+    <div class="columns is-centered mt-5">
+
+      <div class="column">
+        <div class="card working-log-card" onclick="showWorkingLog('hw-log')">
+          <div class="card-content has-text-centered">
+            <span class="icon is-large has-text-link">
+              <i class="fas fa-microchip fa-2x"></i>
+            </span>
+            <p class="title is-5 mt-2">Hardware</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card working-log-card" onclick="showWorkingLog('daq-log')">
+          <div class="card-content has-text-centered">
+            <span class="icon is-large has-text-success">
+              <i class="fas fa-server fa-2x"></i>
+            </span>
+            <p class="title is-5 mt-2">DAQ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card working-log-card" onclick="showWorkingLog('dqm-pa-log')">
+          <div class="card-content has-text-centered">
+            <span class="icon is-large has-text-danger">
+              <i class="fas fa-chart-line fa-2x"></i>
+            </span>
+            <p class="title is-5 mt-2">DQM / PA</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hardware Log -->
+    <div id="hw-log" class="working-log-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe
+          src="https://docs.google.com/document/d/1HlUFz-R2yRp9RmYLGM46Z0hi1W7IZRTLec1-xIz2KW8/preview"
+          style="width: 100%; height: 900px; border: none;">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- DAQ Log -->
+    <div id="daq-log" class="working-log-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe
+          src="https://docs.google.com/document/d/1vFUmnSN4CYUOsErBz54lJ7HUqX_HvDo2PR4VlEgYLp0/preview"
+          style="width: 100%; height: 900px; border: none;">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- DQM / PA Log -->
+    <div id="dqm-pa-log" class="working-log-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe
+          src="https://docs.google.com/document/d/1GmFGgMXSPRYgv8m1W-ZPAb8uIqEpEAbuRgmQP0-0tzE/preview"
+          style="width: 100%; height: 900px; border: none;">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function showWorkingLog(contentId) {
+    const target = document.getElementById(contentId);
+    const isAlreadyOpen = !target.classList.contains('is-hidden');
+
+    const contents = document.querySelectorAll('.working-log-content');
+
+    contents.forEach(content => {content.classList.add('is-hidden');});
+
+    if (isAlreadyOpen) {return;}
+
+    target.classList.remove('is-hidden');
+  }
+</script>
+
+<style>
+  .working-log-card {
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+  }
+
+  .working-log-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .working-log-content {
+    animation: fadeIn 0.4s;
+  }
 </style>
 
   <!-------------------------------------- Tools -------------------------------------->
