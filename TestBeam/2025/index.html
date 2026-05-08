@@ -50,12 +50,41 @@
     padding-right: 0.8rem;
   }
 
-    .jump-buttons .button {
-      white-space: nowrap;
-      font-size: 0.9rem;
-      padding-left: 0.9rem;
-      padding-right: 0.9rem;
-    }
+  .jump-buttons .button {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .jump-layout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-page-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 18px;
+  border: 3px solid #ff3860;
+  background: white;
+  color: #ff3860;
+  font-weight: 700;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.main-page-button:hover {
+  background: #fff5f7;
+  color: #ff3860;
+}
+
+.jump-button-area {flex: 1;}
+  
   </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -95,80 +124,76 @@
   </section>
 
   <!-------------------------------------- Jumping buttons -------------------------------------->
-  <section class="section pt-0">
-    <div class="container is-max-desktop">
-      <div class="box has-background-light jump-box">
-        <!-- first row -->
-        <!-- DRM and DAQ log -->
+<section class="section pt-0">
+  <div class="container is-max-desktop">
+    <div class="box has-background-light jump-box jump-layout">
+      <!-- Main button -->
+      <button class="button main-page-button"
+              onclick="showMainPagePreview()">
+        <span class="icon is-large">
+          <i class="fas fa-home"></i>
+        </span>
+        <span>Main</span>
+      </button>
+      <!-- Jumping buttons -->
+      <div class="jump-button-area">
+        <!-- upper line buttons -->
         <div class="buttons is-centered mb-3">
-          <a href="#meeting-log"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-calendar-alt"></i>
-            </span>
+          <a href="#meeting-log" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-calendar-alt"></i></span>
             <span>Daily Meeting & Log</span>
           </a>
-          <!-- module info -->
-          <a href="#module-info"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-cube"></i>
-            </span>
+          <a href="#module-info" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-cube"></i></span>
             <span>DRC Module Info</span>
           </a>
-          <!-- working log -->
-          <a href="#working-log"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-clipboard-list"></i>
-            </span>
-            <span>Wroking Log</span>
+          <a href="#working-log" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-clipboard-list"></i></span>
+            <span>Working Log</span>
           </a>
-          <!-- tools -->
-          <a href="#tools"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-tools"></i>
-            </span>
+          <a href="#tools" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-tools"></i></span>
             <span>Tools</span>
           </a>
         </div>
-        <!-- second row -->
+        <!-- bottom line buttons -->
         <div class="buttons is-centered">
-          <!-- runlist -->
-          <a href="#run-list"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-list-ol"></i>
-            </span><span>Run List</span>
+          <a href="#run-list" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-list-ol"></i></span>
+            <span>Run List</span>
           </a>
-          <!-- analysis -->
-          <a href="#analysis"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-chart-line"></i>
-            </span>
+          <a href="#analysis" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-chart-line"></i></span>
             <span>Analysis</span>
           </a>
-          <!-- paper -->
-          <a href="#paper"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-book"></i>
-            </span>
+          <a href="#paper" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-book"></i></span>
             <span>Papers</span>
           </a>
-          <!-- Gallery -->
-          <a href="#gallery"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-images"></i>
-            </span>
+          <a href="#gallery" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-images"></i></span>
             <span>Gallery</span>
           </a>
-          <!-- participant list -->
-          <a href="#participant"
-            class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-users"></i>
-            </span>
+          <a href="#participant" class="button is-rounded is-white has-text-weight-semibold">
+            <span class="icon is-small"><i class="fas fa-users"></i></span>
             <span>Participants</span>
           </a>
         </div>
+
       </div>
     </div>
-  </section>
+    <!-- Main page preview -->
+    <div id="main-page-preview" class="mt-4 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe
+          src="https://docs.google.com/document/d/1RQVTv-KAkWnZLgpNQ2_dNovxLpTNB1d1AhAORExZ5u0/preview"
+          style="width: 100%; height: 900px; border: none;">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-------------------------------------- What's new? -------------------------------------->
   <section class="section" id="whats-new">
@@ -601,15 +626,6 @@
 
     <!-- tool buttons -->
     <div class="columns is-centered mt-5">
-
-      <div class="column">
-        <div class="card tool-info-card" onclick="showToolInfo('main-page')">
-          <div class="card-content has-text-centered">
-            <p class="title is-5">Main Page</p>
-          </div>
-        </div>
-      </div>
-      
       <div class="column">
         <div class="card tool-info-card" onclick="showToolInfo('position-calculator')">
           <div class="card-content has-text-centered">
@@ -639,13 +655,6 @@
     <!----------------- Tool contents ----------------->
 
     <!-- main page -->
-    <div id="main-page" class="tool-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe
-          src="https://docs.google.com/document/d/1RQVTv-KAkWnZLgpNQ2_dNovxLpTNB1d1AhAORExZ5u0/edit?tab=t.0/preview?gid=0"
-          style="width: 100%; height: 900px; border: none;">
-        </iframe>
-      </div>
       <div class="has-text-right mt-2">
           <a
             href="https://docs.google.com/document/d/1RQVTv-KAkWnZLgpNQ2_dNovxLpTNB1d1AhAORExZ5u0/edit?tab=t.0/preview?gid=0"
