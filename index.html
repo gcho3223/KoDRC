@@ -6,7 +6,7 @@
   <meta property="og:title" content="KoDRC Beam Test Archive"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>KoDRC Beam Test Archive</title>
+  <title>Korea Dual-Readout Calorimeter Beam Test Archive</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -22,66 +22,166 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
+<script>
+  function toggleBeamSite(siteId) {
+    const target = document.getElementById(siteId);
+    const isAlreadyOpen = !target.classList.contains("is-hidden");
+    const allSites = document.querySelectorAll(".beam-year-buttons");
+
+    allSites.forEach(site => {site.classList.add("is-hidden");});
+
+    if (isAlreadyOpen) {return;}
+
+    target.classList.remove("is-hidden");
+  }
+</script>
+
 <body>
 
 <!-------------------------------------- Title -------------------------------------->
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DRC Beam Test Digital Archive</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Dual-Readout Calorimeter Collaboration</span>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            DRC Beam Test Digital Archive
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Korea Dual-Readout Calorimeter Collaboration
+            </span>
+          </div>
+          <!-- Beam test site selector -->
+          <div class="columns is-centered mt-6">
+            <!-- CERN card -->
+            <div class="column is-half">
+              <div class="card beam-site-card" onclick="toggleBeamSite('cern-tests')">
+                <div class="card-content has-text-centered">
+                  <span class="icon is-large has-text-link">
+                    <i class="fas fa-atom fa-2x"></i>
+                  </span>
+                  <p class="title is-4 mt-3">
+                    TB at CERN
+                  </p>
+                  <p class="subtitle is-6 has-text-grey">
+                    CERN SPS / PS beam tests
+                  </p>
+                </div>
+              </div>
             </div>
+            <!-- KEK card -->
+            <div class="column is-half">
+              <div class="card beam-site-card" onclick="toggleBeamSite('kek-tests')">
+                <div class="card-content has-text-centered">
+                  <span class="icon is-large has-text-danger">
+                    <i class="fas fa-flask fa-2x"></i>
+                  </span>
 
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <span class="link-block">
-                  <a href="TestBeam/2022/index.html" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-calendar-alt"></i></span>
-                    <span>2022 Test</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="TestBeam/2023/index.html" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-calendar-alt"></i></span>
-                    <span>2023 Test</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="TestBeam/2024/index.html" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-calendar-alt"></i></span>
-                    <span>2024 Test</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="TestBeam/2025/index.html" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-calendar-alt"></i></span>
-                    <span>2025 Test</span>
-                  </a>
-                </span>
+                  <p class="title is-4 mt-3">
+                    TB at KEK
+                  </p>
+                  <p class="subtitle is-6 has-text-grey">
+                    KEK beam test archive
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          <!-- CERN year buttons -->
+          <div id="cern-tests" class="beam-year-buttons mt-4 is-hidden">
+            <div class="box has-background-light" style="border-radius: 20px;">
+              <p class="has-text-centered is-size-7 has-text-grey mb-3">
+                Select CERN Beam Test Year
+              </p>
+              <div class="buttons is-centered">
+                <a href="TestBeam/2022/index.html"
+                   class="button is-rounded is-link is-light">
+                  <span class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <span>2022 Test</span>
+                </a>
+                <a href="TestBeam/2023/index.html"
+                   class="button is-rounded is-link is-light">
+                  <span class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <span>2023 Test</span>
+                </a>
+                <a href="TestBeam/2024/index.html"
+                   class="button is-rounded is-link is-light">
+                  <span class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <span>2024 Test</span>
+                </a>
+                <a href="TestBeam/2025/index.html"
+                   class="button is-rounded is-link is-light">
+                  <span class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <span>2025 Test</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- KEK year buttons -->
+          <div id="kek-tests" class="beam-year-buttons mt-4 is-hidden">
+            <div class="box has-background-light" style="border-radius: 20px;">
+              <p class="has-text-centered is-size-7 has-text-grey mb-3">
+                Select KEK Beam Test Year
+              </p>
+              <div class="buttons is-centered">
+                <a href="#"
+                   class="button is-rounded is-danger is-light">
+                  <span class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <span>Year 1</span>
+                </a>
+                <a href="#"
+                   class="button is-rounded is-danger is-light">
+                  <span class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <span>Year 2</span>
+                </a>
+                <a href="#"
+                   class="button is-rounded is-danger is-light">
+                  <span class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <span>Year 3</span>
+                </a>
+                <a href="#"
+                   class="button is-rounded is-danger is-light">
+                  <span class="icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                  <span>Year 4</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-------------------------------------- introduction -------------------------------------->
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Experimental Milestones</h2>
+          <h2 class="title is-3">Introduction</h2>
           <div class="content has-text-justified">
             <p>
-              우리 팀은 2022년부터 매년 듀얼리드아웃 칼로리미터의 성능 검증을 위한 빔테스트를 수행해왔습니다. 
-              각 연도별 페이지에서는 해당 테스트에 사용된 3D 모듈 구조, 런 리스트, 그리고 주요 물리 결과를 확인하실 수 있습니다.
+              Korea DRC team has performed Beam test to evaluate the performance of the Dual-readout calorimeter since 2022.
+              Summarized the module structure, run lists, performance and all information of the beam test!
             </p>
           </div>
         </div>
@@ -91,9 +191,10 @@
         <div class="column is-one-half">
           <div class="card" style="border-radius: 10px; border: 1px solid #e5e5e5;">
             <div class="card-content">
-              <p class="title is-4">2022 Beam Test</p>
-              <p class="subtitle is-6">TB2022 @ CERN SPS</p>
-              <a href="TestBeam/2022/index.html" class="button is-link is-fullwidth is-outlined is-rounded">View Summary</a>
+              <p class="title is-4">DREAM Project</p>
+              <p class="subtitle is-6">DREAM!!</p>
+              <!---------- fill the DREAM link here ---------->
+              <a href="TestBeam/2022/index.html" class="button is-link is-fullwidth is-outlined is-rounded">Go to DREAM Page</a>
             </div>
           </div>
         </div>
@@ -101,9 +202,10 @@
         <div class="column is-one-half">
           <div class="card" style="border-radius: 10px; border: 1px solid #e5e5e5;">
             <div class="card-content">
-              <p class="title is-4">2023 Beam Test</p>
-              <p class="subtitle is-6">TB2023 @ CERN PS</p>
-              <a href="TestBeam/2023/index.html" class="button is-link is-fullwidth is-outlined is-rounded">View Summary</a>
+              <p class="title is-4">Twiki</p>
+              <p class="subtitle is-6">DRC Twiki Page</p>
+              <!---------- fill the twkiki link here ---------->
+              <a href="TestBeam/2023/index.html" class="button is-link is-fullwidth is-outlined is-rounded">Go to twiki</a>
             </div>
           </div>
         </div>
@@ -111,9 +213,10 @@
         <div class="column is-one-half">
           <div class="card" style="border-radius: 10px; border: 1px solid #e5e5e5;">
             <div class="card-content">
-              <p class="title is-4">2024 Beam Test</p>
-              <p class="subtitle is-6">TB2024 @ CERN</p>
-              <a href="TestBeam/2024/index.html" class="button is-link is-fullwidth is-outlined is-rounded">View Summary</a>
+              <p class="title is-4">Future Circular Collider</p>
+              <p class="subtitle is-6">FCC</p>
+              <!---------- fill the FCC link here ---------->
+              <a href="TestBeam/2024/index.html" class="button is-link is-fullwidth is-outlined is-rounded">Go to FCC</a>
             </div>
           </div>
         </div>
@@ -121,9 +224,10 @@
         <div class="column is-one-half">
           <div class="card" style="border-radius: 10px; border: 1px solid #e5e5e5;">
             <div class="card-content">
-              <p class="title is-4">2025 Beam Test</p>
-              <p class="subtitle is-6">TB2025 (Upcoming)</p>
-              <a href="TestBeam/2025/index.html" class="button is-link is-fullwidth is-outlined is-rounded">View Summary</a>
+              <p class="title is-4">???????</p>
+              <p class="subtitle is-6">????????????</p>
+              <!---------- fill the ??????? link here ---------->
+              <a href="TestBeam/2025/index.html" class="button is-link is-fullwidth is-outlined is-rounded">Go to ??????</a>
             </div>
           </div>
         </div>
