@@ -407,11 +407,19 @@
         </div>
       </div>
     </div>
+    <!-------- fill the geometry file path here! -------->
+    <div id="geometry" class="module-info-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <img src="../module/ExpHall_geometry.png"
+             alt="Experimental Hall Geometry"
+             style="width: 100%; height: auto; display: block;">
+      </div>
+    </div>
     <!-------- fill the 3d module file path here! -------->
     <div id="module-viewer" class="module-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <model-viewer
-          src="../../TestBeam/CERN/2025/module/TB2025_module.glb"
+          src="../module/TB2025_module.glb"
           poster="../../static/images/poster_2022.png"
           auto-rotate
           camera-controls
@@ -422,18 +430,10 @@
         마우스로 드래그하여 회전, 휠로 확대/축소할 수 있습니다.
       </p>
     </div>
-    <!-------- fill the geometry file path here! -------->
-    <div id="geometry" class="module-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <img src="../../TestBeam/CERN/2025/module/ExpHall_geometry.png"
-             alt="Experimental Hall Geometry"
-             style="width: 100%; height: auto; display: block;">
-      </div>
-    </div>
     <!-------- fill the dimension file path here! -------->
     <div id="module-dim" class="module-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <img src="../../TestBeam/CERN/2025/module/DRC_dimension.png"
+        <img src="../module/DRC_dimension.png"
              alt="DRC Module Dimension"
              style="width: 500px; height: 500px; display: block; margin: auto;">
       </div>
