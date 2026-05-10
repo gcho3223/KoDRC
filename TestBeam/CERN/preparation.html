@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TB2026 Preparation</title>
+  <title>TB Preparation</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="../../../static/css/bulma.min.css">
@@ -15,57 +15,71 @@
 
     .is-hidden { display: none !important; }
 
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
     .jump-box {
       border-radius: 50px;
       padding: 1rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    .prep-card {
-      border-radius: 18px;
-      height: 100%;
-      border-top: 5px solid #3273dc;
+    .prep-info-card {
+      border-radius: 15px;
+      cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100%;
     }
 
-    .prep-card:hover {
+    .prep-info-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 18px rgba(0,0,0,0.12);
     }
 
-    .info-box {
-      border-radius: 18px;
-      padding: 1.5rem;
-      background: #f7f9fc;
+    .prep-content {
+      animation: fadeIn 0.4s;
     }
 
-    .map-card {
+    .prep-detail-card {
       border-radius: 20px;
       overflow: hidden;
+      padding: 1rem;
     }
 
     #scrollTopBtn {
       position: fixed;
       bottom: 30px;
       right: 30px;
+
       width: 50px;
       height: 50px;
+
       border: none;
       border-radius: 50%;
+
       background-color: #3273dc;
       color: white;
+
       font-size: 20px;
       cursor: pointer;
+
       display: none;
+
       align-items: center;
       justify-content: center;
+
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+      transition: all 0.2s ease;
+
       z-index: 999;
     }
 
     #scrollTopBtn:hover {
-      background-color: #2759a5;
       transform: translateY(-3px);
+      background-color: #2759a5;
     }
   </style>
 
@@ -78,116 +92,172 @@
   <i class="fas fa-chevron-up"></i>
 </button>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar" role="navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="../../../index.html">
-      <span class="icon"><i class="fas fa-home"></i></span>&nbsp;Home
+      <span class="icon">
+        <i class="fas fa-home"></i>
+      </span>
+      &nbsp;Home
     </a>
   </div>
 </nav>
 
+<!-------------------------------------- Title -------------------------------------->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">TB2026 Preparation</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">27 Jul - 3 Aug. @ CERN SPS H8 Line</span>
-          </div>
+
+          <h1 class="title is-1 publication-title">
+            TB Preparation
+          </h1>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-------------------------------------- Jumping buttons -------------------------------------->
+<!-------------------------------------- Jump Buttons -------------------------------------->
 <section class="section pt-0">
   <div class="container is-max-desktop">
+
     <div class="box has-background-light jump-box">
 
       <div class="buttons is-centered mb-3">
-        <a href="#registration" class="button is-rounded is-white has-text-weight-semibold">
-          <span class="icon"><i class="fas fa-user-plus"></i></span>
+
+        <a href="#registration"
+           class="button is-rounded is-white has-text-weight-semibold">
+          <span class="icon">
+            <i class="fas fa-user-plus"></i>
+          </span>
           <span>Registration</span>
         </a>
 
-        <a href="#training" class="button is-rounded is-white has-text-weight-semibold">
-          <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
+        <a href="#training"
+           class="button is-rounded is-white has-text-weight-semibold">
+          <span class="icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </span>
           <span>Training</span>
         </a>
 
-        <a href="#dosimeter" class="button is-rounded is-white has-text-weight-semibold">
-          <span class="icon"><i class="fas fa-radiation"></i></span>
+        <a href="#dosimeter"
+           class="button is-rounded is-white has-text-weight-semibold">
+          <span class="icon">
+            <i class="fas fa-radiation"></i>
+          </span>
           <span>Dosimeter</span>
         </a>
 
-        <a href="#access" class="button is-rounded is-white has-text-weight-semibold">
-          <span class="icon"><i class="fas fa-id-card"></i></span>
-          <span>Access Request</span>
+        <a href="#access"
+           class="button is-rounded is-white has-text-weight-semibold">
+          <span class="icon">
+            <i class="fas fa-id-card"></i>
+          </span>
+          <span>Access</span>
         </a>
+
       </div>
 
       <div class="buttons is-centered">
-        <a href="#epool" class="button is-rounded is-white has-text-weight-semibold">
-          <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+
+        <a href="#epool"
+           class="button is-rounded is-white has-text-weight-semibold">
+          <span class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
           <span>E-Pool</span>
         </a>
 
-        <a href="#cern-car" class="button is-rounded is-white has-text-weight-semibold">
-          <span class="icon"><i class="fas fa-car"></i></span>
-          <span>CERN Car</span>
+        <a href="#vehicle"
+           class="button is-rounded is-white has-text-weight-semibold">
+          <span class="icon">
+            <i class="fas fa-car"></i>
+          </span>
+          <span>Vehicle</span>
         </a>
 
-        <a href="#insurance" class="button is-rounded is-white has-text-weight-semibold">
-          <span class="icon"><i class="fas fa-shield-alt"></i></span>
+        <a href="#insurance"
+           class="button is-rounded is-white has-text-weight-semibold">
+          <span class="icon">
+            <i class="fas fa-shield-alt"></i>
+          </span>
           <span>Insurance</span>
         </a>
 
-        <a href="#other" class="button is-rounded is-white has-text-weight-semibold">
-          <span class="icon"><i class="fas fa-info-circle"></i></span>
+        <a href="#other"
+           class="button is-rounded is-white has-text-weight-semibold">
+          <span class="icon">
+            <i class="fas fa-info-circle"></i>
+          </span>
           <span>Other</span>
         </a>
+
       </div>
 
     </div>
+
   </div>
 </section>
 
 <!-------------------------------------- Registration -------------------------------------->
 <section class="section" id="registration">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Registration</h2>
 
-    <div class="card prep-card">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <span class="icon is-large has-text-link">
-              <i class="fas fa-user-plus fa-2x"></i>
-            </span>
-          </div>
-          <div class="media-content">
-            <p class="title is-4">CERN Registration</p>
-            <p class="subtitle is-6">Before arriving at CERN</p>
-          </div>
-        </div>
+    <h2 class="title is-3 has-text-centered">
+      Registration
+    </h2>
 
-        <div class="content">
-          <ol>
-            <li>Create or check your CERN account.</li>
-            <li>Confirm your institute affiliation and personal information.</li>
-            <li>Complete required registration forms before the beam test period.</li>
-            <li>Keep your passport / ID information ready.</li>
-          </ol>
+    <div class="columns is-centered mt-5">
 
-          <div class="buttons mt-4">
-            <a href="#" target="_blank" class="button is-link is-light is-rounded">
-              <span class="icon"><i class="fas fa-external-link-alt"></i></span>
-              <span>Registration Link</span>
+      <div class="column is-half">
+
+        <div class="card prep-info-card">
+
+          <div class="card-content">
+
+            <div class="media">
+
+              <div class="media-left">
+                <span class="icon is-large has-text-link">
+                  <i class="fas fa-user-plus fa-2x"></i>
+                </span>
+              </div>
+
+              <div class="media-content">
+                <p class="title is-4">
+                  CERN Registration
+                </p>
+              </div>
+
+            </div>
+
+            <div class="content">
+              <ul>
+                <li>Create CERN account</li>
+                <li>Complete registration form</li>
+                <li>Confirm institute affiliation</li>
+                <li>Check beam test participant list</li>
+              </ul>
+            </div>
+
+            <a href="#"
+               target="_blank"
+               class="button is-link is-light is-rounded">
+
+              <span class="icon">
+                <i class="fas fa-external-link-alt"></i>
+              </span>
+
+              <span>Registration Page</span>
+
             </a>
+
           </div>
         </div>
+
       </div>
     </div>
 
@@ -197,47 +267,59 @@
 <!-------------------------------------- Training -------------------------------------->
 <section class="section" id="training">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Training</h2>
 
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <div class="card prep-card">
-          <div class="card-content">
-            <p class="title is-4">
-              <span class="icon has-text-success"><i class="fas fa-chalkboard-teacher"></i></span>
-              Required Training
-            </p>
-            <div class="content">
-              <ul>
-                <li>Complete CERN safety training.</li>
-                <li>Check if radiation safety training is required.</li>
-                <li>Save screenshots or certificates after completion.</li>
-              </ul>
-              <a href="#" target="_blank" class="button is-success is-light is-rounded">
-                Open Training Page
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <h2 class="title is-3 has-text-centered">
+      Training
+    </h2>
+
+    <div class="columns is-centered mt-5">
 
       <div class="column is-half">
-        <div class="card prep-card">
+
+        <div class="card prep-info-card">
+
           <div class="card-content">
-            <p class="title is-4">
-              <span class="icon has-text-warning"><i class="fas fa-clipboard-check"></i></span>
-              Checklist
-            </p>
+
+            <div class="media">
+
+              <div class="media-left">
+                <span class="icon is-large has-text-success">
+                  <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                </span>
+              </div>
+
+              <div class="media-content">
+                <p class="title is-4">
+                  Required Training
+                </p>
+              </div>
+
+            </div>
+
             <div class="content">
               <ul>
-                <li>Account ready</li>
-                <li>Safety course completed</li>
-                <li>Certificate saved</li>
-                <li>Beam area access confirmed</li>
+                <li>Safety training</li>
+                <li>Radiation training</li>
+                <li>Practical training</li>
+                <li>Save certificates</li>
               </ul>
             </div>
+
+            <a href="#"
+               target="_blank"
+               class="button is-success is-light is-rounded">
+
+              <span class="icon">
+                <i class="fas fa-external-link-alt"></i>
+              </span>
+
+              <span>Training Page</span>
+
+            </a>
+
           </div>
         </div>
+
       </div>
     </div>
 
@@ -247,61 +329,109 @@
 <!-------------------------------------- Dosimeter -------------------------------------->
 <section class="section" id="dosimeter">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Dosimeter</h2>
 
-    <div class="info-box">
-      <h4 class="title is-5">
-        <span class="icon has-text-danger"><i class="fas fa-radiation"></i></span>
-        Dosimeter Pickup Guide
-      </h4>
+    <h2 class="title is-3 has-text-centered">
+      Dosimeter
+    </h2>
 
-      <div class="content">
-        <ol>
-          <li>Check whether you need a personal dosimeter.</li>
-          <li>Complete required radiation safety training.</li>
-          <li>Visit the dosimeter office / service point.</li>
-          <li>Bring CERN card or valid ID.</li>
-          <li>Return the dosimeter before leaving CERN if required.</li>
-        </ol>
+    <div class="columns is-centered mt-5">
+
+      <div class="column is-half">
+
+        <div class="card prep-info-card">
+
+          <div class="card-content">
+
+            <div class="media">
+
+              <div class="media-left">
+                <span class="icon is-large has-text-danger">
+                  <i class="fas fa-radiation fa-2x"></i>
+                </span>
+              </div>
+
+              <div class="media-content">
+                <p class="title is-4">
+                  Dosimeter Guide
+                </p>
+              </div>
+
+            </div>
+
+            <div class="content">
+              <ul>
+                <li>Check required training</li>
+                <li>Visit dosimeter office</li>
+                <li>Bring CERN card</li>
+                <li>Return before departure</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-
-      <a href="#" target="_blank" class="button is-danger is-light is-rounded">
-        Dosimeter Information
-      </a>
     </div>
 
   </div>
 </section>
 
-<!-------------------------------------- Access Request -------------------------------------->
+<!-------------------------------------- Access -------------------------------------->
 <section class="section" id="access">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Access Request</h2>
 
-    <div class="card prep-card">
-      <div class="card-content">
-        <p class="title is-4">
-          <span class="icon has-text-link"><i class="fas fa-id-card"></i></span>
-          CERN Access / Beam Area Access
-        </p>
+    <h2 class="title is-3 has-text-centered">
+      Access Request
+    </h2>
 
-        <div class="content">
-          <p>
-            Request the necessary access before the beam test.  
-            The required access may depend on the experimental area, shift duty, and radiation zone.
-          </p>
+    <div class="columns is-centered mt-5">
 
-          <ul>
-            <li>Confirm required access area with the coordinator.</li>
-            <li>Submit access request early.</li>
-            <li>Check approval status before arrival.</li>
-            <li>Bring CERN card when entering the beam area.</li>
-          </ul>
+      <div class="column is-half">
+
+        <div class="card prep-info-card">
+
+          <div class="card-content">
+
+            <div class="media">
+
+              <div class="media-left">
+                <span class="icon is-large has-text-warning">
+                  <i class="fas fa-id-card fa-2x"></i>
+                </span>
+              </div>
+
+              <div class="media-content">
+                <p class="title is-4">
+                  CERN Access
+                </p>
+              </div>
+
+            </div>
+
+            <div class="content">
+              <ul>
+                <li>Submit access request</li>
+                <li>Confirm approval</li>
+                <li>Check radiation area access</li>
+                <li>Bring CERN ID card</li>
+              </ul>
+            </div>
+
+            <a href="#"
+               target="_blank"
+               class="button is-warning is-light is-rounded">
+
+              <span class="icon">
+                <i class="fas fa-external-link-alt"></i>
+              </span>
+
+              <span>Access Page</span>
+
+            </a>
+
+          </div>
         </div>
 
-        <a href="#" target="_blank" class="button is-link is-light is-rounded">
-          Open Access Request Page
-        </a>
       </div>
     </div>
 
@@ -311,72 +441,109 @@
 <!-------------------------------------- E-Pool -------------------------------------->
 <section class="section" id="epool">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">E-Pool</h2>
 
-    <div class="columns is-centered">
+    <h2 class="title is-3 has-text-centered">
+      E-Pool
+    </h2>
+
+    <div class="columns is-centered mt-5">
+
       <div class="column is-half">
-        <div class="card prep-card">
+
+        <div class="card prep-info-card">
+
           <div class="card-content">
-            <p class="title is-4">
-              <span class="icon has-text-info"><i class="fas fa-plug"></i></span>
-              E-Pool Usage
-            </p>
+
+            <div class="media">
+
+              <div class="media-left">
+                <span class="icon is-large has-text-info">
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                </span>
+              </div>
+
+              <div class="media-content">
+                <p class="title is-4">
+                  E-Pool Information
+                </p>
+              </div>
+
+            </div>
 
             <div class="content">
               <ul>
-                <li>Check the location before visiting.</li>
-                <li>Prepare required CERN account / access.</li>
-                <li>Confirm pickup and return procedure.</li>
-                <li>Record borrowed equipment if needed.</li>
+                <li>Equipment pickup</li>
+                <li>Check access permission</li>
+                <li>Return borrowed items</li>
               </ul>
             </div>
 
-            <a href="#" target="_blank" class="button is-info is-light is-rounded">
-              E-Pool Information
-            </a>
           </div>
         </div>
+
       </div>
 
       <div class="column is-half">
-        <div class="card map-card">
+
+        <div class="card prep-detail-card">
+
           <iframe
-            src="https://www.google.com/maps?q=CERN%20E-Pool&output=embed"
-            style="width: 100%; height: 350px; border: none;"
-            loading="lazy">
+            src="https://www.google.com/maps?q=CERN&output=embed"
+            style="width: 100%; height: 350px; border: none;">
           </iframe>
+
         </div>
+
       </div>
+
     </div>
 
   </div>
 </section>
 
-<!-------------------------------------- CERN Car -------------------------------------->
-<section class="section" id="cern-car">
+<!-------------------------------------- Vehicle -------------------------------------->
+<section class="section" id="vehicle">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">CERN Car / Vehicle</h2>
 
-    <div class="card prep-card">
-      <div class="card-content">
-        <p class="title is-4">
-          <span class="icon has-text-warning"><i class="fas fa-car"></i></span>
-          Vehicle Rental / Usage
-        </p>
+    <h2 class="title is-3 has-text-centered">
+      CERN Vehicle
+    </h2>
 
-        <div class="content">
-          <ol>
-            <li>Check whether a CERN vehicle is needed for transport.</li>
-            <li>Confirm driver eligibility and required documents.</li>
-            <li>Reserve the vehicle in advance.</li>
-            <li>Check pickup location, return location, and fuel policy.</li>
-            <li>Report any issue immediately after use.</li>
-          </ol>
+    <div class="columns is-centered mt-5">
+
+      <div class="column is-half">
+
+        <div class="card prep-info-card">
+
+          <div class="card-content">
+
+            <div class="media">
+
+              <div class="media-left">
+                <span class="icon is-large has-text-grey">
+                  <i class="fas fa-car fa-2x"></i>
+                </span>
+              </div>
+
+              <div class="media-content">
+                <p class="title is-4">
+                  Vehicle Rental
+                </p>
+              </div>
+
+            </div>
+
+            <div class="content">
+              <ul>
+                <li>Reserve vehicle</li>
+                <li>Check driver permission</li>
+                <li>Pickup / return procedure</li>
+              </ul>
+            </div>
+
+          </div>
         </div>
 
-        <a href="#" target="_blank" class="button is-warning is-light is-rounded">
-          CERN Vehicle Page
-        </a>
       </div>
     </div>
 
@@ -386,21 +553,46 @@
 <!-------------------------------------- Insurance -------------------------------------->
 <section class="section" id="insurance">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Travel Insurance</h2>
 
-    <div class="info-box">
-      <h4 class="title is-5">
-        <span class="icon has-text-success"><i class="fas fa-shield-alt"></i></span>
-        Insurance Checklist
-      </h4>
+    <h2 class="title is-3 has-text-centered">
+      Insurance
+    </h2>
 
-      <div class="content">
-        <ul>
-          <li>Check travel insurance coverage before departure.</li>
-          <li>Confirm medical coverage abroad.</li>
-          <li>Save emergency contact information.</li>
-          <li>Share insurance document with the responsible person if needed.</li>
-        </ul>
+    <div class="columns is-centered mt-5">
+
+      <div class="column is-half">
+
+        <div class="card prep-info-card">
+
+          <div class="card-content">
+
+            <div class="media">
+
+              <div class="media-left">
+                <span class="icon is-large has-text-success">
+                  <i class="fas fa-shield-alt fa-2x"></i>
+                </span>
+              </div>
+
+              <div class="media-content">
+                <p class="title is-4">
+                  Travel Insurance
+                </p>
+              </div>
+
+            </div>
+
+            <div class="content">
+              <ul>
+                <li>Prepare insurance document</li>
+                <li>Check overseas coverage</li>
+                <li>Emergency contact list</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -410,44 +602,51 @@
 <!-------------------------------------- Other -------------------------------------->
 <section class="section" id="other">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Other Information</h2>
 
-    <div class="columns is-multiline">
+    <h2 class="title is-3 has-text-centered">
+      Other Information
+    </h2>
+
+    <div class="columns is-multiline mt-5">
+
       <div class="column is-half">
-        <div class="card prep-card">
+
+        <div class="card prep-info-card">
+
           <div class="card-content">
-            <p class="title is-5">Accommodation</p>
-            <p>Hotel, hostel, or CERN hostel information can be summarized here.</p>
+
+            <p class="title is-5">
+              Accommodation
+            </p>
+
+            <div class="content">
+              Hotel / hostel information
+            </div>
+
           </div>
         </div>
+
       </div>
 
       <div class="column is-half">
-        <div class="card prep-card">
+
+        <div class="card prep-info-card">
+
           <div class="card-content">
-            <p class="title is-5">Transportation</p>
-            <p>Airport, tram, bus, CERN shuttle, rental car information can be summarized here.</p>
+
+            <p class="title is-5">
+              Transportation
+            </p>
+
+            <div class="content">
+              Airport / tram / bus information
+            </div>
+
           </div>
         </div>
+
       </div>
 
-      <div class="column is-half">
-        <div class="card prep-card">
-          <div class="card-content">
-            <p class="title is-5">Emergency Contact</p>
-            <p>Coordinator, local contact, CERN emergency number, and team contact list.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="card prep-card">
-          <div class="card-content">
-            <p class="title is-5">Useful Links</p>
-            <p>Frequently used CERN links, beam test documents, and shared drives.</p>
-          </div>
-        </div>
-      </div>
     </div>
 
   </div>
@@ -456,7 +655,9 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <p>© Korea Dual-Readout Calorimeter Collaboration</p>
+      <p>
+        © Korea Dual-Readout Calorimeter Collaboration
+      </p>
     </div>
   </div>
 </footer>
