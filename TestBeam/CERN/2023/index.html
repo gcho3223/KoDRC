@@ -98,19 +98,7 @@
       margin: auto;
     }
 
-    .paper-card {
-      border-radius: 20px;
-      transition: all 0.25s ease;
-      height: 100%;
-      border-top: 5px solid #3273dc;
-    }
-
-    .paper-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
-    }
-
-    .gallery-card {
+    .photo-log-card {
       border-radius: 25px;
       padding: 3rem;
       min-height: 200px;
@@ -120,7 +108,7 @@
       border-top: 5px solid #ffdd57;
     }
 
-    .gallery-card:hover {
+    .photo-log-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 12px 28px rgba(0,0,0,0.12);
     }
@@ -233,14 +221,9 @@
             <span>Analysis</span>
           </a>
 
-          <a href="#paper" class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-book"></i></span>
-            <span>Papers</span>
-          </a>
-
-          <a href="#gallery" class="button is-rounded is-white has-text-weight-semibold">
+          <a href="#photo-log" class="button is-rounded is-white has-text-weight-semibold">
             <span class="icon is-small"><i class="fas fa-images"></i></span>
-            <span>Gallery</span>
+            <span>Photo Log</span>
           </a>
 
           <a href="#participant" class="button is-rounded is-white has-text-weight-semibold">
@@ -342,22 +325,22 @@
         <h2 class="title is-3">Daily Run Meeting & DAQ Log</h2>
 
         <div class="buttons is-centered mt-5">
-          <a href="https://indico.cern.ch/event/1572295/" target="_blank"
+          <a href="https://indico.cern.ch/event/1301281/" target="_blank"
              class="button is-link is-large is-rounded is-outlined"
              style="min-width: 230px; border-width: 2px;">
             <span class="icon is-medium"><i class="fas fa-calendar-alt"></i></span>
             <span class="ml-2"><strong>Indico Agenda</strong></span>
           </a>
-          <!-------- fill the indico page link here! -------->
-          <a href="https://docs.google.com/document/d/1I7dI2cQcZ0qU8uhYoJ_Ixwr4qmGQj_Wh14z5fP__gZw/edit?tab=t.0#heading=h.y77lurvcsdg7"
+          <!-------- fill the minute link here! -------->
+          <a href="https://www.notion.so/2023-TB-f4f141f81bae497e8269e35157f6362b#bed73ce75a434ef497bf826bd6e3c148"
              target="_blank"
              class="button is-success is-large is-rounded is-outlined"
              style="min-width: 230px; border-width: 2px;">
             <span class="icon is-medium"><i class="fas fa-file-signature"></i></span>
             <span class="ml-2"><strong>Meeting Minutes</strong></span>
           </a>
-          <!-------- fill the minute link here! -------->
-          <a href="https://docs.google.com/spreadsheets/d/1QejInj5na9T6plFYdJDt8GvZw5HbREuHqwmiyV5pKWY/edit?gid=170723003#gid=170723003"
+          <!-------- fill daq link here! -------->
+          <a href="https://docs.google.com/spreadsheets/d/1x5gSwVOBJqVFiCZS36r97tyRgC9GN_D7PyXEybsSGds/edit?gid=1070127635#gid=1070127635"
              target="_blank"
              class="button is-warning is-large is-rounded is-outlined"
              style="min-width: 230px; border-width: 2px;">
@@ -395,17 +378,6 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('lc-position')">
-          <div class="card-content has-text-centered"><p class="title is-5">LC Position</p></div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('pmt-info')">
-          <div class="card-content has-text-centered"><p class="title is-5">PMT Info</p></div>
-        </div>
-      </div>
     </div>
     <!-------- fill the geometry file path here! -------->
     <div id="geometry" class="module-info-content mt-5 is-hidden">
@@ -436,26 +408,6 @@
         <img src="../../TestBeam/CERN/2023/module/DRC_dimension.png"
              alt="DRC Module Dimension"
              style="width: 500px; height: 500px; display: block; margin: auto;">
-      </div>
-    </div>
-    <!-------- fill the LC position file path here! -------->
-    <div id="lc-position" class="module-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe
-          src="https://drive.google.com/file/d/1GcK9Xj86flsFGSsy0YFivAiQSc3FfRF9/preview"
-          style="width: 100%; height: 600px; border: none;"
-          allow="autoplay">
-        </iframe>
-      </div>
-    </div>
-    <!-------- fill the PMT info link here! -------->
-    <div id="pmt-info" class="module-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe
-          src="https://docs.google.com/spreadsheets/d/1PmOYP1rtmucznqhF7sAOAvE7Xkj45pRDYdsiIAcAVvY/preview?gid=1598062041"
-          style="width: 100%; height: 750px; border: none;"
-          allow="autoplay">
-        </iframe>
       </div>
     </div>
 
@@ -743,92 +695,21 @@
   </div>
 </section>
 
-<!-------------------------------------- Paper -------------------------------------->
-<section class="section" id="paper">
+<!-------------------------------------- Photo Log -------------------------------------->
+<section class="section" id="photo-log">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Papers</h2>
-
-    <div class="columns is-multiline mt-5">
-
-      <div class="column is-half">
-        <div class="card paper-card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <span class="icon is-large has-text-link">
-                  <i class="fas fa-file-alt fa-2x"></i>
-                </span>
-              </div>
-              <div class="media-content">
-                <p class="title is-5">Paper 1 title</p>
-                <p class="subtitle is-6 has-text-grey">paper 1 subtitle</p>
-              </div>
-            </div>
-
-            <div class="content">
-              paper1 for beam test
-            </div>
-            <!-------- fill paper 1 link here! -------->
-            <div class="buttons mt-4">
-              <a href="https://example.com" target="_blank" class="button is-danger is-light is-rounded">
-                <span class="icon"><i class="fas fa-book-open"></i></span>
-                <span>Read Paper</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="card paper-card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <span class="icon is-large has-text-danger">
-                  <i class="fas fa-file-signature fa-2x"></i>
-                </span>
-              </div>
-              <div class="media-content">
-                <p class="title is-5">Paper 2 title</p>
-                <p class="subtitle is-6 has-text-grey">paper2 sub title</p>
-              </div>
-            </div>
-
-            <div class="content">
-              paper 2 content
-            </div>
-            <!-------- fill paper 2 link here! -------->
-            <div class="buttons mt-4">
-              <a href="https://example.com" target="_blank" class="button is-danger is-light is-rounded">
-                <span class="icon"><i class="fas fa-book-open"></i></span>
-                <span>Read Paper</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-------------------------------------- Gallery -------------------------------------->
-<section class="section" id="gallery">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Gallery</h2>
+    <h2 class="title is-3 has-text-centered">Photo Log</h2>
 
     <div class="columns is-centered mt-5">
       <div class="column is-full">
-        <div class="card gallery-card">
+        <div class="card photo-log-card">
           <div class="card-content has-text-centered">
             <span class="icon is-large has-text-warning">
               <i class="fas fa-images fa-3x"></i>
             </span>
 
             <h3 class="title is-4 mt-4">
-              TB2025 Photo Gallery
+              TB2023 Photo Log
             </h3>
 
             <p class="subtitle is-6 has-text-grey">
@@ -836,11 +717,11 @@
             </p>
             <!-------- fill pictures(photo log) link here! -------->
             <div class="mt-5">
-              <a href="https://drive.google.com/drive/folders/1n7JBFKQTU4hxLH7dMEvmbWaNeU-pTofw?usp=drive_link"
+              <a href="https://drive.google.com/drive/u/1/folders/1kqp26jEyrveUD7fP7IaM6jt6RJO6nMAz"
                  target="_blank"
                  class="button is-warning is-light is-rounded is-medium">
                 <span class="icon"><i class="fas fa-external-link-alt"></i></span>
-                <span>Open Gallery</span>
+                <span>Open Photo Log</span>
               </a>
             </div>
 
@@ -861,13 +742,13 @@
       <div class="column is-full">
         <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee;">
           <iframe
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml?widget=true&amp;headers=false"
+            src="https://docs.google.com/spreadsheets/d/12xdmffWbwfLoCvtdsTPF7l32_zxhtqe__UyXWR7CXms/edit?gid=891233649#gid=891233649"
             style="width: 100%; height: 600px; border: none;">
           </iframe>
         </div>
         <!-------- fill participants list link here! -------->
         <p class="help has-text-right mt-2">
-          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml"
+          <a href="https://docs.google.com/spreadsheets/d/12xdmffWbwfLoCvtdsTPF7l32_zxhtqe__UyXWR7CXms/edit?gid=891233649#gid=891233649"
              target="_blank"
              class="button is-small is-text">
             <span class="icon"><i class="fas fa-external-link-alt"></i></span>
