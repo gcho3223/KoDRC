@@ -779,63 +779,51 @@
     preview.classList.toggle("is-hidden");
   }
 
-  function showModuleInfo(contentId, event) {
+  function toggleContent(contentId, selector, event) {
     if (event) event.preventDefault();
 
     const target = document.getElementById(contentId);
-    const contents = document.querySelectorAll(".module-info-content");
+    const isAlreadyOpen = !target.classList.contains("is-hidden");
+    const contents = document.querySelectorAll(selector);
 
     contents.forEach(content => {
       content.classList.add("is-hidden");
     });
 
-    target.classList.remove("is-hidden");
+    if (!isAlreadyOpen) {
+      target.classList.remove("is-hidden");
+    }
+  }
+
+  function showModuleInfo(contentId, event) {
+    toggleContent(contentId, ".module-info-content", event);
   }
 
   function showWorkingLog(contentId, event) {
-    if (event) event.preventDefault();
-
-    const target = document.getElementById(contentId);
-    const contents = document.querySelectorAll(".working-log-content");
-
-    contents.forEach(content => {
-      content.classList.add("is-hidden");
-    });
-
-    target.classList.remove("is-hidden");
+    toggleContent(contentId, ".working-log-content", event);
   }
 
   function showToolInfo(contentId, event) {
-    if (event) event.preventDefault();
-
-    const target = document.getElementById(contentId);
-    const contents = document.querySelectorAll(".tool-info-content");
-
-    contents.forEach(content => {
-      content.classList.add("is-hidden");
-    });
-
-    target.classList.remove("is-hidden");
+    toggleContent(contentId, ".tool-info-content", event);
   }
 
   function showAnalysisInfo(contentId, event) {
-    if (event) event.preventDefault();
-
-    const target = document.getElementById(contentId);
-    const contents = document.querySelectorAll(".analysis-content");
-
-    contents.forEach(content => {
-      content.classList.add("is-hidden");
-    });
-
-    target.classList.remove("is-hidden");
+    toggleContent(contentId, ".analysis-content", event);
   }
 
   function toggleHadronAnalysisMenu(event) {
     if (event) event.preventDefault();
 
     const menu = document.getElementById("hadron-analysis-menu");
+    const isAlreadyOpen = !menu.classList.contains("is-hidden");
+
     menu.classList.toggle("is-hidden");
+
+    if (isAlreadyOpen) {
+      document.querySelectorAll(".analysis-content").forEach(content => {
+        content.classList.add("is-hidden");
+      });
+    }
   }
 
   window.onscroll = function () {
