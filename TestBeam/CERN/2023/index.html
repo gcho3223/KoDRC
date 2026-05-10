@@ -146,7 +146,7 @@
 
 <body>
 
-<button id="scrollTopBtn" onclick="scrollToTop()">
+<button type="button" id="scrollTopBtn" onclick="scrollToTop(event)">
   <i class="fas fa-chevron-up"></i>
 </button>
 
@@ -179,7 +179,7 @@
 
     <div class="box has-background-light jump-box jump-layout">
 
-      <button class="button main-page-button" onclick="showMainPagePreview()">
+      <button type="button" class="button main-page-button" onclick="showMainPagePreview(event)">
         <span class="icon is-large">
           <i class="fas fa-home"></i>
         </span>
@@ -234,7 +234,7 @@
 
       </div>
     </div>
-    <!-------- fill the main page link here! -------->
+
     <div id="main-page-preview" class="mt-4 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe
@@ -331,7 +331,7 @@
             <span class="icon is-medium"><i class="fas fa-calendar-alt"></i></span>
             <span class="ml-2"><strong>Indico Agenda</strong></span>
           </a>
-          <!-------- fill the minute link here! -------->
+
           <a href="https://www.notion.so/2023-TB-f4f141f81bae497e8269e35157f6362b#bed73ce75a434ef497bf826bd6e3c148"
              target="_blank"
              class="button is-success is-large is-rounded is-outlined"
@@ -339,7 +339,7 @@
             <span class="icon is-medium"><i class="fas fa-file-signature"></i></span>
             <span class="ml-2"><strong>Meeting Minutes</strong></span>
           </a>
-          <!-------- fill daq link here! -------->
+
           <a href="https://docs.google.com/spreadsheets/d/1x5gSwVOBJqVFiCZS36r97tyRgC9GN_D7PyXEybsSGds/edit?gid=1070127635#gid=1070127635"
              target="_blank"
              class="button is-warning is-large is-rounded is-outlined"
@@ -361,25 +361,24 @@
 
     <div class="columns is-centered mt-5">
       <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('geometry')">
+        <div class="card module-info-card" onclick="showModuleInfo('geometry', event)">
           <div class="card-content has-text-centered"><p class="title is-5">Geometry</p></div>
         </div>
       </div>
 
       <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('module-viewer')">
+        <div class="card module-info-card" onclick="showModuleInfo('module-viewer', event)">
           <div class="card-content has-text-centered"><p class="title is-5">Module</p></div>
         </div>
       </div>
 
       <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('module-dim')">
+        <div class="card module-info-card" onclick="showModuleInfo('module-dim', event)">
           <div class="card-content has-text-centered"><p class="title is-5">Dimension</p></div>
         </div>
       </div>
-
     </div>
-    <!-------- fill the geometry file path here! -------->
+
     <div id="geometry" class="module-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <img src="../../TestBeam/CERN/2023/module/ExpHall_geometry.png"
@@ -387,7 +386,7 @@
              style="width: 100%; height: auto; display: block;">
       </div>
     </div>
-    <!-------- fill the 3d module file path here! -------->
+
     <div id="module-viewer" class="module-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <model-viewer
@@ -402,7 +401,7 @@
         마우스로 드래그하여 회전, 휠로 확대/축소할 수 있습니다.
       </p>
     </div>
-    <!-------- fill the dimension file path here! -------->
+
     <div id="module-dim" class="module-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <img src="../../TestBeam/CERN/2023/module/DRC_dimension.png"
@@ -410,7 +409,7 @@
              style="width: 500px; height: 500px; display: block; margin: auto;">
       </div>
     </div>
-    
+
   </div>
 </section>
 
@@ -422,7 +421,7 @@
     <div class="columns is-centered mt-5">
 
       <div class="column">
-        <div class="card working-log-card" onclick="showWorkingLog('hw-log')">
+        <div class="card working-log-card" onclick="showWorkingLog('hw-log', event)">
           <div class="card-content has-text-centered">
             <span class="icon is-large has-text-link"><i class="fas fa-microchip fa-2x"></i></span>
             <p class="title is-5 mt-2">Hardware</p>
@@ -431,7 +430,7 @@
       </div>
 
       <div class="column">
-        <div class="card working-log-card" onclick="showWorkingLog('daq-log')">
+        <div class="card working-log-card" onclick="showWorkingLog('daq-log', event)">
           <div class="card-content has-text-centered">
             <span class="icon is-large has-text-success"><i class="fas fa-server fa-2x"></i></span>
             <p class="title is-5 mt-2">DAQ</p>
@@ -440,7 +439,7 @@
       </div>
 
       <div class="column">
-        <div class="card working-log-card" onclick="showWorkingLog('dqm-pa-log')">
+        <div class="card working-log-card" onclick="showWorkingLog('dqm-pa-log', event)">
           <div class="card-content has-text-centered">
             <span class="icon is-large has-text-danger"><i class="fas fa-chart-line fa-2x"></i></span>
             <p class="title is-5 mt-2">DQM / PA</p>
@@ -449,21 +448,21 @@
       </div>
 
     </div>
-    <!-------- fill HW working log link here! -------->
+
     <div id="hw-log" class="working-log-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://docs.google.com/document/d/1HlUFz-R2yRp9RmYLGM46Z0hi1W7IZRTLec1-xIz2KW8/preview"
                 style="width: 100%; height: 900px; border: none;"></iframe>
       </div>
     </div>
-    <!-------- fill DAQ working log link here! -------->
+
     <div id="daq-log" class="working-log-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://docs.google.com/document/d/1vFUmnSN4CYUOsErBz54lJ7HUqX_HvDo2PR4VlEgYLp0/preview"
                 style="width: 100%; height: 900px; border: none;"></iframe>
       </div>
     </div>
-    <!-------- fill DQM and PA working log link here! -------->
+
     <div id="dqm-pa-log" class="working-log-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://docs.google.com/document/d/1GmFGgMXSPRYgv8m1W-ZPAb8uIqEpEAbuRgmQP0-0tzE/preview"
@@ -482,14 +481,15 @@
     <div class="columns is-centered mt-5">
 
       <div class="column">
-        <div class="card module-info-card" onclick="showToolInfo('exp-hall')">
+        <div class="card module-info-card" onclick="showToolInfo('exp-hall', event)">
           <div class="card-content has-text-centered">
-            <p class="title is-5">Experimental Hall</p></div>
+            <p class="title is-5">Experimental Hall</p>
+          </div>
         </div>
       </div>
 
       <div class="column">
-        <div class="card tool-info-card" onclick="showToolInfo('position-calculator')">
+        <div class="card tool-info-card" onclick="showToolInfo('position-calculator', event)">
           <div class="card-content has-text-centered">
             <p class="title is-5">Position Calculator</p>
           </div>
@@ -497,7 +497,7 @@
       </div>
 
       <div class="column">
-        <div class="card tool-info-card" onclick="showToolInfo('mapping')">
+        <div class="card tool-info-card" onclick="showToolInfo('mapping', event)">
           <div class="card-content has-text-centered">
             <p class="title is-5">Mapping</p>
           </div>
@@ -505,7 +505,7 @@
       </div>
 
       <div class="column">
-        <div class="card tool-info-card" onclick="showToolInfo('cc-manual')">
+        <div class="card tool-info-card" onclick="showToolInfo('cc-manual', event)">
           <div class="card-content has-text-centered">
             <p class="title is-5">Cerenkov counter</p>
           </div>
@@ -513,21 +513,20 @@
       </div>
 
     </div>
-    <!-------- fill experimental hall link here! -------->
+
     <div id="exp-hall" class="tool-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://drive.google.com/file/d/13e463fm3iX5RssFCUfmIs8eJEE155tcD/preview"
                 style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
     </div>
-    <!-------- fill position calculator or something link here! -------->
+
     <div id="position-calculator" class="tool-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://docs.google.com/spreadsheets/d/1YCEArCEszZDzzFFp5_Ykqv_CGcq9RnYanzGo6yTBVGo/preview?gid=0"
                 style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
-      <!-------- fill position calculator or something link here too! -------->
-      <!-- link for 'open in google sheets' -->
+
       <div class="has-text-right mt-2">
         <a href="https://docs.google.com/spreadsheets/d/1YCEArCEszZDzzFFp5_Ykqv_CGcq9RnYanzGo6yTBVGo/edit?gid=0#gid=0"
            target="_blank"
@@ -537,14 +536,14 @@
         </a>
       </div>
     </div>
-    <!-------- fill mapping or something link here! -------->
+
     <div id="mapping" class="tool-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://docs.google.com/spreadsheets/d/1O5NpecjhpwNP4_QvgZdk0a_duhE0Oqco0W0HMTUoWDE/edit?gid=0#gid=0"
                 style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
     </div>
-    <!-------- fill cc link here! -------->
+
     <div id="cc-manual" class="tool-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://cds.cern.ch/record/1545809/files/LCD-Note-2013-006.pdf"
@@ -561,14 +560,14 @@
     <h2 class="title is-3 has-text-centered">Run List</h2>
 
     <div class="buttons is-centered mb-4">
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
 
-      <button class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
+      <button type="button" class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
         <span class="icon"><i class="fas fa-chevron-down"></i></span>
         <span>Hadron</span>
       </button>
@@ -583,11 +582,11 @@
       </p>
 
       <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion')">Pion</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk')">Proton/Kaon</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion')">Pion</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk')">Proton/Kaon</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
       </div>
     </div>
 
@@ -624,7 +623,7 @@
 
     <div class="columns is-centered mt-5">
       <div class="column">
-        <div class="card analysis-card" onclick="showAnalysisInfo('analysis-em')">
+        <div class="card analysis-card" onclick="showAnalysisInfo('analysis-em', event)">
           <div class="card-content has-text-centered">
             <p class="title is-5">EM</p>
           </div>
@@ -632,7 +631,7 @@
       </div>
 
       <div class="column">
-        <div class="card analysis-card" onclick="toggleHadronAnalysisMenu()">
+        <div class="card analysis-card" onclick="toggleHadronAnalysisMenu(event)">
           <div class="card-content has-text-centered">
             <p class="title is-5">Hadron</p>
           </div>
@@ -649,10 +648,10 @@
       </p>
 
       <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi')">Pi</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton')">Proton</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi-rot')">Pi w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton-rot')">Proton w/ Rotation</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi', event)">Pi</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton', event)">Proton</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi-rot', event)">Pi w/ Rotation</button>
+        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton-rot', event)">Proton w/ Rotation</button>
       </div>
     </div>
 
@@ -719,7 +718,7 @@
             <p class="subtitle is-6 has-text-grey">
               Beam test photos, setup images, detector operation, and experimental hall snapshots.
             </p>
-            <!-------- fill pictures(photo log) link here! -------->
+
             <div class="mt-5">
               <a href="https://drive.google.com/drive/u/1/folders/1kqp26jEyrveUD7fP7IaM6jt6RJO6nMAz"
                  target="_blank"
@@ -750,7 +749,7 @@
             style="width: 100%; height: 600px; border: none;">
           </iframe>
         </div>
-        <!-------- fill participants list link here! -------->
+
         <p class="help has-text-right mt-2">
           <a href="https://docs.google.com/spreadsheets/d/12xdmffWbwfLoCvtdsTPF7l32_zxhtqe__UyXWR7CXms/edit?gid=891233649#gid=891233649"
              target="_blank"
@@ -773,79 +772,70 @@
 </footer>
 
 <script>
-  function showMainPagePreview() {
+  function showMainPagePreview(event) {
+    if (event) event.preventDefault();
+
     const preview = document.getElementById("main-page-preview");
     preview.classList.toggle("is-hidden");
   }
 
-  function showModuleInfo(contentId) {
+  function showModuleInfo(contentId, event) {
+    if (event) event.preventDefault();
+
     const target = document.getElementById(contentId);
-    const isAlreadyOpen = !target.classList.contains("is-hidden");
     const contents = document.querySelectorAll(".module-info-content");
 
     contents.forEach(content => {
       content.classList.add("is-hidden");
     });
 
-    if (isAlreadyOpen) return;
-
     target.classList.remove("is-hidden");
   }
 
-  function showWorkingLog(contentId) {
+  function showWorkingLog(contentId, event) {
+    if (event) event.preventDefault();
+
     const target = document.getElementById(contentId);
-    const isAlreadyOpen = !target.classList.contains("is-hidden");
     const contents = document.querySelectorAll(".working-log-content");
 
     contents.forEach(content => {
       content.classList.add("is-hidden");
     });
 
-    if (isAlreadyOpen) return;
-
     target.classList.remove("is-hidden");
   }
 
-  function showToolInfo(contentId) {
+  function showToolInfo(contentId, event) {
+    if (event) event.preventDefault();
+
     const target = document.getElementById(contentId);
-    const isAlreadyOpen = !target.classList.contains("is-hidden");
     const contents = document.querySelectorAll(".tool-info-content");
 
     contents.forEach(content => {
       content.classList.add("is-hidden");
     });
 
-    if (isAlreadyOpen) return;
-
     target.classList.remove("is-hidden");
   }
 
-  function showAnalysisInfo(contentId) {
+  function showAnalysisInfo(contentId, event) {
+    if (event) event.preventDefault();
+
     const target = document.getElementById(contentId);
-    const isAlreadyOpen = !target.classList.contains("is-hidden");
     const contents = document.querySelectorAll(".analysis-content");
 
     contents.forEach(content => {
       content.classList.add("is-hidden");
     });
 
-    if (isAlreadyOpen) return;
-
     target.classList.remove("is-hidden");
   }
 
-  function toggleHadronAnalysisMenu() {
+  function toggleHadronAnalysisMenu(event) {
+    if (event) event.preventDefault();
+
     const menu = document.getElementById("hadron-analysis-menu");
-    const isAlreadyOpen = !menu.classList.contains("is-hidden");
-
     menu.classList.toggle("is-hidden");
-
-    if (isAlreadyOpen) {
-      const contents = document.querySelectorAll(".analysis-content");
-      contents.forEach(content => {
-        content.classList.add("is-hidden");
-      });
-    }
   }
 
   window.onscroll = function () {
@@ -859,7 +849,9 @@
     }
   };
 
-  function scrollToTop() {
+  function scrollToTop(event) {
+    if (event) event.preventDefault();
+
     window.scrollTo({
       top: 0,
       behavior: "smooth"
