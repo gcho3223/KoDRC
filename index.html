@@ -21,6 +21,46 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+  .beam-site-card {
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background-color 0.25s ease;
+
+    height: 100%;
+
+    border: 2px solid transparent;
+  }
+  .beam-site-card:hover {
+    transform: translateY(-6px) scale(1.02);
+
+    box-shadow:
+      0 12px 28px rgba(0,0,0,0.15);
+
+    background-color: #fafafa;
+
+    border-color: #3273dc;
+  }
+  .beam-logo {
+    height: 70px;
+    margin-bottom: 1rem;
+
+    transition: transform 0.25s ease;
+  }
+  .beam-site-card:hover .beam-logo {
+    transform: scale(1.08);
+  }
+  .beam-year-buttons {animation: fadeIn 0.4s;}
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+</style>
 </head>
 
 <script>
@@ -59,9 +99,10 @@
             <div class="column is-half">
               <div class="card beam-site-card" onclick="toggleBeamSite('cern-tests')">
                 <div class="card-content has-text-centered">
-                  <span class="icon is-large has-text-link">
-                    <i class="fas fa-atom fa-2x"></i>
-                  </span>
+                  <img
+                    src="./static/images/CERN-Logo.png"
+                    alt="CERN Logo"
+                    style="height: 70px; margin-bottom: 1rem;">
                   <p class="title is-4 mt-3">
                     TB at CERN
                   </p>
@@ -75,9 +116,10 @@
             <div class="column is-half">
               <div class="card beam-site-card" onclick="toggleBeamSite('kek-tests')">
                 <div class="card-content has-text-centered">
-                  <span class="icon is-large has-text-danger">
-                    <i class="fas fa-flask fa-2x"></i>
-                  </span>
+                  <img
+                    src="./static/images/KEK_logo.png"
+                    alt="KEK Logo"
+                    style="height: 70px; margin-bottom: 1rem;">
                   <p class="title is-4 mt-3">
                     TB at KEK
                   </p>
