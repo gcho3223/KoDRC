@@ -63,7 +63,7 @@
     .module-info-card,
     .working-log-card,
     .tool-info-card,
-    .analysis-card {
+    .results-card {
       border-radius: 15px;
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -73,7 +73,7 @@
     .module-info-card:hover,
     .working-log-card:hover,
     .tool-info-card:hover,
-    .analysis-card:hover {
+    .results-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 18px rgba(0,0,0,0.12);
     }
@@ -81,17 +81,17 @@
     .module-info-content,
     .working-log-content,
     .tool-info-content,
-    .analysis-content {
+    .results-content {
       animation: fadeIn 0.4s;
     }
 
-    .analysis-plot-card {
+    .results-plot-card {
       border-radius: 20px;
       overflow: hidden;
       padding: 1rem;
     }
 
-    .analysis-plot-img {
+    .results-plot-img {
       width: 100%;
       height: auto;
       display: block;
@@ -228,9 +228,9 @@
             <span>Run List</span>
           </a>
 
-          <a href="#analysis" class="button is-rounded is-white has-text-weight-semibold">
+          <a href="#results" class="button is-rounded is-white has-text-weight-semibold">
             <span class="icon is-small"><i class="fas fa-chart-line"></i></span>
-            <span>Analysis</span>
+            <span>Results</span>
           </a>
 
           <a href="#photo-log" class="button is-rounded is-white has-text-weight-semibold">
@@ -654,14 +654,14 @@
   </div>
 </section>
 
-<!-------------------------------------- Analysis -------------------------------------->
-<section class="section" id="analysis">
+<!-------------------------------------- Resutls -------------------------------------->
+<section class="section" id="results">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Analysis</h2>
+    <h2 class="title is-3 has-text-centered">Resutls</h2>
 
     <div class="columns is-centered mt-5">
       <div class="column">
-        <div class="card analysis-card" onclick="showAnalysisInfo('analysis-em')">
+        <div class="card results-card" onclick="showResultsInfo('results-em')">
           <div class="card-content has-text-centered">
             <p class="title is-5">EM</p>
           </div>
@@ -669,7 +669,7 @@
       </div>
 
       <div class="column">
-        <div class="card analysis-card" onclick="toggleHadronAnalysisMenu()">
+        <div class="card results-card" onclick="toggleHadronResultsMenu()">
           <div class="card-content has-text-centered">
             <p class="title is-5">Hadron</p>
           </div>
@@ -677,35 +677,35 @@
       </div>
     </div>
 
-    <div id="hadron-analysis-menu"
+    <div id="hadron-results-menu"
          class="box has-background-light is-hidden"
          style="border-radius:20px; margin-bottom:2rem;">
 
       <p class="has-text-centered is-size-7 has-text-grey mb-2">
-        Select Hadron Analysis
+        Select Hadron Resutls
       </p>
 
       <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi')">Pi</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-kp')">Kaon/Proton</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultsInfo('results-pi')">Pi</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultsInfo('results-kp')">Kaon/Proton</button>
       </div>
     </div>
 
-    <div id="analysis-em" class="analysis-content mt-5 is-hidden">
+    <div id="results-em" class="results-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
         <iframe src="https://drive.google.com/file/d/1tRvgybxIRPsmEcF1DIbEML89xORo8v9A/preview"
                 style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
     </div>
 
-    <div id="analysis-pi" class="analysis-content mt-5 is-hidden">
+    <div id="results-pi" class="results-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
         <iframe src="https://drive.google.com/file/d/1t-N1wc0U63r9od_ELwrdbsZe0Y1a-Vz5/preview"
                 style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
     </div>
 
-    <div id="analysis-kp" class="analysis-content mt-5 is-hidden">
+    <div id="results-kp" class="results-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
         <iframe src="https://drive.google.com/file/d/1oc-RPpyc8METpsad6tme1Sf84TZPmfQE/preview"
                 style="width: 100%; height: 750px; border: none;"></iframe>
@@ -835,10 +835,10 @@
     target.classList.remove("is-hidden");
   }
 
-  function showAnalysisInfo(contentId) {
+  function showResultsInfo(contentId) {
     const target = document.getElementById(contentId);
     const isAlreadyOpen = !target.classList.contains("is-hidden");
-    const contents = document.querySelectorAll(".analysis-content");
+    const contents = document.querySelectorAll(".results-content");
 
     contents.forEach(content => {
       content.classList.add("is-hidden");
@@ -849,14 +849,14 @@
     target.classList.remove("is-hidden");
   }
 
-  function toggleHadronAnalysisMenu() {
-    const menu = document.getElementById("hadron-analysis-menu");
+  function toggleHadronResultsMenu() {
+    const menu = document.getElementById("hadron-results-menu");
     const isAlreadyOpen = !menu.classList.contains("is-hidden");
 
     menu.classList.toggle("is-hidden");
 
     if (isAlreadyOpen) {
-      const contents = document.querySelectorAll(".analysis-content");
+      const contents = document.querySelectorAll(".results-content");
       contents.forEach(content => {
         content.classList.add("is-hidden");
       });
