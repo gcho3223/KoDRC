@@ -974,13 +974,18 @@
   }
 
   function showResultInfo(contentId) {
+    // hw 또는 analysis 서브아이템이면 해당 서브메뉴 유지
+    const hwItems = ['result-module', 'result-aux', 'result-sipm'];
+    const analysisItems = ['result-sim', 'result-em'];
+
+    if (!hwItems.includes(id)) {document.getElementById('hw-result-menu').classList.add('is-hidden');}
+    if (!analysisItems.includes(id)) {document.getElementById('analysis-result-menu').classList.add('is-hidden');}
     const target = document.getElementById(contentId);
     const isAlreadyOpen = !target.classList.contains("is-hidden");
     const contents = document.querySelectorAll(".result-content");
 
-    contents.forEach(content => {
-      content.classList.add("is-hidden");
-    });
+    contents.forEach(content => {content.classList.add("is-hidden");});
+    document.getElementById(id).classList.remove('is-hidden');
 
     if (isAlreadyOpen) return;
 
