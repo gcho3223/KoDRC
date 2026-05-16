@@ -525,77 +525,79 @@
 
     <h2 class="title is-3 has-text-centered">Run List</h2>
 
-    <!-- ====================== SET 1 ====================== -->
-    <div class="box mb-5" style="border-radius:20px;">
+    <!-- 메인 버튼 -->
+    <div class="columns is-centered mt-4">
+      <div class="column">
+        <div class="card result-card" onclick="toggleRunSetMenu('set1')">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">SET 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card result-card" onclick="toggleRunSetMenu('set2')">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">SET 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <h3 class="title is-5 has-text-centered mb-4">
-        SET 1
-      </h3>
-
+    <!-- SET 1 서브메뉴 -->
+    <div id="set1-menu"
+         class="box has-background-light is-hidden"
+         style="border-radius:20px; margin-bottom:2rem;">
+      <p class="has-text-centered is-size-7 has-text-grey mb-3">Select SET 1 Category</p>
       <div class="buttons is-centered">
-
         <button type="button"
-                class="button is-rounded is-link filter-btn"
+                class="button is-rounded is-link"
                 onclick="showRunCategory('set1-energy-resolution')">
           Energy Resolution & Timing Resolution
         </button>
-
         <button type="button"
-                class="button is-rounded is-info filter-btn"
+                class="button is-rounded is-info"
                 onclick="showRunCategory('set1-uniformity')">
           Uniformity
         </button>
-
         <button type="button"
-                class="button is-rounded is-danger filter-btn"
+                class="button is-rounded is-danger"
                 onclick="showRunCategory('set1-pion-proton')">
           Pion & Proton Beam
         </button>
-
       </div>
     </div>
 
-    <!-- ====================== SET 2 ====================== -->
-    <div class="box mb-5" style="border-radius:20px;">
-
-      <h3 class="title is-5 has-text-centered mb-4">
-        SET 2
-      </h3>
-
+    <!-- SET 2 서브메뉴 -->
+    <div id="set2-menu"
+         class="box has-background-light is-hidden"
+         style="border-radius:20px; margin-bottom:2rem;">
+      <p class="has-text-centered is-size-7 has-text-grey mb-3">Select SET 2 Category</p>
       <div class="buttons is-centered">
-
         <button type="button"
-                class="button is-rounded is-link filter-btn"
+                class="button is-rounded is-link"
                 onclick="showRunCategory('set2-energy-resolution')">
           Energy Resolution & Timing Resolution
         </button>
-
         <button type="button"
-                class="button is-rounded is-info filter-btn"
+                class="button is-rounded is-info"
                 onclick="showRunCategory('set2-uniformity')">
           Uniformity
         </button>
-
         <button type="button"
-                class="button is-rounded is-warning filter-btn"
+                class="button is-rounded is-warning"
                 onclick="showRunCategory('set2-response')">
           Response
         </button>
-
       </div>
     </div>
 
-    <!-- ====================== TABLE ====================== -->
-
-    <h4 id="run-category-title"
-        class="subtitle is-5">
+    <!-- 테이블 -->
+    <h4 id="run-category-title" class="subtitle is-5">
       Select a run category
     </h4>
 
     <div class="run-table-wrapper is-hidden">
-
       <table class="table is-striped is-fullwidth is-hoverable">
-
         <thead>
           <tr>
             <th>Date</th>
@@ -608,20 +610,14 @@
             <th>Note</th>
           </tr>
         </thead>
-
         <tbody id="run-table-body">
-
           <tr>
-            <td colspan="8"
-                class="has-text-centered has-text-grey">
+            <td colspan="8" class="has-text-centered has-text-grey">
               Loading run list...
             </td>
           </tr>
-
         </tbody>
-
       </table>
-
     </div>
 
   </div>
@@ -893,6 +889,22 @@
 
   function showToolInfo(contentId, event) {
     toggleContent(contentId, ".tool-info-content", event);
+  }
+
+  function toggleRunSetMenu(set) {
+    const set1Menu = document.getElementById('set1-menu');
+    const set2Menu = document.getElementById('set2-menu');
+
+    if (set === 'set1') {
+      set2Menu.classList.add('is-hidden');
+      set1Menu.classList.toggle('is-hidden');
+    } else {
+      set1Menu.classList.add('is-hidden');
+      set2Menu.classList.toggle('is-hidden');
+      }
+    // 서브메뉴 닫힐 때 테이블도 초기화
+    document.querySelector('.run-table-wrapper').classList.add('is-hidden');
+    document.getElementById('run-category-title').textContent = 'Select a run category';
   }
 
   const daqItems = ['daq', 'wireless'];
