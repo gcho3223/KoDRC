@@ -525,34 +525,53 @@
     <h2 class="title is-3 has-text-centered">Run List</h2>
 
     <div class="buttons is-centered mb-4">
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
-
-      <button type="button" class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
-        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-        <span>Hadron</span>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('daq-test')">
+        DAQ Test
       </button>
-    </div>
 
-    <div id="hadron-sub-menu"
-         class="box has-background-light is-hidden"
-         style="border-radius:20px; margin-bottom:2rem;">
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('calibration')">
+        Calibration
+      </button>
 
-      <p class="has-text-centered is-size-7 has-text-grey mb-2">
-        Select Hadron Sub-type
-      </p>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('energy-resolution')">
+        Energy Resolution
+      </button>
 
-      <div class="buttons is-centered">
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion')">Pion</button>
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk')">Proton/Kaon</button>
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
-      </div>
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('position-scan')">
+        Position Scan
+      </button>
+
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('hv-scan')">
+        HV Scan
+      </button>
+
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('mcp-pmt')">
+        MCP-PMT
+      </button>
+
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('uniformity-study')">
+        Uniformity Study
+      </button>
+
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('hadron-pressure-energy-scan')">
+        Hadron Pressure / Energy Scan
+      </button>
+
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('sipm')">
+        SiPM
+      </button>
+
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('cerenkov-pressure-scan')">
+        Cerenkov Pressure Scan
+      </button>
+
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('ancillary-setup')">
+        Ancillary Setup
+      </button>
+
+      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('wireless-daq')">
+        Wireless DAQ
+      </button>
     </div>
 
     <h4 id="run-category-title" class="subtitle is-5">Select a run category</h4>
@@ -561,16 +580,20 @@
       <table class="table is-striped is-fullwidth is-hoverable">
         <thead>
           <tr>
+            <th>Date</th>
             <th>Run No.</th>
+            <th>Events</th>
             <th>Energy</th>
             <th>Particle</th>
             <th>Angle (R/T)</th>
+            <th>Configuration</th>
             <th>Note</th>
           </tr>
         </thead>
+
         <tbody id="run-table-body">
           <tr>
-            <td colspan="5" class="has-text-centered has-text-grey">
+            <td colspan="8" class="has-text-centered has-text-grey">
               Loading run list...
             </td>
           </tr>
@@ -585,7 +608,7 @@
 <section class="section" id="result">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered mt-5">
+    <div class="columns is-centered mt-4">
       <div class="column">
         <div class="card result-card" onclick="showResultInfo('overview')">
           <div class="card-content has-text-centered">
@@ -595,6 +618,7 @@
       </div>
 
       <div class="column">
+        <div class="card result-card" onclick="showResultInfo('hw')">
           <div class="card-content has-text-centered">
             <p class="title is-5">Hardware</p>
           </div>
