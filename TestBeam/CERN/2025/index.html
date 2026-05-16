@@ -935,14 +935,17 @@
     target.classList.remove("is-hidden");
   }
 
+  const hadronAnalysisItems = ["analysis-pi", "analysis-proton", "analysis-pi-rot", "analysis-proton-rot"];
+
   function showAnalysisInfo(contentId) {
+  // 다른 그룹 클릭 시 hadron 서브메뉴 닫기
+    if (!hadronAnalysisItems.includes(contentId)) {document.getElementById("hadron-analysis-menu").classList.add("is-hidden");}
+
     const target = document.getElementById(contentId);
     const isAlreadyOpen = !target.classList.contains("is-hidden");
     const contents = document.querySelectorAll(".analysis-content");
 
-    contents.forEach(content => {
-      content.classList.add("is-hidden");
-    });
+    contents.forEach(content => { content.classList.add("is-hidden"); });
 
     if (isAlreadyOpen) return;
 
@@ -956,13 +959,9 @@
     menu.classList.toggle("is-hidden");
 
     if (isAlreadyOpen) {
-      const contents = document.querySelectorAll(".analysis-content");
-      contents.forEach(content => {
-        content.classList.add("is-hidden");
-      });
+      document.querySelectorAll(".analysis-content").forEach(content => {content.classList.add("is-hidden");});
     }
   }
-
   window.onscroll = function () {
     const btn = document.getElementById("scrollTopBtn");
 
