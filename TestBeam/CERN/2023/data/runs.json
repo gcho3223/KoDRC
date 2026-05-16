@@ -2028,7 +2028,7 @@
     "note": "addition the data;MCP center"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan : 3D printing",
     "date": "23.07.06",
     "runNumber": "4146",
@@ -2040,7 +2040,7 @@
     "note": "energy resolution scan 5 GeV positron (MCP center) | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan : 3D printing",
     "date": "23.07.06",
     "runNumber": "4147",
@@ -2052,7 +2052,7 @@
     "note": "energy resolution scan 5 GeV positron | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Calibration : 3D printing",
     "date": "23.07.06",
     "runNumber": "4148",
@@ -2112,7 +2112,7 @@
     "note": "SFHS-H1 data taking | wrong position"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4153",
@@ -2124,7 +2124,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4154",
@@ -2136,7 +2136,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4155",
@@ -2148,7 +2148,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4156",
@@ -2160,7 +2160,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4157",
@@ -2172,7 +2172,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4158",
@@ -2184,7 +2184,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4159",
@@ -2196,7 +2196,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4160",
@@ -2208,7 +2208,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4161",
@@ -2220,7 +2220,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4162",
@@ -2232,7 +2232,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4163",
@@ -2244,7 +2244,7 @@
     "note": "position scan again | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4164",
@@ -2256,7 +2256,7 @@
     "note": "peak ADC center | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4165",
@@ -2268,7 +2268,7 @@
     "note": "peak ADC center\nposition change KILLME | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4166",
@@ -2280,7 +2280,7 @@
     "note": "event number bug | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4167",
@@ -2292,7 +2292,7 @@
     "note": "intADC center | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4168",
@@ -2304,7 +2304,7 @@
     "note": "intADC center+1mm | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4169",
@@ -2316,7 +2316,7 @@
     "note": "intADC center+2mm | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4170",
@@ -2328,7 +2328,7 @@
     "note": "intADC center-1mm | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4171",
@@ -2340,7 +2340,7 @@
     "note": "intADC center-2mm | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4172",
@@ -2352,7 +2352,7 @@
     "note": "intADC center-1.4mm | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4173",
@@ -2364,7 +2364,7 @@
     "note": "position scan | run 4173 : find the final MCP center !\n(horizontal -0.283, vertical -0.3cm)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Position scan : Vertical",
     "date": "23.07.06",
     "runNumber": "4174",
@@ -2472,7 +2472,7 @@
     "note": "move to L2 module center and receive 10k event"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4183",
@@ -2484,7 +2484,7 @@
     "note": "move to MCP center and receive 30k event 4GeV positron, (will receive 100k event at MCP center this run is first )"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4184",
@@ -2496,7 +2496,7 @@
     "note": "receive 30k event at MCP center 4GeV positron  this is second run"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4185",
@@ -2508,7 +2508,7 @@
     "note": "setting bug problem for run so rerun 4186 run"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4186",
@@ -2520,7 +2520,7 @@
     "note": "receive 40k event at MCP center 4GeV positron this is third run"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4187",
@@ -2532,7 +2532,7 @@
     "note": "- receive 30k event at MCP center 5GeV positron (will recive 100k event this is first run)\n- It was not 5 GeV, but 4 GeV. We got the wrong beam profile. | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4188",
@@ -2544,7 +2544,7 @@
     "note": "- receive 30k event at MCP center 5GeV positron this is second run\n- It was not 5 GeV, but 4 GeV. We got the wrong beam profile. | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4189",
@@ -2556,7 +2556,7 @@
     "note": "- receive 30k event at MCP center 5GeV positron this third run\n- It was not 5 GeV, but 4 GeV. We got the wrong beam profile. | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4190",
@@ -2568,7 +2568,7 @@
     "note": "receive 30k event at MCP center 3GeV positron (will receive 100k event this first run)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4191",
@@ -2580,7 +2580,7 @@
     "note": "setting bug problem for run so rerun 4192 run"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4192",
@@ -2592,7 +2592,7 @@
     "note": "receive 30k event at MCP center 3GeV positron this second run"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4193",
@@ -2604,7 +2604,7 @@
     "note": "receive 40k event at MCP center 3GeV positron this third run"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4194",
@@ -2616,7 +2616,7 @@
     "note": "receive 30k event at MCP center 2GeV positron (will receive 100k event this first run)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4195",
@@ -2628,7 +2628,7 @@
     "note": "receive 30k event at MCP center 2GeV positron this second run"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4196",
@@ -2640,7 +2640,7 @@
     "note": "receive 40k event at MCP center 2GeV positron this third run"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4197",
@@ -2652,7 +2652,7 @@
     "note": "receive 20k event at MCP center 1GeV positron, (it`s low rate so we procedure next point)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4198",
@@ -2664,7 +2664,7 @@
     "note": "receive 1k event at MCP center 0.75GeV positron, check 1k event rate."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4199",
@@ -2676,7 +2676,7 @@
     "note": "receive 9k event at MCP center 0.75GeV positron. (it`s low rate so we procedure next point)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4200",
@@ -2688,7 +2688,7 @@
     "note": "10k event run at MCP center 0.5GeV positron, \nbut it`s so low rate (1 event /1 sec) \nso kill job using touch KILLME option so we receive 1432 event receive)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.06",
     "runNumber": "4201",
@@ -2700,7 +2700,7 @@
     "note": "rerun the 2k event run at MCP center 0.5 GeV positron"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4202",
@@ -2712,7 +2712,7 @@
     "note": "same condition. 0.5 GeV on MCP center. take more data"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4203",
@@ -2724,7 +2724,7 @@
     "note": "- Start energy scan after putting astropix chip board in front of modules.\n- take 30k events at 5 GeV\n- It was not 5 GeV, but 4 GeV. We got the wrong beam profile issue. | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4204",
@@ -2736,7 +2736,7 @@
     "note": "take 30k events at 5 GeV\n- It was not 5 GeV, but 4 GeV. We got the wrong beam profile. | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4205",
@@ -2748,7 +2748,7 @@
     "note": "DAQ bug | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4206",
@@ -2760,7 +2760,7 @@
     "note": "take 40k events at 5 GeV\n- It was not 5 GeV, but 4 GeV. We got the wrong beam profile. | Wrong beam profile. not 5 GeV, but 4 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4207",
@@ -2772,7 +2772,7 @@
     "note": "take 30k events at 4 GeV | with astropix chip board\n(only these runs are w/ astropix chip board)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4208",
@@ -2784,7 +2784,7 @@
     "note": "take 30k events at 4 GeV | with astropix chip board\n(only these runs are w/ astropix chip board)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4209",
@@ -2796,7 +2796,7 @@
     "note": "take 40k events at 4 GeV | with astropix chip board\n(only these runs are w/ astropix chip board)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4210",
@@ -2808,7 +2808,7 @@
     "note": "take 30k events at 3 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4211",
@@ -2820,7 +2820,7 @@
     "note": "take 30k events at 3 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4212",
@@ -2832,7 +2832,7 @@
     "note": "take 40k events at 3 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4213",
@@ -2844,7 +2844,7 @@
     "note": "take 40k events at 2 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4214",
@@ -2856,7 +2856,7 @@
     "note": "take 30k events at 2 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4215",
@@ -2868,7 +2868,7 @@
     "note": "take 30k events at 2 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4216",
@@ -2880,7 +2880,7 @@
     "note": "- Contacted PS coordinator and asked for modifying beam profile at 5 GeV. So, This run is the first run we get actual 5 GeV positron. We got 4 GeV instead of 5 GeV until now.\n- take 30k events at 5 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4217",
@@ -2892,7 +2892,7 @@
     "note": "take 30k events at 5 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4218",
@@ -2904,7 +2904,7 @@
     "note": "take 40k events at 5 GeV"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4219",
@@ -2916,7 +2916,7 @@
     "note": "1 GeV로 에너지 바꿔서 e+ event 5만개 데이터 받기 시작. rate ~ 4~5 Hz"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4220",
@@ -2928,7 +2928,7 @@
     "note": "0.75 GeV로 에너지 바꿔서 e+ event 1만개 데이터 받기 시작. 저녁식사 관계로 4013 event만 받고 run 중지함.  rate ~ 4 Hz"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4221",
@@ -2940,7 +2940,7 @@
     "note": "0.5 GeV로 에너지 바꿔서 e+ event 1만개 데이터 받기 시작. rate ~ 1 Hz"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4222",
@@ -2952,7 +2952,7 @@
     "note": "0.75 GeV로 에너지 바꿔서 e+ event 6천개 데이터 받기 시작. rate ~2.5 Hz"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4223",
@@ -2964,7 +2964,7 @@
     "note": "5 GeV로 에너지 바꿔서 e+ event 1만개 데이터 받기 시작."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4224",
@@ -2976,7 +2976,7 @@
     "note": "- 5 GeV로 이어서 e+ event 4만개 데이터 받음.\n- astropix chip board 제거하고 받은 런. 이 런 이후로는 계속 제거된 상태"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4225",
@@ -2988,7 +2988,7 @@
     "note": "5 GeV로 이어서 e+ event 5만개 데이터 받음."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4226",
@@ -3084,7 +3084,7 @@
     "note": "Beam profile (Magnetic) 조정\ne+ event 50개.\n-> Event rate 얼마나 바뀌는지 확인하기 위해. (Test Run)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4234",
@@ -3096,7 +3096,7 @@
     "note": "Beam energy 조정,  e+ event 5000개."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4235",
@@ -3108,7 +3108,7 @@
     "note": "Beam energy 조정,  e+ event 5000개."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4236",
@@ -3120,7 +3120,7 @@
     "note": "Beam energy 조정,  e+ event 5000개."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4237",
@@ -3132,7 +3132,7 @@
     "note": "Beam energy 조정,  e+ event 5000개."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4238",
@@ -3144,7 +3144,7 @@
     "note": "Beam energy 조정,  e+ event 5000개."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4239",
@@ -3156,7 +3156,7 @@
     "note": "Beam energy 조정,  e+ event 1000개."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4240",
@@ -3168,7 +3168,7 @@
     "note": "Beam energy 조정,  e+ event 1000개."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.07",
     "runNumber": "4241",
@@ -3180,7 +3180,7 @@
     "note": "Statistic 위해 추가로 받음,  e+ event 500개."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing HV & collimator\n: 3D printing",
     "date": "23.07.08",
     "runNumber": "4242",
@@ -3192,7 +3192,7 @@
     "note": ""
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4243",
@@ -3204,7 +3204,7 @@
     "note": "Wrong beam profile and collimator setting."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4244",
@@ -3216,7 +3216,7 @@
     "note": "Wrong beam profile and collimator setting."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4245",
@@ -3228,7 +3228,7 @@
     "note": "Wrong beam profile and collimator setting."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4246",
@@ -3240,7 +3240,7 @@
     "note": "Changed the position of MCP center :\nvertical -0.3 -> -0.301\n(This value is applied on below runs.)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4247",
@@ -3252,7 +3252,7 @@
     "note": ""
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4248",
@@ -3264,7 +3264,7 @@
     "note": ""
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4249",
@@ -3276,7 +3276,7 @@
     "note": ""
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4250",
@@ -3288,7 +3288,7 @@
     "note": ""
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4251",
@@ -3300,7 +3300,7 @@
     "note": ""
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4252",
@@ -3312,7 +3312,7 @@
     "note": ""
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4253",
@@ -3324,7 +3324,7 @@
     "note": ""
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\nafter changing angle\n( rotation : 1.5, tilting : 1 )",
     "date": "23.07.08",
     "runNumber": "4254",
@@ -5208,7 +5208,7 @@
     "note": "DAQ bug"
   },
   {
-    "category": "set2-energy-timing",
+    "category": "set2-energy-resolution",
     "program": "Energy resolution scan : HW",
     "date": "23.07.10",
     "runNumber": "4411",
@@ -6336,7 +6336,7 @@
     "note": "Trip issue로 MCP PMT c ch 2700 V로 변경 후 데이터 다시 받음 | - collimator : ± 6mm during these runs\n\n- run 4490 : changed HV of S ch (1500 V -> 1650 V)\n- run 4504 : changed HV of C ch (2720 V -> 2700 V)\n- run 4504 : fixed 3D printing center after changing HV\n                     (hori : -0.409, ver : -0.673)"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.11",
     "runNumber": "4505",
@@ -6348,7 +6348,7 @@
     "note": "5GeV ~ 0.5GeV energy sacn 시작"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.11",
     "runNumber": "4506",
@@ -6360,7 +6360,7 @@
     "note": "5GeV ~ 0.5GeV energy sacn 시작"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.11",
     "runNumber": "4507",
@@ -6372,7 +6372,7 @@
     "note": "5GeV ~ 0.5GeV energy sacn 시작"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.11",
     "runNumber": "4508",
@@ -6384,7 +6384,7 @@
     "note": "5GeV ~ 0.5GeV energy sacn 시작\n2 GeV 5000 event."
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.11",
     "runNumber": "4509",
@@ -6396,7 +6396,7 @@
     "note": "5GeV ~ 0.5GeV energy sacn 시작\n1 GeV 5000 event"
   },
   {
-    "category": "set1-energy-timing",
+    "category": "set1-energy-resolution",
     "program": "Energy resolution scan\n: 3D printing",
     "date": "23.07.11",
     "runNumber": "4510",
