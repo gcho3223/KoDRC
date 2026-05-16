@@ -2,11 +2,11 @@ let allRuns = [];
 let currentRunCategory = null;
 
 const categoryTitles = {
-  "set1-energy-timing": "SET 1: Energy Resolution & Timing Resolution",
+  "set1-energy-resolution": "SET 1: Energy Resolution",
   "set1-uniformity": "SET 1: Uniformity",
   "set1-pion-proton": "SET 1: Pion & Proton Beam",
 
-  "set2-energy-timing": "SET 2: Energy Resolution & Timing Resolution",
+  "set2-energy-resolution": "SET 2: Energy Resolution",
   "set2-uniformity": "SET 2: Uniformity",
   "set2-response": "SET 2: Response"
 };
@@ -36,10 +36,14 @@ function showRunCategory(categoryId) {
     currentRunCategory === categoryId &&
     !tableWrapper.classList.contains("is-hidden")
   ) {
+
     currentRunCategory = null;
+
     title.textContent = "Select a run category";
     tbody.innerHTML = "";
+
     tableWrapper.classList.add("is-hidden");
+
     return;
   }
 
@@ -54,6 +58,7 @@ function showRunCategory(categoryId) {
     allRuns.filter(run => run.category === categoryId);
 
   if (filteredRuns.length === 0) {
+
     tbody.innerHTML = `
       <tr>
         <td colspan="8" class="has-text-centered has-text-grey">
@@ -63,6 +68,7 @@ function showRunCategory(categoryId) {
     `;
 
     tableWrapper.classList.remove("is-hidden");
+
     return;
   }
 
