@@ -63,7 +63,7 @@
     .module-info-card,
     .working-log-card,
     .tool-info-card,
-    .analysis-card {
+    .result-card {
       border-radius: 15px;
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -73,7 +73,7 @@
     .module-info-card:hover,
     .working-log-card:hover,
     .tool-info-card:hover,
-    .analysis-card:hover {
+    .result-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 18px rgba(0,0,0,0.12);
     }
@@ -81,17 +81,17 @@
     .module-info-content,
     .working-log-content,
     .tool-info-content,
-    .analysis-content {
+    .result-content {
       animation: fadeIn 0.4s;
     }
 
-    .analysis-plot-card {
+    .result-plot-card {
       border-radius: 20px;
       overflow: hidden;
       padding: 1rem;
     }
 
-    .analysis-plot-img {
+    .result-plot-img {
       width: 100%;
       height: auto;
       display: block;
@@ -228,9 +228,9 @@
             <span>Run List</span>
           </a>
 
-          <a href="#analysis" class="button is-rounded is-white has-text-weight-semibold">
+          <a href="#result" class="button is-rounded is-white has-text-weight-semibold">
             <span class="icon is-small"><i class="fas fa-chart-line"></i></span>
-            <span>Analysis</span>
+            <span>Results</span>
           </a>
 
           <a href="#paper" class="button is-rounded is-white has-text-weight-semibold">
@@ -392,25 +392,14 @@
           <div class="card-content has-text-centered"><p class="title is-5">Dimension</p></div>
         </div>
       </div>
-
-      <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('lc-position')">
-          <div class="card-content has-text-centered"><p class="title is-5">LC Position</p></div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('pmt-info')">
-          <div class="card-content has-text-centered"><p class="title is-5">PMT Info</p></div>
-        </div>
-      </div>
     </div>
     <!-------- fill the geometry file path here! -------->
     <div id="geometry" class="module-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <img src="../../TestBeam/CERN/2022/module/ExpHall_geometry.png"
+        <img src=".module/2022_detector_geometry.pdf"
              alt="Experimental Hall Geometry"
-             style="width: 100%; height: auto; display: block;">
+             style="width: 100%; height: 750px; border: none;"
+          allow="autoplay">
       </div>
     </div>
     <!-------- fill the 3d module file path here! -------->
@@ -437,27 +426,6 @@
           allow="autoplay">>
       </div>
     </div>
-    <!-------- fill 다른거 file path here! -------->
-    <div id="lc-position" class="module-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe
-          src="https://drive.google.com/file/d/1GcK9Xj86flsFGSsy0YFivAiQSc3FfRF9/preview"
-          style="width: 100%; height: 600px; border: none;"
-          allow="autoplay">
-        </iframe>
-      </div>
-    </div>
-    <!-------- fill the PMT info link here! -------->
-    <div id="pmt-info" class="module-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe
-          src="https://docs.google.com/spreadsheets/d/1PmOYP1rtmucznqhF7sAOAvE7Xkj45pRDYdsiIAcAVvY/preview?gid=1598062041"
-          style="width: 100%; height: 750px; border: none;"
-          allow="autoplay">
-        </iframe>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -660,14 +628,14 @@
   </div>
 </section>
 
-<!-------------------------------------- Analysis -------------------------------------->
-<section class="section" id="analysis">
+<!-------------------------------------- Result -------------------------------------->
+<section class="section" id="result">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Analysis</h2>
+    <h2 class="title is-3 has-text-centered">Result</h2>
 
     <div class="columns is-centered mt-5">
       <div class="column">
-        <div class="card analysis-card" onclick="showAnalysisInfo('analysis-em')">
+        <div class="card result-card" onclick="showResultInfo('result-em')">
           <div class="card-content has-text-centered">
             <p class="title is-5">EM</p>
           </div>
@@ -675,7 +643,7 @@
       </div>
 
       <div class="column">
-        <div class="card analysis-card" onclick="toggleHadronAnalysisMenu()">
+        <div class="card result-card" onclick="toggleHadronresultMenu()">
           <div class="card-content has-text-centered">
             <p class="title is-5">Hadron</p>
           </div>
@@ -683,59 +651,59 @@
       </div>
     </div>
 
-    <div id="hadron-analysis-menu"
+    <div id="hadron-result-menu"
          class="box has-background-light is-hidden"
          style="border-radius:20px; margin-bottom:2rem;">
 
       <p class="has-text-centered is-size-7 has-text-grey mb-2">
-        Select Hadron Analysis
+        Select Hadron Result
       </p>
 
       <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi')">Pi</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton')">Proton</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi-rot')">Pi w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton-rot')">Proton w/ Rotation</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('result-pi')">Pi</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('result-proton')">Proton</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('result-pi-rot')">Pi w/ Rotation</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('result-proton-rot')">Proton w/ Rotation</button>
       </div>
     </div>
 
-    <div id="analysis-em" class="analysis-content mt-5 is-hidden">
+    <div id="result-em" class="result-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/em_plot1.png" class="analysis-plot-img" alt="EM Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/em_plot2.png" class="analysis-plot-img" alt="EM Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/em_plot3.png" class="analysis-plot-img" alt="EM Plot 3"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/em_plot1.png" class="result-plot-img" alt="EM Plot 1"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/em_plot2.png" class="result-plot-img" alt="EM Plot 2"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/em_plot3.png" class="result-plot-img" alt="EM Plot 3"></div></div>
       </div>
     </div>
 
-    <div id="analysis-pi" class="analysis-content mt-5 is-hidden">
+    <div id="result-pi" class="result-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/pi_plot1.png" class="analysis-plot-img" alt="Pi Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/pi_plot2.png" class="analysis-plot-img" alt="Pi Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/pi_plot3.png" class="analysis-plot-img" alt="Pi Plot 3"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/pi_plot1.png" class="result-plot-img" alt="Pi Plot 1"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/pi_plot2.png" class="result-plot-img" alt="Pi Plot 2"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/pi_plot3.png" class="result-plot-img" alt="Pi Plot 3"></div></div>
       </div>
     </div>
 
-    <div id="analysis-proton" class="analysis-content mt-5 is-hidden">
+    <div id="result-proton" class="result-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/proton_plot1.png" class="analysis-plot-img" alt="Proton Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/proton_plot2.png" class="analysis-plot-img" alt="Proton Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/proton_plot3.png" class="analysis-plot-img" alt="Proton Plot 3"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/proton_plot1.png" class="result-plot-img" alt="Proton Plot 1"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/proton_plot2.png" class="result-plot-img" alt="Proton Plot 2"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/proton_plot3.png" class="result-plot-img" alt="Proton Plot 3"></div></div>
       </div>
     </div>
 
-    <div id="analysis-pi-rot" class="analysis-content mt-5 is-hidden">
+    <div id="result-pi-rot" class="result-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/pi_rot_plot1.png" class="analysis-plot-img" alt="Pi Rotation Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/pi_rot_plot2.png" class="analysis-plot-img" alt="Pi Rotation Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/pi_rot_plot3.png" class="analysis-plot-img" alt="Pi Rotation Plot 3"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/pi_rot_plot1.png" class="result-plot-img" alt="Pi Rotation Plot 1"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/pi_rot_plot2.png" class="result-plot-img" alt="Pi Rotation Plot 2"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/pi_rot_plot3.png" class="result-plot-img" alt="Pi Rotation Plot 3"></div></div>
       </div>
     </div>
 
-    <div id="analysis-proton-rot" class="analysis-content mt-5 is-hidden">
+    <div id="result-proton-rot" class="result-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/proton_rot_plot1.png" class="analysis-plot-img" alt="Proton Rotation Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/proton_rot_plot2.png" class="analysis-plot-img" alt="Proton Rotation Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2022/analysis/proton_rot_plot3.png" class="analysis-plot-img" alt="Proton Rotation Plot 3"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/proton_rot_plot1.png" class="result-plot-img" alt="Proton Rotation Plot 1"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/proton_rot_plot2.png" class="result-plot-img" alt="Proton Rotation Plot 2"></div></div>
+        <div class="column is-one-third"><div class="card result-plot-card"><img src="../../TestBeam/CERN/2022/result/proton_rot_plot3.png" class="result-plot-img" alt="Proton Rotation Plot 3"></div></div>
       </div>
     </div>
 
@@ -898,10 +866,10 @@
     target.classList.remove("is-hidden");
   }
 
-  function showAnalysisInfo(contentId) {
+  function showResultInfo(contentId) {
     const target = document.getElementById(contentId);
     const isAlreadyOpen = !target.classList.contains("is-hidden");
-    const contents = document.querySelectorAll(".analysis-content");
+    const contents = document.querySelectorAll(".result-content");
 
     contents.forEach(content => {
       content.classList.add("is-hidden");
@@ -912,14 +880,14 @@
     target.classList.remove("is-hidden");
   }
 
-  function toggleHadronAnalysisMenu() {
-    const menu = document.getElementById("hadron-analysis-menu");
+  function toggleHadronresultMenu() {
+    const menu = document.getElementById("hadron-result-menu");
     const isAlreadyOpen = !menu.classList.contains("is-hidden");
 
     menu.classList.toggle("is-hidden");
 
     if (isAlreadyOpen) {
-      const contents = document.querySelectorAll(".analysis-content");
+      const contents = document.querySelectorAll(".result-content");
       contents.forEach(content => {
         content.classList.add("is-hidden");
       });
