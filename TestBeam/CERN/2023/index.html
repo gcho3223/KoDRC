@@ -895,44 +895,29 @@
     toggleContent(contentId, ".tool-info-content", event);
   }
 
-  // 모든 서브메뉴 ID 목록
-  const allMenus = ['hw-result-menu', 'daq-result-menu', 'analysis-result-menu'];
-
-  // 각 서브메뉴에 속하는 contentId 목록
-  const hwItems = ['result-module'];          // HW 서브아이템
-  const daqItems = ['daq', 'wireless'];       // DAQ 서브아이템
-  const analysisItems = ['result-em'];        // Analysis 서브아이템
+  const daqItems = ['daq', 'wireless'];
 
   function showResultInfo(contentId) {
-    // 해당 카테고리 서브메뉴만 유지, 나머지 닫기
-    if (!hwItems.includes(contentId)) document.getElementById('hw-result-menu').classList.add('is-hidden');
-    if (!daqItems.includes(contentId)) document.getElementById('daq-result-menu').classList.add('is-hidden');
-    if (!analysisItems.includes(contentId)) document.getElementById('analysis-result-menu').classList.add('is-hidden');
-
-    // 콘텐츠 전환
+    if (!daqItems.includes(contentId)) {document.getElementById('daq-result-menu').classList.add('is-hidden');}
     document.querySelectorAll('.result-content').forEach(el => el.classList.add('is-hidden'));
     document.getElementById(contentId).classList.remove('is-hidden');
   }
 
   function toggleHWresultMenu() {
     document.getElementById('daq-result-menu').classList.add('is-hidden');
-    document.getElementById('analysis-result-menu').classList.add('is-hidden');
     document.querySelectorAll('.result-content').forEach(el => el.classList.add('is-hidden'));
-    document.getElementById('hw-result-menu').classList.toggle('is-hidden');
+    showResultInfo('result-module');
   }
 
   function toggleDAQresultMenu() {
-    document.getElementById('hw-result-menu').classList.add('is-hidden');
-    document.getElementById('analysis-result-menu').classList.add('is-hidden');
     document.querySelectorAll('.result-content').forEach(el => el.classList.add('is-hidden'));
     document.getElementById('daq-result-menu').classList.toggle('is-hidden');
   }
 
   function toggleAnalysisresultMenu() {
-    document.getElementById('hw-result-menu').classList.add('is-hidden');
     document.getElementById('daq-result-menu').classList.add('is-hidden');
     document.querySelectorAll('.result-content').forEach(el => el.classList.add('is-hidden'));
-    document.getElementById('analysis-result-menu').classList.toggle('is-hidden');
+    showResultInfo('result-em');
   }
 
   window.onscroll = function () {
