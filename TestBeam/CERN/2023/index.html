@@ -211,7 +211,7 @@
 
           <a href="#result" class="button is-rounded is-white has-text-weight-semibold">
             <span class="icon is-small"><i class="fas fa-chart-line"></i></span>
-            <span>result</span>
+            <span>Result</span>
           </a>
 
           <a href="#photo-log" class="button is-rounded is-white has-text-weight-semibold">
@@ -522,62 +522,80 @@
 <!-------------------------------------- Run list -------------------------------------->
 <section class="section" id="run-list">
   <div class="container is-max-desktop">
+
     <h2 class="title is-3 has-text-centered">Run List</h2>
 
-    <div class="buttons is-centered mb-4">
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('daq-test')">
-        DAQ Test
-      </button>
+    <!-- ====================== SET 1 ====================== -->
+    <div class="box mb-5" style="border-radius:20px;">
 
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('calibration')">
-        Calibration
-      </button>
+      <h3 class="title is-5 has-text-centered mb-4">
+        SET 1
+      </h3>
 
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('energy-resolution')">
-        Energy Resolution
-      </button>
+      <div class="buttons is-centered">
 
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('position-scan')">
-        Position Scan
-      </button>
+        <button type="button"
+                class="button is-rounded is-link filter-btn"
+                onclick="showRunCategory('set1-energy-resolution')">
+          Energy Resolution & Timing Resolution
+        </button>
 
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('hv-scan')">
-        HV Scan
-      </button>
+        <button type="button"
+                class="button is-rounded is-info filter-btn"
+                onclick="showRunCategory('set1-uniformity')">
+          Uniformity
+        </button>
 
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('mcp-pmt')">
-        MCP-PMT
-      </button>
+        <button type="button"
+                class="button is-rounded is-danger filter-btn"
+                onclick="showRunCategory('set1-pion-proton')">
+          Pion & Proton Beam
+        </button>
 
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('uniformity-study')">
-        Uniformity Study
-      </button>
-
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('hadron-pressure-energy-scan')">
-        Hadron Pressure / Energy Scan
-      </button>
-
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('sipm')">
-        SiPM
-      </button>
-
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('cerenkov-pressure-scan')">
-        Cerenkov Pressure Scan
-      </button>
-
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('ancillary-setup')">
-        Ancillary Setup
-      </button>
-
-      <button type="button" class="button is-rounded is-link filter-btn" onclick="showRunCategory('wireless-daq')">
-        Wireless DAQ
-      </button>
+      </div>
     </div>
 
-    <h4 id="run-category-title" class="subtitle is-5">Select a run category</h4>
+    <!-- ====================== SET 2 ====================== -->
+    <div class="box mb-5" style="border-radius:20px;">
+
+      <h3 class="title is-5 has-text-centered mb-4">
+        SET 2
+      </h3>
+
+      <div class="buttons is-centered">
+
+        <button type="button"
+                class="button is-rounded is-link filter-btn"
+                onclick="showRunCategory('set2-energy-resolution')">
+          Energy Resolution & Timing Resolution
+        </button>
+
+        <button type="button"
+                class="button is-rounded is-info filter-btn"
+                onclick="showRunCategory('set2-uniformity')">
+          Uniformity
+        </button>
+
+        <button type="button"
+                class="button is-rounded is-warning filter-btn"
+                onclick="showRunCategory('set2-response')">
+          Response
+        </button>
+
+      </div>
+    </div>
+
+    <!-- ====================== TABLE ====================== -->
+
+    <h4 id="run-category-title"
+        class="subtitle is-5">
+      Select a run category
+    </h4>
 
     <div class="run-table-wrapper is-hidden">
+
       <table class="table is-striped is-fullwidth is-hoverable">
+
         <thead>
           <tr>
             <th>Date</th>
@@ -592,13 +610,18 @@
         </thead>
 
         <tbody id="run-table-body">
+
           <tr>
-            <td colspan="8" class="has-text-centered has-text-grey">
+            <td colspan="8"
+                class="has-text-centered has-text-grey">
               Loading run list...
             </td>
           </tr>
+
         </tbody>
+
       </table>
+
     </div>
 
   </div>
@@ -618,7 +641,7 @@
       </div>
 
       <div class="column">
-        <div class="card result-card" onclick="showResultInfo('hw')">
+        <div class="card result-card" onclick="toggleHWresultMenu()">
           <div class="card-content has-text-centered">
             <p class="title is-5">Hardware</p>
           </div>
@@ -626,8 +649,7 @@
       </div>
 
       <div class="column">
-        <div class="card result-card" onclick="showResultInfo('daq')">
-          <div class="card result-card" onclick="toggleDAQresultMenu('daq')">
+        <div class="card result-card" onclick="toggleDAQresultMenu()">
           <div class="card-content has-text-centered">
             <p class="title is-5">DAQ</p>
           </div>
@@ -643,16 +665,27 @@
       </div>
 
       <div class="column">
-        <div class="card result-card" onclick="toggleresultresultMenu('result')">
+        <div class="card result-card" onclick="toggleAnalysisresultMenu()">
           <div class="card-content has-text-centered">
             <p class="title is-5">Analysis</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- ↑ columns div 여기서 닫힘 (서브메뉴/콘텐츠 전부 밖으로) -->
 
-    <!-- result 서브메뉴 -->
+    <!-- Hardware 서브메뉴 -->
+    <div id="hw-result-menu"
+         class="box has-background-light is-hidden"
+         style="border-radius:20px; margin-bottom:2rem;">
+      <p class="has-text-centered is-size-7 has-text-grey mb-3">
+        Select Hardware
+      </p>
+      <div class="buttons is-centered">
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('result-module')">Module</button>
+      </div>
+    </div>
+
+    <!-- DAQ 서브메뉴 -->
     <div id="daq-result-menu"
          class="box has-background-light is-hidden"
          style="border-radius:20px; margin-bottom:2rem;">
@@ -660,8 +693,20 @@
         Select DAQ
       </p>
       <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('daq-daq')">DAQ</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('daq-wireless')">Wireless DAQ</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('daq')">DAQ</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('wireless')">Wireless DAQ</button>
+      </div>
+    </div>
+
+    <!-- Analysis 서브메뉴 -->
+    <div id="analysis-result-menu"
+         class="box has-background-light is-hidden"
+         style="border-radius:20px; margin-bottom:2rem;">
+      <p class="has-text-centered is-size-7 has-text-grey mb-2">
+        Select Analysis
+      </p>
+      <div class="buttons is-centered">
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('result-em')">EM Performance</button>
       </div>
     </div>
 
@@ -745,7 +790,7 @@
       </div>
     </div>
 
-    <!-- result: EM Performance -->
+    <!-- Analysis: EM Performance -->
     <div id="result-em" class="result-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://drive.google.com/file/d/1sTpSp1TGCqMNIyoSkl2ncw7iMq0w7del/preview"
@@ -873,29 +918,45 @@
     toggleContent(contentId, ".tool-info-content", event);
   }
 
+  // 모든 서브메뉴 ID 목록
+  const allMenus = ['hw-result-menu', 'daq-result-menu', 'analysis-result-menu'];
+
+  // 각 서브메뉴에 속하는 contentId 목록
+  const hwItems = ['result-module'];          // HW 서브아이템
+  const daqItems = ['daq', 'wireless'];       // DAQ 서브아이템
+  const analysisItems = ['result-em'];        // Analysis 서브아이템
+
   function showResultInfo(contentId) {
-  const daqItems = ['daq-daq', 'daq-wireless'];
+    // 해당 카테고리 서브메뉴만 유지, 나머지 닫기
+    if (!hwItems.includes(contentId)) document.getElementById('hw-result-menu').classList.add('is-hidden');
+    if (!daqItems.includes(contentId)) document.getElementById('daq-result-menu').classList.add('is-hidden');
+    if (!analysisItems.includes(contentId)) document.getElementById('analysis-result-menu').classList.add('is-hidden');
 
-  if (!daqItems.includes(contentId)) {document.getElementById('hw-result-menu').classList.add('is-hidden');}
+    // 콘텐츠 전환
+    document.querySelectorAll('.result-content').forEach(el => el.classList.add('is-hidden'));
+    document.getElementById(contentId).classList.remove('is-hidden');
+  }
 
-  const contents = document.querySelectorAll(".result-content");
-  contents.forEach(content => { content.classList.add("is-hidden"); });
-
-  document.getElementById(contentId).classList.remove('is-hidden');
-}
+  function toggleHWresultMenu() {
+    document.getElementById('daq-result-menu').classList.add('is-hidden');
+    document.getElementById('analysis-result-menu').classList.add('is-hidden');
+    document.querySelectorAll('.result-content').forEach(el => el.classList.add('is-hidden'));
+    document.getElementById('hw-result-menu').classList.toggle('is-hidden');
+  }
 
   function toggleDAQresultMenu() {
-  document.getElementById('analysis-result-menu').classList.add('is-hidden');
-  const menu = document.getElementById("hw-result-menu");
-  const isAlreadyOpen = !menu.classList.contains("is-hidden");
-  menu.classList.toggle("is-hidden");
-  if (isAlreadyOpen) {
-    const contents = document.querySelectorAll(".result-content");
-    contents.forEach(content => {
-      content.classList.add("is-hidden");
-    });
+    document.getElementById('hw-result-menu').classList.add('is-hidden');
+    document.getElementById('analysis-result-menu').classList.add('is-hidden');
+    document.querySelectorAll('.result-content').forEach(el => el.classList.add('is-hidden'));
+    document.getElementById('daq-result-menu').classList.toggle('is-hidden');
   }
-}
+
+  function toggleAnalysisresultMenu() {
+    document.getElementById('hw-result-menu').classList.add('is-hidden');
+    document.getElementById('daq-result-menu').classList.add('is-hidden');
+    document.querySelectorAll('.result-content').forEach(el => el.classList.add('is-hidden'));
+    document.getElementById('analysis-result-menu').classList.toggle('is-hidden');
+  }
 
   window.onscroll = function () {
     const btn = document.getElementById("scrollTopBtn");
