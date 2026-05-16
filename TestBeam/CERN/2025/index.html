@@ -684,14 +684,16 @@
       </div>
 
       <div class="column">
-        <div class="card results-card" onclick="toggleHadronResultsMenu()">
+        <!-- if you have detailed energy resolutions, add this  
+        <div class="card results-card" onclick="toggleHadronResultsMenu()"> -->
+        <div class="card results-card" onclick="showResultsInfo('results-hadron')">
           <div class="card-content has-text-centered">
             <p class="title is-5">Hadron</p>
           </div>
         </div>
       </div>
     </div>
-
+<!-- hadronic energy resolution : pion , proton with/without rotation and tilting
     <div id="hadron-results-menu"
          class="box has-background-light is-hidden"
          style="border-radius:20px; margin-bottom:2rem;">
@@ -707,7 +709,7 @@
         <button class="button is-small is-rounded is-danger is-light" onclick="showResultsInfo('results-proton-rot')">Proton w/ Rotation</button>
       </div>
     </div>
-
+-->
     <div id="overview" class="results-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
         <iframe src="https://drive.google.com/file/d/1LGPzMftpik2r0zePDbSV1opUUOtDbw4M/preview"
@@ -717,35 +719,14 @@
 
     <div id="results-em" class="results-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
-        <iframe src="https://drive.google.com/file/d/1mS_dbCQBT6AE2esdXC_UYE_ZgkTyME9e/preview"
+        <iframe src=""
                 style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
     </div>
 
-    <div id="results-pi" class="results-content mt-5 is-hidden">
+    <div id="results-hadron" class="results-content mt-5 is-hidden">
       <div class="columns is-multiline is-centered">
-        <img src=""
-                style="width: 100%; height: 750px; border: none;"></iframe>
-      </div>
-    </div>
-
-    <div id="pi-rot" class="results-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <img src=""
-                style="width: 100%; height: 750px; border: none;"></iframe>
-      </div>
-    </div>
-
-    <div id="results-proton" class="results-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <img src=""
-                style="width: 100%; height: 750px; border: none;"></iframe>
-      </div>
-    </div>
-
-    <div id="results-proton-rot" class="results-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <img src=""
+        <img src="https://drive.google.com/file/d/1mS_dbCQBT6AE2esdXC_UYE_ZgkTyME9e/preview"
                 style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
     </div>
