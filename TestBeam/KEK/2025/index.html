@@ -63,7 +63,7 @@
     .module-info-card,
     .working-log-card,
     .tool-info-card,
-    .analysis-card {
+    .result-card {
       border-radius: 15px;
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -73,7 +73,7 @@
     .module-info-card:hover,
     .working-log-card:hover,
     .tool-info-card:hover,
-    .analysis-card:hover {
+    .result-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 18px rgba(0,0,0,0.12);
     }
@@ -81,17 +81,17 @@
     .module-info-content,
     .working-log-content,
     .tool-info-content,
-    .analysis-content {
+    .result-content {
       animation: fadeIn 0.4s;
     }
 
-    .analysis-plot-card {
+    .result-plot-card {
       border-radius: 20px;
       overflow: hidden;
       padding: 1rem;
     }
 
-    .analysis-plot-img {
+    .result-plot-img {
       width: 100%;
       height: auto;
       display: block;
@@ -228,9 +228,9 @@
             <span>Run List</span>
           </a>
 
-          <a href="#analysis" class="button is-rounded is-white has-text-weight-semibold">
+          <a href="#result" class="button is-rounded is-white has-text-weight-semibold">
             <span class="icon is-small"><i class="fas fa-chart-line"></i></span>
-            <span>Analysis</span>
+            <span>Results</span>
           </a>
 
           <a href="#paper" class="button is-rounded is-white has-text-weight-semibold">
@@ -356,7 +356,7 @@
             <span class="ml-2"><strong>Meeting Minutes</strong></span>
           </a>
           <!-------- fill DAQ log link here! -------->
-          <a href="https://docs.google.com/spreadsheets/d/1RaLLkuHS4pvb7S0oarPjj6oTcUuc1QOVF42Gf5Wqkzs/preview"
+          <a href="https://docs.google.com/spreadsheets/d/1RaLLkuHS4pvb7S0oarPjj6oTcUuc1QOVF42Gf5Wqkzs/edit?usp=sharing"
              target="_blank"
              class="button is-warning is-large is-rounded is-outlined"
              style="min-width: 230px; border-width: 2px;">
@@ -393,18 +393,6 @@
           <div class="card-content has-text-centered"><p class="title is-5">Dimension</p></div>
         </div>
       </div>
-
-      <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('lc-position')">
-          <div class="card-content has-text-centered"><p class="title is-5">LC Position</p></div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('pmt-info')">
-          <div class="card-content has-text-centered"><p class="title is-5">PMT Info</p></div>
-        </div>
-      </div>
     </div>
     <!-------- fill the geometry file path here! -------->
     <div id="geometry" class="module-info-content mt-5 is-hidden">
@@ -437,31 +425,12 @@
              style="width: 500px; height: 500px; display: block; margin: auto;">
       </div>
     </div>
-    <!-------- fill the LC position file path here! -------->
-    <div id="lc-position" class="module-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe
-          src="https://drive.google.com/file/d/1GcK9Xj86flsFGSsy0YFivAiQSc3FfRF9/preview"
-          style="width: 100%; height: 600px; border: none;"
-          allow="autoplay">
-        </iframe>
-      </div>
-    </div>
-    <!-------- fill the PMT info link here! -------->
-    <div id="pmt-info" class="module-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe
-          src="https://docs.google.com/spreadsheets/d/1PmOYP1rtmucznqhF7sAOAvE7Xkj45pRDYdsiIAcAVvY/preview?gid=1598062041"
-          style="width: 100%; height: 750px; border: none;"
-          allow="autoplay">
-        </iframe>
-      </div>
-    </div>
 
   </div>
 </section>
 
 <!-------------------------------------- Working Log -------------------------------------->
+<!--
 <section class="section" id="working-log">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Working Log</h2>
@@ -497,6 +466,7 @@
 
     </div>
     <!-------- fill HW working log link here! -------->
+<!--
     <div id="hw-log" class="working-log-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://docs.google.com/document/d/1HlUFz-R2yRp9RmYLGM46Z0hi1W7IZRTLec1-xIz2KW8/preview"
@@ -504,6 +474,7 @@
       </div>
     </div>
     <!-------- fill DAQ working log link here! -------->
+<!--
     <div id="daq-log" class="working-log-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://docs.google.com/document/d/128EvXiEHFnnZ3yHneSi7vVw_pEx_PcqNgvMjQwo9oxw/preview"
@@ -511,6 +482,7 @@
       </div>
     </div>
     <!-------- fill DQM and PA working log link here! -------->
+<!--
     <div id="dqm-pa-log" class="working-log-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe src="https://docs.google.com/document/d/1GmFGgMXSPRYgv8m1W-ZPAb8uIqEpEAbuRgmQP0-0tzE/preview"
@@ -520,7 +492,7 @@
 
   </div>
 </section>
-
+-->
 <!-------------------------------------- Tools -------------------------------------->
 <section class="section" id="tools">
   <div class="container is-max-desktop">
@@ -543,15 +515,6 @@
           </div>
         </div>
       </div>
-
-      <div class="column">
-        <div class="card tool-info-card" onclick="showToolInfo('cc-gas-calculation')">
-          <div class="card-content has-text-centered">
-            <p class="title is-5">CC Gas Calculation</p>
-          </div>
-        </div>
-      </div>
-
     </div>
     <!-------- fill position calculator or something link here! -------->
     <div id="position-calculator" class="tool-info-content mt-5 is-hidden">
@@ -572,29 +535,13 @@
     </div>
     <!-------- fill mapping or something link here! -------->
     <div id="mapping" class="tool-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe src="https://docs.google.com/spreadsheets/d/1WsOf18Pz7shEmT70F8FlSkUP6L1sNmwRFAyeG7TlntY/preview?gid=0"
-                style="width: 100%; height: 750px; border: none;"></iframe>
+      <div class="box has-text-centered" style="border-radius: 20px; padding: 3rem;">
+        <span class="icon is-large has-text-grey-light">
+          <i class="fas fa-clock fa-3x"></i>
+        </span>
+        <p class="title is-5 mt-4 has-text-grey">곧 추가 예정입니다</p>
       </div>
     </div>
-    <!-------- fill cc gas calculation or something link here! -------->
-    <div id="cc-gas-calculation" class="tool-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe src="https://docs.google.com/spreadsheets/d/1H7RlN93RMUHWaj-X1uUJHh-yITmTvC4ihviakoYdOF0/preview?gid=0"
-                style="width: 100%; height: 600px; border: none;"></iframe>
-      </div>
-      <!-------- fill cc gas calculator or something link here too! -------->
-      <!-- link for 'open in google sheets' -->
-      <div class="has-text-right mt-2">
-        <a href="https://docs.google.com/spreadsheets/d/1H7RlN93RMUHWaj-X1uUJHh-yITmTvC4ihviakoYdOF0/edit?gid=0#gid=0"
-           target="_blank"
-           class="button is-link is-light is-small">
-          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
-          <span>Open in Google Sheets</span>
-        </a>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -660,14 +607,14 @@
   </div>
 </section>
 
-<!-------------------------------------- Analysis -------------------------------------->
-<section class="section" id="analysis">
+<!-------------------------------------- Result -------------------------------------->
+<section class="section" id="result">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Analysis</h2>
+    <h2 class="title is-3 has-text-centered">Results</h2>
 
     <div class="columns is-centered mt-5">
       <div class="column">
-        <div class="card analysis-card" onclick="showAnalysisInfo('analysis-em')">
+        <div class="card result-card" onclick="showResultInfo('result-em')">
           <div class="card-content has-text-centered">
             <p class="title is-5">EM</p>
           </div>
@@ -675,7 +622,7 @@
       </div>
 
       <div class="column">
-        <div class="card analysis-card" onclick="toggleHadronAnalysisMenu()">
+        <div class="card result-card" onclick="toggleHadronResultMenu()">
           <div class="card-content has-text-centered">
             <p class="title is-5">Hadron</p>
           </div>
@@ -683,59 +630,35 @@
       </div>
     </div>
 
-    <div id="hadron-analysis-menu"
+    <div id="hadron-result-menu"
          class="box has-background-light is-hidden"
          style="border-radius:20px; margin-bottom:2rem;">
 
       <p class="has-text-centered is-size-7 has-text-grey mb-2">
-        Select Hadron Analysis
+        Select Hadron Result
       </p>
 
       <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi')">Pi</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton')">Proton</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi-rot')">Pi w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton-rot')">Proton w/ Rotation</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('result-pi')">Pi</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('result-proton')">Proton</button>
       </div>
     </div>
 
-    <div id="analysis-em" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/em_plot1.png" class="analysis-plot-img" alt="EM Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/em_plot2.png" class="analysis-plot-img" alt="EM Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/em_plot3.png" class="analysis-plot-img" alt="EM Plot 3"></div></div>
+    <div id="results-em" class="results-content mt-5 is-hidden">
+      <div class="box has-text-centered" style="border-radius: 20px; padding: 3rem;">
+        <span class="icon is-large has-text-grey-light">
+          <i class="fas fa-clock fa-3x"></i>
+        </span>
+        <p class="title is-5 mt-4 has-text-grey">곧 추가 예정입니다</p>
       </div>
     </div>
 
-    <div id="analysis-pi" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/pi_plot1.png" class="analysis-plot-img" alt="Pi Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/pi_plot2.png" class="analysis-plot-img" alt="Pi Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/pi_plot3.png" class="analysis-plot-img" alt="Pi Plot 3"></div></div>
-      </div>
-    </div>
-
-    <div id="analysis-proton" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/proton_plot1.png" class="analysis-plot-img" alt="Proton Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/proton_plot2.png" class="analysis-plot-img" alt="Proton Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/proton_plot3.png" class="analysis-plot-img" alt="Proton Plot 3"></div></div>
-      </div>
-    </div>
-
-    <div id="analysis-pi-rot" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/pi_rot_plot1.png" class="analysis-plot-img" alt="Pi Rotation Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/pi_rot_plot2.png" class="analysis-plot-img" alt="Pi Rotation Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/pi_rot_plot3.png" class="analysis-plot-img" alt="Pi Rotation Plot 3"></div></div>
-      </div>
-    </div>
-
-    <div id="analysis-proton-rot" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/proton_rot_plot1.png" class="analysis-plot-img" alt="Proton Rotation Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/proton_rot_plot2.png" class="analysis-plot-img" alt="Proton Rotation Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2026/analysis/proton_rot_plot3.png" class="analysis-plot-img" alt="Proton Rotation Plot 3"></div></div>
+    <div id="results-hadron" class="results-content mt-5 is-hidden">
+     <div class="box has-text-centered" style="border-radius: 20px; padding: 3rem;">
+        <span class="icon is-large has-text-grey-light">
+          <i class="fas fa-clock fa-3x"></i>
+        </span>
+        <p class="title is-5 mt-4 has-text-grey">곧 추가 예정입니다</p>
       </div>
     </div>
 
@@ -860,13 +783,13 @@
       <div class="column is-full">
         <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee;">
           <iframe
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml?widget=true&amp;headers=false"
+            src="https://docs.google.com/spreadsheets/d/1yW96ZqfaZge9DDR9Bvqg-nuVZqtVfOj8wI3o9wxE50I/preview"
             style="width: 100%; height: 600px; border: none;">
           </iframe>
         </div>
         <!-------- fill participants list link here! -------->
         <p class="help has-text-right mt-2">
-          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml"
+          <a href="https://docs.google.com/spreadsheets/d/1yW96ZqfaZge9DDR9Bvqg-nuVZqtVfOj8wI3o9wxE50I/edit?gid=1921751643#gid=1921751643"
              target="_blank"
              class="button is-small is-text">
             <span class="icon"><i class="fas fa-external-link-alt"></i></span>
@@ -934,10 +857,10 @@
     target.classList.remove("is-hidden");
   }
 
-  function showAnalysisInfo(contentId) {
+  function showResultInfo(contentId) {
     const target = document.getElementById(contentId);
     const isAlreadyOpen = !target.classList.contains("is-hidden");
-    const contents = document.querySelectorAll(".analysis-content");
+    const contents = document.querySelectorAll(".result-content");
 
     contents.forEach(content => {
       content.classList.add("is-hidden");
@@ -948,14 +871,14 @@
     target.classList.remove("is-hidden");
   }
 
-  function toggleHadronAnalysisMenu() {
-    const menu = document.getElementById("hadron-analysis-menu");
+  function toggleHadronResultMenu() {
+    const menu = document.getElementById("hadron-result-menu");
     const isAlreadyOpen = !menu.classList.contains("is-hidden");
 
     menu.classList.toggle("is-hidden");
 
     if (isAlreadyOpen) {
-      const contents = document.querySelectorAll(".analysis-content");
+      const contents = document.querySelectorAll(".result-content");
       contents.forEach(content => {
         content.classList.add("is-hidden");
       });
