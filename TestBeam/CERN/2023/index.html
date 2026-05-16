@@ -63,7 +63,7 @@
     .module-info-card,
     .working-log-card,
     .tool-info-card,
-    .analysis-card {
+    .result-card {
       border-radius: 15px;
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -73,7 +73,7 @@
     .module-info-card:hover,
     .working-log-card:hover,
     .tool-info-card:hover,
-    .analysis-card:hover {
+    .result-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 18px rgba(0,0,0,0.12);
     }
@@ -81,17 +81,17 @@
     .module-info-content,
     .working-log-content,
     .tool-info-content,
-    .analysis-content {
+    .result-content {
       animation: fadeIn 0.4s;
     }
 
-    .analysis-plot-card {
+    .result-plot-card {
       border-radius: 20px;
       overflow: hidden;
       padding: 1rem;
     }
 
-    .analysis-plot-img {
+    .result-plot-img {
       width: 100%;
       height: auto;
       display: block;
@@ -209,9 +209,9 @@
             <span>Run List</span>
           </a>
 
-          <a href="#analysis" class="button is-rounded is-white has-text-weight-semibold">
+          <a href="#result" class="button is-rounded is-white has-text-weight-semibold">
             <span class="icon is-small"><i class="fas fa-chart-line"></i></span>
-            <span>Analysis</span>
+            <span>result</span>
           </a>
 
           <a href="#photo-log" class="button is-rounded is-white has-text-weight-semibold">
@@ -581,82 +581,159 @@
   </div>
 </section>
 
-<!-------------------------------------- Analysis -------------------------------------->
-<section class="section" id="analysis">
+<!-------------------------------------- Result ------------------------------------->
+<section class="section" id="result">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Analysis</h2>
 
     <div class="columns is-centered mt-5">
       <div class="column">
-        <div class="card analysis-card" onclick="showAnalysisInfo('analysis-em', event)">
+        <div class="card result-card" onclick="showResultInfo('overview')">
           <div class="card-content has-text-centered">
-            <p class="title is-5">EM</p>
+            <p class="title is-5">Overview</p>
           </div>
         </div>
       </div>
 
       <div class="column">
-        <div class="card analysis-card" onclick="toggleHadronAnalysisMenu(event)">
           <div class="card-content has-text-centered">
-            <p class="title is-5">Hadron</p>
+            <p class="title is-5">Hardware</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card result-card" onclick="showResultInfo('daq')">
+          <div class="card result-card" onclick="toggleDAQresultMenu('daq')">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">DAQ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card result-card" onclick="showResultInfo('dqm')">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">DQM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card result-card" onclick="toggleresultresultMenu('result')">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">Analysis</p>
           </div>
         </div>
       </div>
     </div>
+    <!-- ↑ columns div 여기서 닫힘 (서브메뉴/콘텐츠 전부 밖으로) -->
 
-    <div id="hadron-analysis-menu"
+    <!-- result 서브메뉴 -->
+    <div id="daq-result-menu"
          class="box has-background-light is-hidden"
          style="border-radius:20px; margin-bottom:2rem;">
-
       <p class="has-text-centered is-size-7 has-text-grey mb-2">
-        Select Hadron Analysis
+        Select DAQ
       </p>
-
       <div class="buttons is-centered">
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi', event)">Pi</button>
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton', event)">Proton</button>
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-pi-rot', event)">Pi w/ Rotation</button>
-        <button type="button" class="button is-small is-rounded is-danger is-light" onclick="showAnalysisInfo('analysis-proton-rot', event)">Proton w/ Rotation</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('daq-daq')">DAQ</button>
+        <button class="button is-small is-rounded is-danger is-light" onclick="showResultInfo('daq-wireless')">Wireless DAQ</button>
       </div>
     </div>
 
-    <div id="analysis-em" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/em_plot1.png" class="analysis-plot-img" alt="EM Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/em_plot2.png" class="analysis-plot-img" alt="EM Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/em_plot3.png" class="analysis-plot-img" alt="EM Plot 3"></div></div>
+    <!-- Overview -->
+    <div id="overview" class="result-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe src="https://drive.google.com/file/d/1axuJiZ8QIjgSHTxIWkLvSkPoUhhp_s-d/preview"
+                style="width: 100%; height: 600px; border: none;"></iframe>
+      </div>
+      <div class="has-text-right mt-2">
+        <a href="https://drive.google.com/file/d/1axuJiZ8QIjgSHTxIWkLvSkPoUhhp_s-d/preview"
+           target="_blank"
+           class="button is-link is-light is-small">
+          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+          <span>Open in Google Sheets</span>
+        </a>
       </div>
     </div>
 
-    <div id="analysis-pi" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/pi_plot1.png" class="analysis-plot-img" alt="Pi Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/pi_plot2.png" class="analysis-plot-img" alt="Pi Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/pi_plot3.png" class="analysis-plot-img" alt="Pi Plot 3"></div></div>
+    <!-- Hardware: Module -->
+    <div id="result-module" class="result-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe src="https://drive.google.com/file/d/10YAgVcFOiWUqB_-SBrndQpXZh60HfIdD/preview"
+                style="width: 100%; height: 600px; border: none;"></iframe>
+      </div>
+      <div class="has-text-right mt-2">
+        <a href="https://drive.google.com/file/d/10YAgVcFOiWUqB_-SBrndQpXZh60HfIdD/preview"
+           target="_blank"
+           class="button is-link is-light is-small">
+          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+          <span>Open in Google Sheets</span>
+        </a>
       </div>
     </div>
 
-    <div id="analysis-proton" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/proton_plot1.png" class="analysis-plot-img" alt="Proton Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/proton_plot2.png" class="analysis-plot-img" alt="Proton Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/proton_plot3.png" class="analysis-plot-img" alt="Proton Plot 3"></div></div>
+    <!-- DAQ -->
+    <div id="daq" class="result-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe src="https://drive.google.com/file/d/1XClR7Yfq7Pt10UI9UmWbAhMw1k3pAooV/preview"
+                style="width: 100%; height: 600px; border: none;"></iframe>
+      </div>
+      <div class="has-text-right mt-2">
+        <a href="https://drive.google.com/file/d/1XClR7Yfq7Pt10UI9UmWbAhMw1k3pAooV/preview"
+           target="_blank"
+           class="button is-link is-light is-small">
+          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+          <span>Open in Google Sheets</span>
+        </a>
       </div>
     </div>
 
-    <div id="analysis-pi-rot" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/pi_rot_plot1.png" class="analysis-plot-img" alt="Pi Rotation Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/pi_rot_plot2.png" class="analysis-plot-img" alt="Pi Rotation Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/pi_rot_plot3.png" class="analysis-plot-img" alt="Pi Rotation Plot 3"></div></div>
+    <!-- Wireless DAQ -->
+    <div id="wireless" class="result-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe src="https://drive.google.com/file/d/1hudmMe82ZJl55ricQJN8gsbZQlHym6l1/preview"
+                style="width: 100%; height: 600px; border: none;"></iframe>
+      </div>
+      <div class="has-text-right mt-2">
+        <a href="https://drive.google.com/file/d/1hudmMe82ZJl55ricQJN8gsbZQlHym6l1/preview"
+           target="_blank"
+           class="button is-link is-light is-small">
+          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+          <span>Open in Google Sheets</span>
+        </a>
       </div>
     </div>
 
-    <div id="analysis-proton-rot" class="analysis-content mt-5 is-hidden">
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/proton_rot_plot1.png" class="analysis-plot-img" alt="Proton Rotation Plot 1"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/proton_rot_plot2.png" class="analysis-plot-img" alt="Proton Rotation Plot 2"></div></div>
-        <div class="column is-one-third"><div class="card analysis-plot-card"><img src="../../TestBeam/CERN/2023/analysis/proton_rot_plot3.png" class="analysis-plot-img" alt="Proton Rotation Plot 3"></div></div>
+    <!-- DQM -->
+    <div id="dqm" class="result-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe src="https://drive.google.com/file/d/1BlM9wjeIeZ51w7Nqf6jtBXQvZYF4s-L1/preview"
+                style="width: 100%; height: 600px; border: none;"></iframe>
+      </div>
+      <div class="has-text-right mt-2">
+        <a href="https://drive.google.com/file/d/1BlM9wjeIeZ51w7Nqf6jtBXQvZYF4s-L1/preview"
+           target="_blank"
+           class="button is-link is-light is-small">
+          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+          <span>Open in Google Sheets</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- result: EM Performance -->
+    <div id="result-em" class="result-content mt-5 is-hidden">
+      <div class="card" style="border-radius: 20px; overflow: hidden;">
+        <iframe src="https://drive.google.com/file/d/1sTpSp1TGCqMNIyoSkl2ncw7iMq0w7del/preview"
+                style="width: 100%; height: 600px; border: none;"></iframe>
+      </div>
+      <div class="has-text-right mt-2">
+        <a href="https://drive.google.com/file/d/1sTpSp1TGCqMNIyoSkl2ncw7iMq0w7del/preview"
+           target="_blank"
+           class="button is-link is-light is-small">
+          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+          <span>Open in Google Sheets</span>
+        </a>
       </div>
     </div>
 
@@ -772,24 +849,29 @@
     toggleContent(contentId, ".tool-info-content", event);
   }
 
-  function showAnalysisInfo(contentId, event) {
-    toggleContent(contentId, ".analysis-content", event);
+  function showResultInfo(contentId) {
+  const daqItems = ['daq-daq', 'daq-wireless'];
+
+  if (!daqItems.includes(contentId)) {document.getElementById('hw-result-menu').classList.add('is-hidden');}
+
+  const contents = document.querySelectorAll(".result-content");
+  contents.forEach(content => { content.classList.add("is-hidden"); });
+
+  document.getElementById(contentId).classList.remove('is-hidden');
+}
+
+  function toggleDAQresultMenu() {
+  document.getElementById('analysis-result-menu').classList.add('is-hidden');
+  const menu = document.getElementById("hw-result-menu");
+  const isAlreadyOpen = !menu.classList.contains("is-hidden");
+  menu.classList.toggle("is-hidden");
+  if (isAlreadyOpen) {
+    const contents = document.querySelectorAll(".result-content");
+    contents.forEach(content => {
+      content.classList.add("is-hidden");
+    });
   }
-
-  function toggleHadronAnalysisMenu(event) {
-    if (event) event.preventDefault();
-
-    const menu = document.getElementById("hadron-analysis-menu");
-    const isAlreadyOpen = !menu.classList.contains("is-hidden");
-
-    menu.classList.toggle("is-hidden");
-
-    if (isAlreadyOpen) {
-      document.querySelectorAll(".analysis-content").forEach(content => {
-        content.classList.add("is-hidden");
-      });
-    }
-  }
+}
 
   window.onscroll = function () {
     const btn = document.getElementById("scrollTopBtn");
