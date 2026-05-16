@@ -15,8 +15,9 @@ const categoryTitles = {
   "h-target": "Hadron: Pion w/ Interaction Target Runs"
 };
 
-async function loadRuns() {
+const hadronItems = ["h-pion", "h-pk", "h-pion-rot", "h-pk-rot", "h-target"];
 
+async function loadRuns() {
   const response = await fetch("data/runs.json");
   allRuns = await response.json();
 
@@ -24,48 +25,40 @@ async function loadRuns() {
   const tbody = document.getElementById("run-table-body");
   const tableWrapper = document.querySelector(".run-table-wrapper");
 
-  // 처음에는 아무것도 안보이게
   title.textContent = "Select a run category";
   tbody.innerHTML = "";
-
   tableWrapper.classList.add("is-hidden");
 }
 
 function showRunCategory(categoryId) {
-
   const tbody = document.getElementById("run-table-body");
   const title = document.getElementById("run-category-title");
   const tableWrapper = document.querySelector(".run-table-wrapper");
+
+  // 다른 그룹 클릭 시 hadron 서브메뉴 닫기
+  if (!hadronItems.includes(categoryId)) {
+    document.getElementById("hadron-sub-menu").classList.add("is-hidden");
+  }
 
   // 같은 버튼 다시 누르면 접기
   if (
     currentRunCategory === categoryId &&
     !tableWrapper.classList.contains("is-hidden")
   ) {
-
     currentRunCategory = null;
-
     title.textContent = "Select a run category";
-
     tbody.innerHTML = "";
-
     tableWrapper.classList.add("is-hidden");
-
     return;
   }
 
   currentRunCategory = categoryId;
-
-  title.textContent =
-    categoryTitles[categoryId] || "Run List";
-
+  title.textContent = categoryTitles[categoryId] || "Run List";
   tbody.innerHTML = "";
 
-  const filteredRuns =
-    allRuns.filter(run => run.category === categoryId);
+  const filteredRuns = allRuns.filter(run => run.category === categoryId);
 
   if (filteredRuns.length === 0) {
-
     tbody.innerHTML = `
       <tr>
         <td colspan="5" class="has-text-centered has-text-grey">
@@ -73,16 +66,12 @@ function showRunCategory(categoryId) {
         </td>
       </tr>
     `;
-
     tableWrapper.classList.remove("is-hidden");
-
     return;
   }
 
   filteredRuns.forEach(run => {
-
     const row = document.createElement("tr");
-
     row.innerHTML = `
       <td>${run.runNumber || ""}</td>
       <td>${run.energy || ""}</td>
@@ -90,7 +79,6 @@ function showRunCategory(categoryId) {
       <td>${run.angle || ""}</td>
       <td>${run.note || ""}</td>
     `;
-
     tbody.appendChild(row);
   });
 
@@ -98,14 +86,18 @@ function showRunCategory(categoryId) {
 }
 
 function toggleHadronMenu() {
-
-  const subMenu =
-    document.getElementById("hadron-sub-menu");
+  const subMenu = document.getElementById("hadron-sub-menu");
+  const isAlreadyOpen = !subMenu.classList.contains("is-hidden");
 
   subMenu.classList.toggle("is-hidden");
+
+  // 서브메뉴 닫힐 때 테이블도 초기화
+  if (isAlreadyOpen) {
+    currentRunCategory = null;
+    document.getElementById("run-category-title").textContent = "Select a run category";
+    document.getElementById("run-table-body").innerHTML = "";
+    document.querySelector(".run-table-wrapper").classList.add("is-hidden");
+  }
 }
 
-document.addEventListener(
-  "DOMContentLoaded",
-  loadRuns
-);
+document.addEventListener("DOMContentLoaded", loadRuns);
