@@ -615,7 +615,6 @@
 <!-------------------------------------- Result -------------------------------------->
 <section class="section" id="result">
   <div class="container is-max-desktop">
-   <!-- <h2 class="title is-3 has-text-centered">Result</h2> -->
 
     <div class="columns is-centered mt-5">
       <div class="column">
@@ -651,7 +650,7 @@
       </div>
 
     <div class="column">
-        <div class="card result-card" onclick="showResultInfo('analysis')">
+      <div class="card result-card" onclick="toggleAnalysisresultMenu('analysis')">
           <div class="card-content has-text-centered">
             <p class="title is-5">Analysis</p>
           </div>
@@ -661,7 +660,7 @@
     <div id="hw-result-menu"
          class="box has-background-light is-hidden"
          style="border-radius:20px; margin-bottom:2rem;">
-      <p class="has-text-centered is-size-7 has-text-grey mb-2">
+      <p class="has-text-centered is-size-7 has-text-grey mb-3">
         Select Hardware
       </p>
       <div class="buttons is-centered">
@@ -1014,7 +1013,7 @@
       });
     }
   }
-  function toggleHWresultMenu() {
+  function toggleAnalysisresultMenu() {
     const menu = document.getElementById("analysis-result-menu");
     const isAlreadyOpen = !menu.classList.contains("is-hidden");
 
