@@ -934,30 +934,25 @@
   const hadronResultsItems = ["results-pi", "results-proton", "results-pi-rot", "results-proton-rot"];
 
   function showResultsInfo(contentId) {
-  // 다른 그룹 클릭 시 hadron 서브메뉴 닫기
-    if (!hadronResultsItems.includes(contentId)) {document.getElementById("hadron-results-menu").classList.add("is-hidden");}
+    const hadronMenu = document.getElementById("hadron-results-menu");
+  if (hadronMenu && !hadronResultsItems.includes(contentId)) {hadronMenu.classList.add("is-hidden");}
 
     const target = document.getElementById(contentId);
     const isAlreadyOpen = !target.classList.contains("is-hidden");
     const contents = document.querySelectorAll(".results-content");
-
     contents.forEach(content => { content.classList.add("is-hidden"); });
-
     if (isAlreadyOpen) return;
-
-    target.classList.remove("is-hidden");
+      target.classList.remove("is-hidden");
   }
 
   function toggleHadronResultsMenu() {
     const menu = document.getElementById("hadron-results-menu");
+    if (!menu) return;  // null 체크 추가
     const isAlreadyOpen = !menu.classList.contains("is-hidden");
-
     menu.classList.toggle("is-hidden");
-
-    if (isAlreadyOpen) {
-      document.querySelectorAll(".results-content").forEach(content => {content.classList.add("is-hidden");});
-    }
+    if (isAlreadyOpen) {document.querySelectorAll(".results-content").forEach(content => {content.classList.add("is-hidden");});}
   }
+  
   window.onscroll = function () {
     const btn = document.getElementById("scrollTopBtn");
 
