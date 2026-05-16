@@ -974,6 +974,8 @@
   }
 
   function showResultInfo(contentId) {
+    document.getElementById('hw-result-menu').classList.add('is-hidden');
+    document.getElementById('analysis-result-menu').classList.add('is-hidden')
     const target = document.getElementById(contentId);
     const isAlreadyOpen = !target.classList.contains("is-hidden");
     const contents = document.querySelectorAll(".result-content");
@@ -988,31 +990,32 @@
   }
 
   function toggleHWresultMenu() {
-    const menu = document.getElementById("hw-result-menu");
-    const isAlreadyOpen = !menu.classList.contains("is-hidden");
-
-    menu.classList.toggle("is-hidden");
-
-    if (isAlreadyOpen) {
-      const contents = document.querySelectorAll(".result-content");
-      contents.forEach(content => {
-        content.classList.add("is-hidden");
-      });
-    }
+  // Analysis 서브메뉴 닫기 (추가)
+  document.getElementById('analysis-result-menu').classList.add('is-hidden');
+  const menu = document.getElementById("hw-result-menu");
+  const isAlreadyOpen = !menu.classList.contains("is-hidden");
+  menu.classList.toggle("is-hidden");
+  if (isAlreadyOpen) {
+    const contents = document.querySelectorAll(".result-content");
+    contents.forEach(content => {
+      content.classList.add("is-hidden");
+    });
   }
-  function toggleAnalysisresultMenu() {
-    const menu = document.getElementById("analysis-result-menu");
-    const isAlreadyOpen = !menu.classList.contains("is-hidden");
+}
 
-    menu.classList.toggle("is-hidden");
-
-    if (isAlreadyOpen) {
-      const contents = document.querySelectorAll(".result-content");
-      contents.forEach(content => {
-        content.classList.add("is-hidden");
-      });
-    }
+function toggleAnalysisresultMenu() {
+  // HW 서브메뉴 닫기 (추가)
+  document.getElementById('hw-result-menu').classList.add('is-hidden');
+  const menu = document.getElementById("analysis-result-menu");
+  const isAlreadyOpen = !menu.classList.contains("is-hidden");
+  menu.classList.toggle("is-hidden");
+  if (isAlreadyOpen) {
+    const contents = document.querySelectorAll(".result-content");
+    contents.forEach(content => {
+      content.classList.add("is-hidden");
+    });
   }
+}
 
   window.onscroll = function () {
     const btn = document.getElementById("scrollTopBtn");
