@@ -551,52 +551,62 @@
     <h2 class="title is-3 has-text-centered">Run List</h2>
 
     <div class="buttons is-centered mb-4">
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
 
-      <button class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
-        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-        <span>Hadron</span>
+      <button type="button"
+              class="button is-rounded is-link filter-btn"
+              onclick="showRunCategory('position-scan')">
+        Position Scan
       </button>
+
+      <button type="button"
+              class="button is-rounded is-link filter-btn"
+              onclick="showRunCategory('calibration')">
+        Calibration
+      </button>
+
+      <button type="button"
+              class="button is-rounded is-link filter-btn"
+              onclick="showRunCategory('em-performance')">
+        EM Performance
+      </button>
+
+      <button type="button"
+              class="button is-rounded is-link filter-btn"
+              onclick="showRunCategory('uniformity-scan')">
+        Uniformity Scan
+      </button>
+
+      <button type="button"
+              class="button is-rounded is-warning is-outlined filter-btn"
+              onclick="showRunCategory('additional-horizontal-scan')">
+        Additional: Horizontal Scan
+      </button>
+
     </div>
 
-    <div id="hadron-sub-menu"
-         class="box has-background-light is-hidden"
-         style="border-radius:20px; margin-bottom:2rem;">
-
-      <p class="has-text-centered is-size-7 has-text-grey mb-2">
-        Select Hadron Sub-type
-      </p>
-
-      <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion')">Pion</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk')">Proton/Kaon</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
-      </div>
-    </div>
-
-    <h4 id="run-category-title" class="subtitle is-5">Select a run category</h4>
+    <h4 id="run-category-title" class="subtitle is-5">
+      Select a run category
+    </h4>
 
     <div class="run-table-wrapper is-hidden">
       <table class="table is-striped is-fullwidth is-hoverable">
         <thead>
           <tr>
+            <th>Date</th>
+            <th>Program</th>
             <th>Run No.</th>
+            <th>Events</th>
             <th>Energy</th>
             <th>Particle</th>
             <th>Angle (R/T)</th>
+            <th>Configuration</th>
             <th>Note</th>
           </tr>
         </thead>
+
         <tbody id="run-table-body">
           <tr>
-            <td colspan="5" class="has-text-centered has-text-grey">
+            <td colspan="9" class="has-text-centered has-text-grey">
               Loading run list...
             </td>
           </tr>
@@ -861,31 +871,15 @@
   }
 
   function showResultInfo(contentId) {
-    const target = document.getElementById(contentId);
-    const isAlreadyOpen = !target.classList.contains("is-hidden");
-    const contents = document.querySelectorAll(".result-content");
-
-    contents.forEach(content => {
-      content.classList.add("is-hidden");
-    });
-
-    if (isAlreadyOpen) return;
-
+    const target =
+      document.getElementById(contentId);
+    const isAlreadyOpen =
+      !target.classList.contains("is-hidden");
+    const contents =
+      document.querySelectorAll(".result-content");
+    contents.forEach(content => {content.classList.add("is-hidden");});
+    if (isAlreadyOpen) {return;}
     target.classList.remove("is-hidden");
-  }
-
-  function toggleHadronResultMenu() {
-    const menu = document.getElementById("hadron-result-menu");
-    const isAlreadyOpen = !menu.classList.contains("is-hidden");
-
-    menu.classList.toggle("is-hidden");
-
-    if (isAlreadyOpen) {
-      const contents = document.querySelectorAll(".result-content");
-      contents.forEach(content => {
-        content.classList.add("is-hidden");
-      });
-    }
   }
 
   window.onscroll = function () {
