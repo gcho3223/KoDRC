@@ -565,52 +565,125 @@
     <h2 class="title is-3 has-text-centered">Run List</h2>
 
     <div class="buttons is-centered mb-4">
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('calib')">Calibration</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('unif')">Uniformity</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('em')">EM</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('double-peak')">Double Peak</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('timing')">Timing Resolution</button>
-      <button class="button is-rounded is-link filter-btn" onclick="showRunCategory('lc-calib')">LC Calibration</button>
 
-      <button class="button is-rounded is-danger is-outlined filter-btn" onclick="toggleHadronMenu()">
-        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-        <span>Hadron</span>
+      <button type="button"
+              class="button is-rounded is-link filter-btn"
+              onclick="showRunCategory('calibration')">
+        Calibration
       </button>
+
+      <button type="button"
+              class="button is-rounded is-link filter-btn"
+              onclick="showRunCategory('em')">
+        EM
+      </button>
+
+      <button type="button"
+              class="button is-rounded is-danger is-outlined filter-btn"
+              onclick="toggleHadronicMenu()">
+        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+        <span>Hadronic</span>
+      </button>
+
+      <button type="button"
+              class="button is-rounded is-warning is-outlined filter-btn"
+              onclick="toggleAdditionalMenu()">
+        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+        <span>Additional</span>
+      </button>
+
     </div>
 
-    <div id="hadron-sub-menu"
+    <div id="hadronic-sub-menu"
          class="box has-background-light is-hidden"
          style="border-radius:20px; margin-bottom:2rem;">
 
       <p class="has-text-centered is-size-7 has-text-grey mb-2">
-        Select Hadron Sub-type
+        Select Hadronic Sub-type
       </p>
 
       <div class="buttons is-centered">
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion')">Pion</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk')">Proton/Kaon</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pion-rot')">Pion w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-pk-rot')">Proton/Kaon w/ Rotation</button>
-        <button class="button is-small is-rounded is-danger is-light" onclick="showRunCategory('h-target')">Pion w/ Interaction Target</button>
+
+        <button type="button"
+                class="button is-small is-rounded is-danger is-light"
+                onclick="showRunCategory('hadronic-pion-interaction-target')">
+          Pion w/ Interaction Target
+        </button>
+
+        <button type="button"
+                class="button is-small is-rounded is-danger is-light"
+                onclick="showRunCategory('hadronic-proton-no-interaction-target')">
+          Proton w/o Interaction Target
+        </button>
+
       </div>
     </div>
 
-    <h4 id="run-category-title" class="subtitle is-5">Select a run category</h4>
+    <div id="additional-sub-menu"
+         class="box has-background-light is-hidden"
+         style="border-radius:20px; margin-bottom:2rem;">
+
+      <p class="has-text-centered is-size-7 has-text-grey mb-2">
+        Select Additional Program
+      </p>
+
+      <div class="buttons is-centered">
+
+        <button type="button"
+                class="button is-small is-rounded is-warning is-light"
+                onclick="showRunCategory('additional-position-resolution')">
+          Position Resolution
+        </button>
+
+        <button type="button"
+                class="button is-small is-rounded is-warning is-light"
+                onclick="showRunCategory('additional-pid')">
+          PID
+        </button>
+
+        <button type="button"
+                class="button is-small is-rounded is-warning is-light"
+                onclick="showRunCategory('additional-time-resolution')">
+          Time Resolution
+        </button>
+
+        <button type="button"
+                class="button is-small is-rounded is-warning is-light"
+                onclick="showRunCategory('additional-lateral-shower')">
+          Lateral Shower
+        </button>
+
+        <button type="button"
+                class="button is-small is-rounded is-warning is-light"
+                onclick="showRunCategory('additional-light-attenuation')">
+          Light Attenuation
+        </button>
+
+      </div>
+    </div>
+
+    <h4 id="run-category-title" class="subtitle is-5">
+      Select a run category
+    </h4>
 
     <div class="run-table-wrapper is-hidden">
       <table class="table is-striped is-fullwidth is-hoverable">
         <thead>
           <tr>
+            <th>Date</th>
             <th>Run No.</th>
+            <th>Events</th>
             <th>Energy</th>
             <th>Particle</th>
             <th>Angle (R/T)</th>
+            <th>Configuration</th>
             <th>Note</th>
           </tr>
         </thead>
+
         <tbody id="run-table-body">
           <tr>
-            <td colspan="5" class="has-text-centered has-text-grey">
+            <td colspan="8" class="has-text-centered has-text-grey">
               Loading run list...
             </td>
           </tr>
@@ -626,6 +699,24 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Resutls</h2>
 
+    <div class="columns is-centered mt-5">
+      <div class="column">
+        <div class="card results-card" onclick="showResultsInfo('results-hw')">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">Hardware</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="columns is-centered mt-5">
+      <div class="column">
+        <div class="card results-card" onclick="showResultsInfo('results-fiber')">
+          <div class="card-content has-text-centered">
+            <p class="title is-5">Optical Fiber</p>
+          </div>
+        </div>
+      </div>
+      
     <div class="columns is-centered mt-5">
       <div class="column">
         <div class="card results-card" onclick="showResultsInfo('results-em')">
@@ -655,6 +746,20 @@
       <div class="buttons is-centered">
         <button class="button is-small is-rounded is-danger is-light" onclick="showResultsInfo('results-pi')">Pi</button>
         <button class="button is-small is-rounded is-danger is-light" onclick="showResultsInfo('results-kp')">Kaon/Proton</button>
+      </div>
+    </div>
+
+    <div id="results-hw" class="results-content mt-5 is-hidden">
+      <div class="columns is-multiline is-centered">
+        <iframe src="https://drive.google.com/file/d/1BcGaNA5cizm5JN_-dcIMLgtCYbxxFB_v/preview"
+                style="width: 100%; height: 750px; border: none;"></iframe>
+      </div>
+    </div>
+
+    <div id="results-fiber" class="results-content mt-5 is-hidden">
+      <div class="columns is-multiline is-centered">
+        <iframe src="https://drive.google.com/file/d/194dBCgIqoJ1dstDAhKtnsgpSXOvJuAOp/preview"
+                style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
     </div>
 
