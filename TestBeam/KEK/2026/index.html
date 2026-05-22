@@ -233,11 +233,6 @@
             <span>Analysis</span>
           </a>
 
-          <a href="#paper" class="button is-rounded is-white has-text-weight-semibold">
-            <span class="icon is-small"><i class="fas fa-book"></i></span>
-            <span>Papers</span>
-          </a>
-
           <a href="#photo-log" class="button is-rounded is-white has-text-weight-semibold">
             <span class="icon is-small"><i class="fas fa-images"></i></span>
             <span>photo-log</span>
@@ -255,7 +250,7 @@
     <div id="main-page-preview" class="mt-4 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
         <iframe
-          src="https://docs.google.com/document/d/17kLcxhN7rhDfOtYT7L4rYhtuRq_QBIsmsSx1s0dofwU/preview"
+          src="https://docs.google.com/document/d/1kmbzfhaWcCG4inQ-Bqlx5ktv-f3MP8_QKL7y7b1cvpU/preview"
           style="width: 100%; height: 900px; border: none;">
         </iframe>
       </div>
@@ -287,15 +282,14 @@
             </div>
             <div class="content">
               <ul style="list-style-type: none; margin-left: 0;">
-                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>New Readout Frame:</strong> Better optical contact using spring/screw mechanism.</li>
-                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>New module frame to use TB2024 only:</strong>
+                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>Add Hodoscope</strong> for applying correlation cut</li>
+                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>Drilling module performance</strong>
                   <ul class="is-size-7 mt-1" style="list-style-type: square;">
-                    <li>easier installation using rail & no need for SiPM setup</li>
-                    <li>LC installed under the module for precise leakage counting.</li>
-                    <li>New back-plane & side-planes for stability/alignment.</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
                   </ul>
                 </li>
-                <li><i class="fas fa-check-circle has-text-link mr-2"></i><strong>Yellow Filter:</strong> Wratten #12 &rarr; #3 (Higher light yield).</li>
               </ul>
             </div>
           </div>
@@ -317,7 +311,7 @@
             </div>
             <div class="content">
               <ul style="list-style-type: none; margin-left: 0;">
-                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Fix DRC chip bug:</strong> dd</li>
+                <li><i class="fas fa-tools has-text-success mr-2"></i><strong>Point 1</strong> dd</li>
                 <li><i class="fas fa-tools has-text-success mr-2"></i><strong>point 2</strong> point 2</li>
                 <li><i class="fas fa-tools has-text-success mr-2"></i><strong>point 3</strong> point 3</li>
                 <li><i class="fas fa-tools has-text-success mr-2"></i><strong>point 4</strong> point 4</li>
@@ -356,7 +350,7 @@
             <span class="ml-2"><strong>Meeting Minutes</strong></span>
           </a>
           <!-------- fill DAQ log link here! -------->
-          <a href="https://docs.google.com/spreadsheets/d/1RaLLkuHS4pvb7S0oarPjj6oTcUuc1QOVF42Gf5Wqkzs/preview"
+          <a href="https://docs.google.com/spreadsheets/d/1V28RNHiscra5_y1kzlodzq1DiIw76fAdDkj-t9tzf1U/preview"
              target="_blank"
              class="button is-warning is-large is-rounded is-outlined"
              style="min-width: 230px; border-width: 2px;">
@@ -395,12 +389,6 @@
       </div>
 
       <div class="column">
-        <div class="card module-info-card" onclick="showModuleInfo('lc-position')">
-          <div class="card-content has-text-centered"><p class="title is-5">LC Position</p></div>
-        </div>
-      </div>
-
-      <div class="column">
         <div class="card module-info-card" onclick="showModuleInfo('pmt-info')">
           <div class="card-content has-text-centered"><p class="title is-5">PMT Info</p></div>
         </div>
@@ -435,16 +423,6 @@
         <img src="../2025/module/DRC_dimension.png"
              alt="DRC Module Dimension"
              style="width: 500px; height: 500px; display: block; margin: auto;">
-      </div>
-    </div>
-    <!-------- fill the LC position file path here! -------->
-    <div id="lc-position" class="module-info-content mt-5 is-hidden">
-      <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe
-          src="https://drive.google.com/file/d/1GcK9Xj86flsFGSsy0YFivAiQSc3FfRF9/preview"
-          style="width: 100%; height: 600px; border: none;"
-          allow="autoplay">
-        </iframe>
       </div>
     </div>
     <!-------- fill the PMT info link here! -------->
@@ -544,14 +522,6 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="card tool-info-card" onclick="showToolInfo('cc-gas-calculation')">
-          <div class="card-content has-text-centered">
-            <p class="title is-5">CC Gas Calculation</p>
-          </div>
-        </div>
-      </div>
-
     </div>
     <!-------- fill position calculator or something link here! -------->
     <div id="position-calculator" class="tool-info-content mt-5 is-hidden">
@@ -573,25 +543,15 @@
     <!-------- fill mapping or something link here! -------->
     <div id="mapping" class="tool-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe src="https://docs.google.com/spreadsheets/d/1WsOf18Pz7shEmT70F8FlSkUP6L1sNmwRFAyeG7TlntY/preview?gid=0"
+        <iframe src="https://docs.google.com/spreadsheets/d/1Dr0oDaSSW26R6Bs6CZPy9gaFDi-2Gsje86J_Zgf7kMc/edit?gid=0#gid=0"
                 style="width: 100%; height: 750px; border: none;"></iframe>
       </div>
     </div>
     <!-------- fill cc gas calculation or something link here! -------->
     <div id="cc-gas-calculation" class="tool-info-content mt-5 is-hidden">
       <div class="card" style="border-radius: 20px; overflow: hidden;">
-        <iframe src="https://docs.google.com/spreadsheets/d/1H7RlN93RMUHWaj-X1uUJHh-yITmTvC4ihviakoYdOF0/preview?gid=0"
+        <iframe src="https://docs.google.com/spreadsheets/d/1Dr0oDaSSW26R6Bs6CZPy9gaFDi-2Gsje86J_Zgf7kMc/edit?gid=0#gid=0"
                 style="width: 100%; height: 600px; border: none;"></iframe>
-      </div>
-      <!-------- fill cc gas calculator or something link here too! -------->
-      <!-- link for 'open in google sheets' -->
-      <div class="has-text-right mt-2">
-        <a href="https://docs.google.com/spreadsheets/d/1H7RlN93RMUHWaj-X1uUJHh-yITmTvC4ihviakoYdOF0/edit?gid=0#gid=0"
-           target="_blank"
-           class="button is-link is-light is-small">
-          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
-          <span>Open in Google Sheets</span>
-        </a>
       </div>
     </div>
 
@@ -742,77 +702,6 @@
   </div>
 </section>
 
-<!-------------------------------------- Paper -------------------------------------->
-<section class="section" id="paper">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Papers</h2>
-
-    <div class="columns is-multiline mt-5">
-
-      <div class="column is-half">
-        <div class="card paper-card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <span class="icon is-large has-text-link">
-                  <i class="fas fa-file-alt fa-2x"></i>
-                </span>
-              </div>
-              <div class="media-content">
-                <p class="title is-5">Paper 1 title</p>
-                <p class="subtitle is-6 has-text-grey">paper 1 subtitle</p>
-              </div>
-            </div>
-
-            <div class="content">
-              paper1 for beam test
-            </div>
-            <!-------- fill paper 1 link here! -------->
-            <div class="buttons mt-4">
-              <a href="https://example.com" target="_blank" class="button is-danger is-light is-rounded">
-                <span class="icon"><i class="fas fa-book-open"></i></span>
-                <span>Read Paper</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="card paper-card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <span class="icon is-large has-text-danger">
-                  <i class="fas fa-file-signature fa-2x"></i>
-                </span>
-              </div>
-              <div class="media-content">
-                <p class="title is-5">Paper 2 title</p>
-                <p class="subtitle is-6 has-text-grey">paper2 sub title</p>
-              </div>
-            </div>
-
-            <div class="content">
-              paper 2 content
-            </div>
-            <!-------- fill paper 2 link here! -------->
-            <div class="buttons mt-4">
-              <a href="https://example.com" target="_blank" class="button is-danger is-light is-rounded">
-                <span class="icon"><i class="fas fa-book-open"></i></span>
-                <span>Read Paper</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-------------------------------------- Photo Log -------------------------------------->
 <section class="section" id="photo-log">
   <div class="container is-max-desktop">
@@ -860,13 +749,13 @@
       <div class="column is-full">
         <div class="card" style="border-radius: 15px; overflow: hidden; border: 1px solid #eee;">
           <iframe
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml?widget=true&amp;headers=false"
+            src="https://docs.google.com/spreadsheets/d/1WOp6x7WCmFqASDSPj_4Kc6OIpVUh1gkdLA3IS90fNZE/edit?gid=1921751643#gid=1921751643"
             style="width: 100%; height: 600px; border: none;">
           </iframe>
         </div>
         <!-------- fill participants list link here! -------->
         <p class="help has-text-right mt-2">
-          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWpySuoEy20szqd9kg6qcjKx-kQeliRjKaBBBtPWQFr0ZeaoY6BQ86eD4SpHaHu6i663ADaU8Htv_Y/pubhtml"
+          <a href="https://docs.google.com/spreadsheets/d/1WOp6x7WCmFqASDSPj_4Kc6OIpVUh1gkdLA3IS90fNZE/edit?gid=1921751643#gid=1921751643"
              target="_blank"
              class="button is-small is-text">
             <span class="icon"><i class="fas fa-external-link-alt"></i></span>
